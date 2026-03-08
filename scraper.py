@@ -16,6 +16,7 @@ CONFIG_PATH = os.path.join(os.path.dirname(__file__), "config.json")
 
 MONOPRIX_URL = "https://catalogue.monoprix.fr/"
 BONIAL_URL = "https://www.bonial.fr/Magasins/Annecy/Monoprix/v-r17"
+COURSES_PROMO_URL = "https://courses.monoprix.fr/categories/promotions/3d423a4e-70eb-4d3b-8b86-f64a46097f8f"
 
 
 def normalize(text: str) -> str:
@@ -49,6 +50,16 @@ def scrape_deals(url: str) -> list[dict]:
             page.goto(url, wait_until="networkidle", timeout=30000)
             # Attendre que les produits soient chargés
             page.wait_for_timeout(3000)
+
+            # Scroll infini : charger tous les produits
+            prev_height = 0
+            for _ in range(20):
+                height = page.evaluate("document.body.scrollHeight")
+                if height == prev_height:
+                    break
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                page.wait_for_timeout(1500)
+                prev_height = height
 
             # Chercher les données JSON embarquées (Next.js / Nuxt)
             next_data = page.evaluate("""
@@ -177,15 +188,21 @@ def main():
 
     print(f"[INFO] Surveillance de : {keywords}")
 
-    # Essai sur catalogue.monoprix.fr d'abord
-    deals = scrape_deals(MONOPRIX_URL)
-
-    # Fallback sur Bonial si rien trouvé
-    if not deals:
-        print("[INFO] Fallback sur Bonial...")
-        deals = scrape_deals(BONIAL_URL)
-
-    matched = filter_deals(deals, keywords)
+    # Scrape toutes les sources dans l'ordre jusqu'au premier match
+    sources = [
+        (MONOPRIX_URL, "catalogue.monoprix.fr"),
+        (COURSES_PROMO_URL, "courses.monoprix.fr"),
+        (BONIAL_URL, "Bonial"),
+    ]
+    matched = []
+    for url, label in sources:
+        print(f"[INFO] Scraping {label}...")
+        deals = scrape_deals(url)
+        matched = filter_deals(deals, keywords)
+        if matched:
+            print(f"[INFO] Match trouvé sur {label}.")
+            break
+        print(f"[INFO] Pas de match sur {label}.")
 
     if matched or notify_if_empty:
         message = build_discord_message(matched, keywords)
