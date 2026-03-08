@@ -1,0 +1,31 @@
+name: Monoprix Deals Check
+
+on:
+  schedule:
+    - cron: "0 8 * * *"   # 08:00 UTC = 09:00 Paris (heure d'hiver), 10:00 en été
+  workflow_dispatch:       # Permet de lancer manuellement depuis l'onglet Actions
+
+jobs:
+  check-deals:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: playwright install chromium --with-deps
+
+      - name: Run scraper
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python scraper.py
