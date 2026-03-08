@@ -6,8 +6,8 @@ Scrape le catalogue Monoprix et notifie sur Discord si des produits surveillés 
 
 import json
 import os
-import re
 import unicodedata
+import urllib.parse
 from datetime import date
 from playwright.sync_api import sync_playwright
 import requests
@@ -16,7 +16,7 @@ CONFIG_PATH = os.path.join(os.path.dirname(__file__), "config.json")
 
 MONOPRIX_URL = "https://catalogue.monoprix.fr/"
 BONIAL_URL = "https://www.bonial.fr/Magasins/Annecy/Monoprix/v-r17"
-COURSES_PROMO_URL = "https://courses.monoprix.fr/categories/promotions/3d423a4e-70eb-4d3b-8b86-f64a46097f8f"
+COURSES_SEARCH_URL = "https://courses.monoprix.fr/api/webproductpagews/v6/product-pages/search"
 
 
 def normalize(text: str) -> str:
@@ -28,6 +28,59 @@ def load_config() -> dict:
     with open(CONFIG_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
 
+
+# ---------------------------------------------------------------------------
+# Source 1 : courses.monoprix.fr — API JSON directe (pas de Playwright)
+# ---------------------------------------------------------------------------
+
+def search_courses_api(keywords: list[str]) -> list[dict]:
+    """
+    Cherche chaque mot-clé via l'API courses.monoprix.fr et retourne uniquement
+    les produits qui ont une promotion active.
+    """
+    matched = []
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/122.0.0.0 Safari/537.36"
+        )
+    }
+    for kw in keywords:
+        params = {
+            "includeAdditionalPageInfo": "true",
+            "maxPageSize": "300",
+            "maxProductsToDecorate": "50",
+            "q": kw,
+            "tag": "web",
+        }
+        try:
+            url = COURSES_SEARCH_URL + "?" + urllib.parse.urlencode(params)
+            r = requests.get(url, headers=headers, timeout=15)
+            if not r.ok:
+                print(f"[WARN] courses API {r.status_code} pour '{kw}'")
+                continue
+            data = r.json()
+            for group in data.get("productGroups", []):
+                products = group.get("decoratedProducts") or group.get("products", [])
+                for product in products:
+                    promos = product.get("promotions", [])
+                    if promos:
+                        promo_desc = promos[0].get("description", "")
+                        price = product.get("price", {}).get("amount", "")
+                        matched.append({
+                            "name": product.get("name", kw),
+                            "price": f"{price} €" if price else "",
+                            "discount": promo_desc,
+                        })
+        except Exception as e:
+            print(f"[WARN] courses API erreur pour '{kw}': {e}")
+    return matched
+
+
+# ---------------------------------------------------------------------------
+# Source 2 : Playwright (catalogue.monoprix.fr, bonial.fr)
+# ---------------------------------------------------------------------------
 
 def scrape_deals(url: str) -> list[dict]:
     """
@@ -48,33 +101,10 @@ def scrape_deals(url: str) -> list[dict]:
 
         try:
             page.goto(url, wait_until="networkidle", timeout=30000)
-            # Attendre que les produits soient chargés
             page.wait_for_timeout(3000)
 
-            # Scroll infini : charger tous les produits
-            prev_height = 0
-            for _ in range(20):
-                height = page.evaluate("document.body.scrollHeight")
-                if height == prev_height:
-                    break
-                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                page.wait_for_timeout(1500)
-                prev_height = height
-
-            # Chercher les données JSON embarquées (Next.js / Nuxt)
-            next_data = page.evaluate("""
-                () => {
-                    const el = document.getElementById('__NEXT_DATA__');
-                    return el ? el.textContent : null;
-                }
-            """)
-
-            if next_data:
-                deals = extract_from_next_data(next_data)
-
             # Fallback : extraction depuis le DOM
-            if not deals:
-                deals = extract_from_dom(page)
+            deals = extract_from_dom(page)
 
         except Exception as e:
             print(f"[WARN] Erreur sur {url}: {e}")
@@ -84,30 +114,10 @@ def scrape_deals(url: str) -> list[dict]:
     return deals
 
 
-def extract_from_next_data(raw_json: str) -> list[dict]:
-    """Tente d'extraire les produits depuis le JSON Next.js embarqué dans la page."""
-    deals = []
-    try:
-        data = json.loads(raw_json)
-        # Chercher récursivement les produits (structure variable selon le site)
-        text = json.dumps(data)
-        # Chercher des patterns prix + nom
-        products = re.findall(
-            r'"(?:name|label|title)"\s*:\s*"([^"]+)"[^}]*?"(?:price|prix)"\s*:\s*"?([^",}]+)"?',
-            text,
-        )
-        for name, price in products:
-            deals.append({"name": name, "price": price, "discount": ""})
-    except Exception:
-        pass
-    return deals
-
-
 def extract_from_dom(page) -> list[dict]:
     """Extraction générique depuis le DOM rendu."""
     deals = []
     try:
-        # Récupérer tout le texte visible de la page
         content = page.inner_text("body")
         deals.append({"name": "__RAW__", "price": "", "discount": "", "_raw": content})
     except Exception as e:
@@ -121,13 +131,11 @@ def filter_deals(deals: list[dict], keywords: list[str]) -> list[dict]:
     matched = []
 
     for deal in deals:
-        # Mode brut : chercher dans le texte complet de la page
         if deal.get("name") == "__RAW__":
             raw = deal.get("_raw", "")
             norm_raw = normalize(raw)
             for kw, kw_norm in zip(keywords, normalized_keywords):
                 if kw_norm in norm_raw:
-                    # Extraire un extrait de contexte autour du mot-clé
                     idx = norm_raw.find(kw_norm)
                     excerpt = raw[max(0, idx - 30) : idx + 80].strip().replace("\n", " ")
                     matched.append({"name": kw, "price": "", "discount": "", "excerpt": excerpt})
@@ -188,21 +196,26 @@ def main():
 
     print(f"[INFO] Surveillance de : {keywords}")
 
-    # Scrape toutes les sources dans l'ordre jusqu'au premier match
-    sources = [
-        (MONOPRIX_URL, "catalogue.monoprix.fr"),
-        (COURSES_PROMO_URL, "courses.monoprix.fr"),
-        (BONIAL_URL, "Bonial"),
-    ]
-    matched = []
-    for url, label in sources:
-        print(f"[INFO] Scraping {label}...")
-        deals = scrape_deals(url)
-        matched = filter_deals(deals, keywords)
-        if matched:
-            print(f"[INFO] Match trouvé sur {label}.")
-            break
-        print(f"[INFO] Pas de match sur {label}.")
+    # Source 1 : API courses.monoprix.fr (rapide, fiable)
+    print("[INFO] Recherche via courses.monoprix.fr API...")
+    matched = search_courses_api(keywords)
+    if matched:
+        print(f"[INFO] {len(matched)} deal(s) trouvé(s) via courses.monoprix.fr.")
+    else:
+        print("[INFO] Pas de match sur courses.monoprix.fr, essai sources secondaires...")
+
+        # Source 2 : catalogue.monoprix.fr + bonial (Playwright)
+        for url, label in [
+            (MONOPRIX_URL, "catalogue.monoprix.fr"),
+            (BONIAL_URL, "Bonial"),
+        ]:
+            print(f"[INFO] Scraping {label}...")
+            deals = scrape_deals(url)
+            matched = filter_deals(deals, keywords)
+            if matched:
+                print(f"[INFO] Match trouvé sur {label}.")
+                break
+            print(f"[INFO] Pas de match sur {label}.")
 
     if matched or notify_if_empty:
         message = build_discord_message(matched, keywords)
