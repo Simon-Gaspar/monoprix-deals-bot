@@ -197,10 +197,23 @@
   .badge-20 { background: #3b82f622; color: #60a5fa; border: 1px solid #3b82f644; }
   .badge-default { background: #6b728022; color: #9ca3af; border: 1px solid #6b728044; }
   .badge-bon-prix { background: #10b98122; color: #34d399; border: 1px solid #10b98144; font-size: 0.65rem; }
+  .badge-above-median { background: #6b728022; color: #9ca3af; border: 1px solid #6b728044; font-size: 0.65rem; }
   .card-unit {
     font-size: 0.7rem;
     color: var(--muted);
-    font-style: italic;
+  }
+  .card-unit-original {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  .card-unit-discounted {
+    color: #4ade80;
+    font-weight: 600;
+  }
+  .card-ref {
+    font-size: 0.65rem;
+    color: var(--muted);
+    opacity: 0.7;
   }
   .card-cat {
     font-size: 0.7rem;
@@ -244,7 +257,8 @@
   <label for="sort">Trier par</label>
   <select id="sort">
     <option value="default">Par défaut</option>
-    <option value="unit-price">Prix unitaire croissant</option>
+    <option value="discounted-unit-price">Prix/unité avec promo</option>
+    <option value="unit-price">Prix/unité sans promo</option>
     <option value="price">Prix croissant</option>
   </select>
 </div>
@@ -265,6 +279,7 @@
 
 <script>
 let DATA = [];
+let REF_PRICES = {};
 let activePromos = new Set();
 let activeCats = new Set();
 
@@ -298,37 +313,16 @@ function parseUnit(s) {
   return m ? m[1].trim() : '';
 }
 
-function computeBonPrix(deals) {
-  // Group by category + unit, find 20th percentile threshold
-  const groups = {};
-  deals.forEach(d => {
-    const up = parseUnitPrice(d.unitPrice);
-    const unit = parseUnit(d.unitPrice);
-    if (up === Infinity || !unit) return;
-    const key = d.category + '|' + unit;
-    if (!groups[key]) groups[key] = [];
-    groups[key].push(up);
-  });
-
-  const thresholds = {};
-  for (const [key, prices] of Object.entries(groups)) {
-    if (prices.length < 3) continue; // need enough products to compare
-    prices.sort((a, b) => a - b);
-    const idx = Math.max(0, Math.ceil(prices.length * 0.2) - 1);
-    thresholds[key] = prices[idx];
-  }
-
-  const bonPrix = new Set();
-  deals.forEach((d, i) => {
-    const up = parseUnitPrice(d.unitPrice);
-    const unit = parseUnit(d.unitPrice);
-    if (up === Infinity || !unit) return;
-    const key = d.category + '|' + unit;
-    if (thresholds[key] !== undefined && up <= thresholds[key]) {
-      bonPrix.add(i);
-    }
-  });
-  return bonPrix;
+function getRefComparison(d) {
+  // Compare discounted unit price to rayon median
+  const up = parseUnitPrice(d.discountedUnitPrice || d.unitPrice);
+  const unit = parseUnit(d.discountedUnitPrice || d.unitPrice);
+  if (up === Infinity || !unit) return null;
+  const key = d.category + '|' + unit;
+  const ref = REF_PRICES[key];
+  if (!ref) return null;
+  const pct = Math.round((1 - up / ref.median) * 100);
+  return { pct, median: ref.median, unit, count: ref.count };
 }
 
 function render() {
@@ -344,14 +338,13 @@ function render() {
   });
 
   // Sort
-  if (sortBy === 'unit-price') {
+  if (sortBy === 'discounted-unit-price') {
+    filtered.sort((a, b) => parseUnitPrice(a.discountedUnitPrice || a.unitPrice) - parseUnitPrice(b.discountedUnitPrice || b.unitPrice));
+  } else if (sortBy === 'unit-price') {
     filtered.sort((a, b) => parseUnitPrice(a.unitPrice) - parseUnitPrice(b.unitPrice));
   } else if (sortBy === 'price') {
     filtered.sort((a, b) => (parseFloat(a.price) || Infinity) - (parseFloat(b.price) || Infinity));
   }
-
-  // Compute "bon prix" within filtered results
-  const bonPrix = computeBonPrix(filtered);
 
   document.getElementById('results-count').textContent = `${filtered.length} produit${filtered.length > 1 ? 's' : ''}`;
 
@@ -360,7 +353,17 @@ function render() {
     return;
   }
 
-  grid.innerHTML = filtered.map((d, i) => `
+  grid.innerHTML = filtered.map((d, i) => {
+    const ref = getRefComparison(d);
+    let refHtml = '';
+    if (ref) {
+      if (ref.pct > 0) {
+        refHtml = `<span class="badge badge-bon-prix">${ref.pct}% sous la m\u00e9diane du rayon</span>`;
+      } else if (ref.pct < 0) {
+        refHtml = `<span class="badge badge-above-median">${Math.abs(ref.pct)}% au-dessus</span>`;
+      }
+    }
+    return `
     <div class="card">
       ${d.image ? `<img class="card-img" src="${esc(d.image)}" alt="" loading="lazy">` : ''}
       <div class="card-body">
@@ -368,17 +371,18 @@ function render() {
           <div class="card-name">${esc(d.name)}</div>
           <div>
             <div class="card-price">${d.price ? d.price + ' \u20ac' : ''}</div>
-            ${d.unitPrice ? `<div class="card-unit">${esc(d.unitPrice)}</div>` : ''}
+            ${d.discountedUnitPrice ? `<div class="card-unit"><span class="card-unit-original">${esc(d.unitPrice)}</span> <span class="card-unit-discounted">${esc(d.discountedUnitPrice)}</span></div>` : d.unitPrice ? `<div class="card-unit">${esc(d.unitPrice)}</div>` : ''}
+            ${ref ? `<div class="card-ref">m\u00e9diane rayon: ${ref.median.toFixed(2)} \u20ac${ref.unit}</div>` : ''}
           </div>
         </div>
         <div class="card-bottom">
           <span class="badge ${getBadgeClass(d.discount)}">${esc(d.discount)}</span>
-          ${bonPrix.has(i) ? '<span class="badge badge-bon-prix">Bon prix/unit\u00e9</span>' : ''}
+          ${refHtml}
           <span class="card-cat">${esc(d.category)}</span>
         </div>
       </div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 }
 
 function esc(s) {
@@ -415,6 +419,7 @@ async function init() {
     const res = await fetch('data.json');
     const json = await res.json();
     DATA = json.deals;
+    REF_PRICES = json.referencePrices || {};
 
     const d = new Date(json.updated);
     document.getElementById('meta').textContent =

@@ -32,6 +32,198 @@ def load_config() -> dict:
         return json.load(f)
 
 
+# Mapping mots-clés → catégorie pour les produits classés "Promotions" par l'API
+CATEGORY_KEYWORDS = {
+    "Produits Laitiers": [
+        "yaourt", "lait ", "crème", "beurre", "fromage", "mozzarella", "emmental",
+        "comté", "camembert", "brie", "gruyère", "skyr", "dessert", "flan",
+        "mousse", "petit suisse", "perle de lait", "danette", "activia", "danone",
+        "yoplait", "gervais", "kiri", "danonino", "philadelphia", "pérac",
+        "apérivrais", "margarine", "hubert", "sorbet", "glace",
+    ],
+    "Bière et Alcools": [
+        "bière", "blonde", " ipa ", "pale ale", "stout", "brune", "lager",
+        "cidre", "vin ", "champagne", "whisky", "rhum", "vodka", "gin ",
+        "corona", "heineken", "guinness", "1664", "brewdog", "galibier",
+        "pelican", "pélican", "crémant", "luberon", "ventoux", "cabernet",
+        "merlot", "rosé", "igp ", "aop ",
+    ],
+    "Épicerie Sucrée": [
+        "biscuit", "chocolat", "gâteau", "cookie", "bonbon", "confiture",
+        "miel", "pâte à tartiner", "céréale", "granola", "nutella", "ferrero",
+        "kinder", "lindt", "lutti", "gerblé", "brioche", "pain de mie",
+        "muesli", "bjorg", "sablé", "œuf", "oeuf", "abtey",
+    ],
+    "Épicerie Salée": [
+        "pâtes", "riz ", "sauce", "huile", "vinaigre", "conserve", "soupe",
+        "bouillon", "condiment", "moutarde", "ketchup", "mayonnaise", "olive",
+        "cornichon", "chips", "apéritif", "crackers", "benenuts", "bénénuts",
+        "maggi", "tipiak", "old el paso", "cacahuète", "noix de cajou",
+        "amande", "noix", "raisin", "seeberger",
+    ],
+    "Boissons": [
+        "jus", "eau ", "soda", "thé ", "café", "boisson", "sirop",
+        "limonade", "coca", "orangina", "oasis", "evian", "vittel",
+        "perrier", "tropicana", "innocent", "pressade", "teisseire",
+        "salvetat", "lorina", "starbucks", "lipton", "clipper", "oatly",
+        "avoine", "danao", "infusion", "heroic", "prime ", "hydratation",
+    ],
+    "Viandes et Charcuterie": [
+        "jambon", "saucisson", "poulet", "bœuf", "porc", "veau", "agneau",
+        "steak", "côte", "escalope", "rôti", "lardons", "bacon", "pâté",
+        "rillettes", "terrine", "saucisse", "merguez", "charal", "socopa",
+        "fleury michon", "herta", "cochonou", "citterio", "maître coq",
+        "daunat", "bresaola", "lard", "dinde", "ailes", "saint agaûne",
+        "henri raffin", "bûchette", "villani",
+    ],
+    "Poissons et Fruits de mer": [
+        "saumon", "thon", "crevette", "poisson", "cabillaud", "truite",
+        "sardine", "hareng", "surimi", "labeyrie",
+    ],
+    "Hygiène et Beauté": [
+        "shampooing", "gel douche", "dentifrice", "déodorant", "savon",
+        "lotion", "elsève", "dessange", "sanex", "l'oréal", "pampers",
+    ],
+    "Entretien": [
+        "lessive", "liquide vaisselle", "nettoyant", "éponge", "javel", "lotus",
+    ],
+    "Fruits et Légumes": [
+        "salade", "tomate", "pomme", "banane", "orange", "carotte",
+        "courgette", "florette", "bonduelle", "compote", "pom'potes",
+    ],
+}
+
+
+# Normalise les catégories de l'API vers nos catégories unifiées
+CATEGORY_NORMALIZE = {
+    "Produits Laitiers, Œufs et Fromages": "Produits Laitiers",
+    "Boissons et Lait": "Boissons",
+    "Bière, Cave et Spiritueux": "Bière et Alcools",
+    "Charcuterie et Traiteur": "Viandes et Charcuterie",
+    "Boucherie et Volaille": "Viandes et Charcuterie",
+    "Epicerie Sucrée": "Épicerie Sucrée",
+    "Epicerie Salée": "Épicerie Salée",
+    "Pain et Viennoiserie": "Épicerie Sucrée",
+    "Entretien & Nettoyage": "Entretien",
+    "Pâques": "Épicerie Sucrée",
+    "Nos sélections": "",  # will be guessed from name
+    "Nos recettes": "",
+}
+
+
+def guess_category(name: str) -> str:
+    """Déduit la catégorie d'un produit à partir de son nom."""
+    name_lower = name.lower()
+    for category, keywords in CATEGORY_KEYWORDS.items():
+        for kw in keywords:
+            if kw in name_lower:
+                return category
+    return "Autre"
+
+
+# Termes de recherche pour récupérer les prix de référence par catégorie
+CATEGORY_SEARCH_TERMS = {
+    "Produits Laitiers": ["yaourt", "fromage", "lait", "beurre", "crème dessert"],
+    "Bière et Alcools": ["bière", "vin rouge", "vin blanc"],
+    "Boissons": ["jus de fruits", "eau minérale", "soda", "thé"],
+    "Épicerie Sucrée": ["chocolat", "biscuit", "céréales", "confiture"],
+    "Épicerie Salée": ["pâtes", "riz", "sauce", "chips", "huile"],
+    "Viandes et Charcuterie": ["jambon", "poulet", "saucisson", "steak"],
+    "Poissons et Fruits de mer": ["saumon", "thon", "crevette"],
+    "Hygiène et Beauté": ["shampooing", "gel douche", "dentifrice"],
+    "Entretien": ["lessive", "liquide vaisselle"],
+    "Fruits et Légumes": ["salade", "compote"],
+}
+
+
+def fetch_reference_prices() -> dict:
+    """
+    Récupère les prix unitaires médians par catégorie+unité
+    en cherchant tous les produits du rayon (promo ou pas).
+    Retourne: {"Produits Laitiers|/kg": {"median": 5.60, "count": 295}, ...}
+    """
+    from statistics import median
+
+    ref = {}
+    for category, terms in CATEGORY_SEARCH_TERMS.items():
+        # Collect unit prices from all search terms for this category
+        prices_by_unit = {}  # unit -> list of prices
+        seen_ids = set()
+
+        for term in terms:
+            try:
+                r = requests.get(
+                    COURSES_SEARCH_URL,
+                    params={
+                        "maxPageSize": "300",
+                        "maxProductsToDecorate": "300",
+                        "q": term,
+                        "tag": "web",
+                    },
+                    headers=HEADERS,
+                    timeout=15,
+                )
+                if not r.ok:
+                    continue
+            except Exception:
+                continue
+
+            data = r.json()
+            for group in data.get("productGroups", []):
+                products = group.get("decoratedProducts") or group.get("products", [])
+                for p in products:
+                    pid = p.get("productId", "")
+                    if pid in seen_ids:
+                        continue
+                    seen_ids.add(pid)
+                    up = p.get("unitPrice", {})
+                    amount = up.get("price", {}).get("amount", "")
+                    unit_raw = up.get("unit", "")
+                    if not amount or not unit_raw:
+                        continue
+                    unit_label = unit_raw.replace("fop.price.per.", "/")
+                    prices_by_unit.setdefault(unit_label, []).append(float(amount))
+
+        for unit_label, prices in prices_by_unit.items():
+            if len(prices) >= 5:  # need enough data points
+                key = f"{category}|{unit_label}"
+                ref[key] = {
+                    "median": round(median(prices), 2),
+                    "count": len(prices),
+                }
+                print(f"  [REF] {key}: médiane={ref[key]['median']} €  (n={len(prices)})")
+
+    return ref
+
+
+def discount_factor(desc: str) -> float:
+    """
+    Calcule le facteur multiplicatif moyen pour une promo.
+    Ex: -50% sur le 2ème → on paie 1.5 pour 2 → facteur 0.75
+        2+1 offert → on paie 2 pour 3 → facteur 0.667
+        -30% remise immédiate → facteur 0.70
+    """
+    d = desc.lower()
+    # "X+Y offert" ou "X +Y offert"
+    m = re.search(r"(\d+)\s*\+\s*(\d+)\s*offert", d)
+    if m:
+        pay = int(m.group(1))
+        free = int(m.group(2))
+        return pay / (pay + free)
+    # "-XX% sur le 2ème/Nème produit"
+    m = re.search(r"-(\d+)%\s*sur le (\d+)", d)
+    if m:
+        pct = int(m.group(1))
+        nth = int(m.group(2))
+        # On paie (nth-1) + (1 - pct/100) pour nth produits
+        return ((nth - 1) + (1 - pct / 100)) / nth
+    # "-XX% remise immédiate"
+    m = re.search(r"-(\d+)%", d)
+    if m:
+        return 1 - int(m.group(1)) / 100
+    return 1.0
+
+
 def fetch_all_promos() -> list[dict]:
     """
     Récupère toutes les promos via l'API courses.monoprix.fr.
@@ -67,7 +259,12 @@ def fetch_all_promos() -> list[dict]:
             short_desc = re.sub(r" - Cliquez.*", "", desc)
             price = product.get("price", {}).get("amount", "")
             category_path = product.get("categoryPath", [])
-            category = category_path[0] if category_path else "Autre"
+            raw_category = category_path[0] if category_path else "Autre"
+
+            # Normaliser la catégorie API, puis deviner si nécessaire
+            category = CATEGORY_NORMALIZE.get(raw_category, raw_category)
+            if not category or category == "Promotions":
+                category = guess_category(product.get("name", ""))
 
             image_path = (product.get("imagePaths") or [""])[0]
             image = f"{image_path}/200x200.webp" if image_path else ""
@@ -77,6 +274,13 @@ def fetch_all_promos() -> list[dict]:
             unit_raw = unit_price_data.get("unit", "")
             unit_label = unit_raw.replace("fop.price.per.", "/") if unit_raw else ""
 
+            # Prix unitaire après réduction
+            discounted_unit = ""
+            if unit_amount:
+                factor = discount_factor(short_desc)
+                discounted = float(unit_amount) * factor
+                discounted_unit = f"{discounted:.2f} €{unit_label}"
+
             deals.append({
                 "name": product.get("name", ""),
                 "price": price,
@@ -84,18 +288,20 @@ def fetch_all_promos() -> list[dict]:
                 "category": category,
                 "image": image,
                 "unitPrice": f"{unit_amount} €{unit_label}" if unit_amount else "",
+                "discountedUnitPrice": discounted_unit,
             })
 
     return deals
 
 
-def export_json(deals: list[dict]) -> None:
+def export_json(deals, reference_prices=None):
     """Exporte les promos en JSON dans docs/data.json."""
     os.makedirs(DOCS_DIR, exist_ok=True)
     output = {
         "updated": datetime.now(timezone.utc).isoformat(),
         "count": len(deals),
         "deals": deals,
+        "referencePrices": reference_prices or {},
     }
     path = os.path.join(DOCS_DIR, "data.json")
     with open(path, "w", encoding="utf-8") as f:
@@ -167,9 +373,13 @@ def main():
     deals = fetch_all_promos()
     print(f"[INFO] {len(deals)} promo(s) trouvée(s).")
 
+    print("[INFO] Récupération des prix de référence par rayon...")
+    ref_prices = fetch_reference_prices()
+    print(f"[INFO] {len(ref_prices)} références de prix récupérées.")
+
     # Export JSON pour le front
     if deals:
-        export_json(deals)
+        export_json(deals, ref_prices)
 
     # Discord
     webhook_url = os.environ.get("DISCORD_WEBHOOK_URL")
