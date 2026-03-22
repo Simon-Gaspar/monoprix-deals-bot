@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-22T15:47:47.646718+00:00",
+  "updated": "2026-03-22T16:04:42.385075+00:00",
   "count": 294,
   "deals": [
     {
@@ -2244,20 +2244,20 @@
       "discountedUnitPrice": "8.74 €/litre"
     },
     {
-      "name": "Excellence Crème Coloration 7 Blond",
-      "price": "15.69",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/9d6a8188-5659-4b7d-b5b3-60a88a58c159/200x200.webp",
-      "unitPrice": "15.69 €/each",
-      "discountedUnitPrice": "11.77 €/each"
-    },
-    {
       "name": "Excellence Crème Coloration 8.1 Blond clair cendré",
       "price": "15.69",
       "discount": "-50% sur le 2ème produit",
       "category": "Produits Laitiers",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/462fe53c-39a7-45d9-836b-a319e033bb2c/200x200.webp",
+      "unitPrice": "15.69 €/each",
+      "discountedUnitPrice": "11.77 €/each"
+    },
+    {
+      "name": "Excellence Crème Coloration 7 Blond",
+      "price": "15.69",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Produits Laitiers",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/9d6a8188-5659-4b7d-b5b3-60a88a58c159/200x200.webp",
       "unitPrice": "15.69 €/each",
       "discountedUnitPrice": "11.77 €/each"
     },
