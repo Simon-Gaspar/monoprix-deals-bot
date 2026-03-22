@@ -215,6 +215,25 @@
     color: var(--muted);
     opacity: 0.7;
   }
+  .card-sparkline {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.15rem;
+  }
+  .card-sparkline svg { display: block; }
+  .card-trend {
+    font-size: 0.65rem;
+    font-weight: 600;
+  }
+  .card-trend.down { color: #4ade80; }
+  .card-trend.up { color: #f87171; }
+  .card-trend.stable { color: var(--muted); }
+  .sparkline-tooltip {
+    font-size: 0.6rem;
+    color: var(--muted);
+    opacity: 0.7;
+  }
   .card-cat {
     font-size: 0.7rem;
     color: var(--muted);
@@ -257,8 +276,8 @@
   <label for="sort">Trier par</label>
   <select id="sort">
     <option value="default">Par défaut</option>
+    <option value="best-deal">Meilleur deal vs rayon</option>
     <option value="discounted-unit-price">Prix/unité avec promo</option>
-    <option value="unit-price">Prix/unité sans promo</option>
     <option value="price">Prix croissant</option>
   </select>
 </div>
@@ -280,6 +299,7 @@
 <script>
 let DATA = [];
 let REF_PRICES = {};
+let HISTORY = {};
 let activePromos = new Set();
 let activeCats = new Set();
 
@@ -314,15 +334,56 @@ function parseUnit(s) {
 }
 
 function getRefComparison(d) {
-  // Compare discounted unit price to rayon median
+  // Compare discounted unit price to subcategory median
   const up = parseUnitPrice(d.discountedUnitPrice || d.unitPrice);
   const unit = parseUnit(d.discountedUnitPrice || d.unitPrice);
-  if (up === Infinity || !unit) return null;
-  const key = d.category + '|' + unit;
+  // Skip /each — units are often not comparable (per item vs per box)
+  if (up === Infinity || !unit || !d.subcategory || unit === '/each') return null;
+  const key = d.subcategory + '|' + unit;
   const ref = REF_PRICES[key];
   if (!ref) return null;
   const pct = Math.round((1 - up / ref.median) * 100);
-  return { pct, median: ref.median, unit, count: ref.count };
+  return { pct, median: ref.median, unit, count: ref.count, label: ref.label || d.subcategory };
+}
+
+function buildSparkline(d) {
+  if (!d.id || !HISTORY[d.id]) return '';
+  const hist = HISTORY[d.id].prices;
+  const dates = Object.keys(hist).sort();
+  if (dates.length < 2) return '';
+
+  const prices = dates.map(dt => parseFloat(hist[dt].price) || 0).filter(p => p > 0);
+  if (prices.length < 2) return '';
+
+  const W = 80, H = 24, pad = 2;
+  const min = Math.min(...prices);
+  const max = Math.max(...prices);
+  const range = max - min || 1;
+
+  const points = prices.map((p, i) => {
+    const x = pad + (i / (prices.length - 1)) * (W - 2 * pad);
+    const y = pad + (1 - (p - min) / range) * (H - 2 * pad);
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(' ');
+
+  // Trend: compare last vs first
+  const first = prices[0];
+  const last = prices[prices.length - 1];
+  const diff = last - first;
+  const pctChange = Math.round((diff / first) * 100);
+  let color, trendClass, arrow;
+  if (pctChange < -1) { color = '#4ade80'; trendClass = 'down'; arrow = '\u2193'; }
+  else if (pctChange > 1) { color = '#f87171'; trendClass = 'up'; arrow = '\u2191'; }
+  else { color = '#888'; trendClass = 'stable'; arrow = '='; }
+
+  const firstDate = dates[0];
+  const tooltip = `depuis le ${firstDate.split('-').reverse().join('/')}`;
+
+  return `<div class="card-sparkline">
+    <svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><polyline points="${points}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span class="card-trend ${trendClass}">${arrow}${Math.abs(pctChange) > 0 ? Math.abs(pctChange) + '%' : ''}</span>
+    <span class="sparkline-tooltip">${tooltip}</span>
+  </div>`;
 }
 
 function render() {
@@ -338,10 +399,16 @@ function render() {
   });
 
   // Sort
-  if (sortBy === 'discounted-unit-price') {
+  if (sortBy === 'best-deal') {
+    filtered.sort((a, b) => {
+      const ra = getRefComparison(a);
+      const rb = getRefComparison(b);
+      const pa = ra ? ra.pct : -9999;
+      const pb = rb ? rb.pct : -9999;
+      return pb - pa; // highest % below median first
+    });
+  } else if (sortBy === 'discounted-unit-price') {
     filtered.sort((a, b) => parseUnitPrice(a.discountedUnitPrice || a.unitPrice) - parseUnitPrice(b.discountedUnitPrice || b.unitPrice));
-  } else if (sortBy === 'unit-price') {
-    filtered.sort((a, b) => parseUnitPrice(a.unitPrice) - parseUnitPrice(b.unitPrice));
   } else if (sortBy === 'price') {
     filtered.sort((a, b) => (parseFloat(a.price) || Infinity) - (parseFloat(b.price) || Infinity));
   }
@@ -363,6 +430,7 @@ function render() {
         refHtml = `<span class="badge badge-above-median">${Math.abs(ref.pct)}% au-dessus</span>`;
       }
     }
+    const spark = buildSparkline(d);
     return `
     <div class="card">
       ${d.image ? `<img class="card-img" src="${esc(d.image)}" alt="" loading="lazy">` : ''}
@@ -372,9 +440,10 @@ function render() {
           <div>
             <div class="card-price">${d.price ? d.price + ' \u20ac' : ''}</div>
             ${d.discountedUnitPrice ? `<div class="card-unit"><span class="card-unit-original">${esc(d.unitPrice)}</span> <span class="card-unit-discounted">${esc(d.discountedUnitPrice)}</span></div>` : d.unitPrice ? `<div class="card-unit">${esc(d.unitPrice)}</div>` : ''}
-            ${ref ? `<div class="card-ref">m\u00e9diane rayon: ${ref.median.toFixed(2)} \u20ac${ref.unit}</div>` : ''}
+            ${ref ? `<div class="card-ref">m\u00e9diane ${esc(ref.label)}: ${ref.median.toFixed(2)} \u20ac${ref.unit}</div>` : ''}
           </div>
         </div>
+        ${spark}
         <div class="card-bottom">
           <span class="badge ${getBadgeClass(d.discount)}">${esc(d.discount)}</span>
           ${refHtml}
@@ -416,10 +485,16 @@ function buildChips(containerId, values, activeSet) {
 
 async function init() {
   try {
-    const res = await fetch('data.json');
+    const [res, histRes] = await Promise.all([
+      fetch('data.json'),
+      fetch('history.json').catch(() => null)
+    ]);
     const json = await res.json();
     DATA = json.deals;
     REF_PRICES = json.referencePrices || {};
+    if (histRes && histRes.ok) {
+      HISTORY = await histRes.json();
+    }
 
     const d = new Date(json.updated);
     document.getElementById('meta').textContent =

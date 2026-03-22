@@ -9,7 +9,7 @@ import json
 import os
 import re
 import urllib.parse
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import requests
 
 CONFIG_PATH = os.path.join(os.path.dirname(__file__), "config.json")
@@ -121,75 +121,129 @@ def guess_category(name: str) -> str:
     return "Autre"
 
 
-# Termes de recherche pour récupérer les prix de référence par catégorie
-CATEGORY_SEARCH_TERMS = {
-    "Produits Laitiers": ["yaourt", "fromage", "lait", "beurre", "crème dessert"],
-    "Bière et Alcools": ["bière", "vin rouge", "vin blanc"],
-    "Boissons": ["jus de fruits", "eau minérale", "soda", "thé"],
-    "Épicerie Sucrée": ["chocolat", "biscuit", "céréales", "confiture"],
-    "Épicerie Salée": ["pâtes", "riz", "sauce", "chips", "huile"],
-    "Viandes et Charcuterie": ["jambon", "poulet", "saucisson", "steak"],
-    "Poissons et Fruits de mer": ["saumon", "thon", "crevette"],
-    "Hygiène et Beauté": ["shampooing", "gel douche", "dentifrice"],
-    "Entretien": ["lessive", "liquide vaisselle"],
-    "Fruits et Légumes": ["salade", "compote"],
-}
+# Sous-catégories de recherche pour les prix de référence.
+# Chaque terme = une recherche API → une médiane distincte.
+# Les mots-clés servent à associer un produit promo au bon terme.
+# IMPORTANT : l'ordre compte ! Les sous-catégories plus spécifiques
+# doivent être listées AVANT les plus génériques pour éviter les faux matchs.
+SUBCATEGORY_TERMS = [
+    # Fruits et Légumes (avant "compote" qui matche "pommes")
+    {"term": "salade", "keywords": ["salade", "florette", "bonduelle", "tortis"]},
+    # Épicerie Sucrée (avant "lait" pour que "chocolat au lait" → chocolat)
+    {"term": "chocolat", "keywords": ["chocolat", "lindt", "ferrero", "kinder", "nutella"]},
+    {"term": "biscuit", "keywords": ["biscuit", "cookie", "sablé", "gerblé", "granola", "lu "]},
+    {"term": "confiture", "keywords": ["confiture", "miel", "pâte à tartiner", "bonne maman"]},
+    {"term": "céréales", "keywords": ["céréale", "muesli", "bjorg"]},
+    {"term": "brioche", "keywords": ["brioche", "pain de mie", "harrys", "viennoiserie"]},
+    {"term": "bonbon", "keywords": ["bonbon", "lutti", "œuf", "oeuf", "abtey"]},
+    # Produits Laitiers
+    {"term": "yaourt", "keywords": ["yaourt", "skyr", "perle de lait", "activia", "danone", "yoplait", "danonino", "petit suisse", "gervais", "siggi"]},
+    {"term": "fromage", "keywords": ["fromage", "mozzarella", "emmental", "comté", "camembert", "brie", "gruyère", "gouda", "kiri", "pérac", "apérivrais", "philadelphia", "etorki", "caprice"]},
+    {"term": "beurre", "keywords": ["beurre", "margarine", "hubert", "elle & vire"]},
+    {"term": "crème dessert", "keywords": ["danette", "flan", "mousse au", "crème dessert", "laitière"]},
+    {"term": "compote", "keywords": ["compote", "pom'potes", "pommes", "fruits", "charles"]},
+    {"term": "sorbet", "keywords": ["sorbet", "glace"]},
+    {"term": "lait", "keywords": ["lait ", " lait", "lactel", "elben"]},
+    # Bière et Alcools
+    {"term": "bière", "keywords": ["bière", "blonde", " ipa ", "stout", "brune", "corona", "heineken", "guinness", "1664", "brewdog", "galibier", "pelican", "pélican"]},
+    {"term": "vin rouge", "keywords": ["vin ", "cabernet", "merlot", "ventoux", "luberon", "igp ", "aop ", "crémant", "rosé"]},
+    # Boissons
+    {"term": "jus de fruits", "keywords": ["jus", "tropicana", "pressade", "innocent", "danao"]},
+    {"term": "eau minérale", "keywords": ["eau ", "vittel", "salvetat", "evian", "perrier"]},
+    {"term": "soda", "keywords": ["soda", "limonade", "lorina", "coca"]},
+    {"term": "thé", "keywords": ["thé ", "infusion", "lipton", "clipper"]},
+    {"term": "boisson énergétique", "keywords": ["boisson", "oatly", "avoine", "heroic", "prime ", "hydratation", "starbucks", "café"]},
+    {"term": "sirop", "keywords": ["sirop", "teisseire"]},
+    # Épicerie Salée
+    {"term": "pâtes", "keywords": ["pâtes"]},
+    {"term": "riz", "keywords": ["riz "]},
+    {"term": "sauce", "keywords": ["sauce", "ketchup", "mayonnaise", "moutarde", "maggi", "old el paso"]},
+    {"term": "chips", "keywords": ["chips", "cacahuète", "bénénuts", "benenuts", "apéritif"]},
+    {"term": "huile", "keywords": ["huile", "olive", "vinaigre"]},
+    {"term": "noix", "keywords": ["noix", "amande", "cajou", "seeberger", "raisin"]},
+    {"term": "conserve", "keywords": ["conserve", "soupe", "bouillon", "tipiak"]},
+    # Viandes et Charcuterie
+    {"term": "jambon", "keywords": ["jambon", "fleury michon", "herta"]},
+    {"term": "poulet", "keywords": ["poulet", "dinde", "ailes", "maître coq", "loué", "cordon bleu"]},
+    {"term": "saucisson", "keywords": ["saucisson", "saint agaûne", "henri raffin", "bûchette", "cochonou"]},
+    {"term": "steak", "keywords": ["steak", "bœuf", "charal", "socopa", "lardons", "lard", "viande"]},
+    {"term": "bresaola", "keywords": ["bresaola", "villani", "citterio", "daunat"]},
+    # Poissons
+    {"term": "saumon", "keywords": ["saumon", "labeyrie"]},
+    {"term": "thon", "keywords": ["thon", "crevette", "poisson", "surimi"]},
+    # Hygiène
+    {"term": "shampooing", "keywords": ["shampooing", "elsève", "dessange", "l'oréal"]},
+    {"term": "gel douche", "keywords": ["gel douche", "savon", "sanex", "déodorant", "dentifrice"]},
+    {"term": "couches", "keywords": ["pampers", "couche"]},
+    # Entretien
+    {"term": "lessive", "keywords": ["lessive", "liquide vaisselle", "nettoyant", "javel", "éponge"]},
+    {"term": "mouchoirs", "keywords": ["mouchoir", "lotus"]},
+]
 
 
-def fetch_reference_prices() -> dict:
+def match_subcategory(product_name):
+    """Trouve le terme de sous-catégorie le plus pertinent pour un produit."""
+    name_lower = product_name.lower()
+    for sub in SUBCATEGORY_TERMS:
+        for kw in sub["keywords"]:
+            if kw in name_lower:
+                return sub["term"]
+    return None
+
+
+def fetch_reference_prices():
     """
-    Récupère les prix unitaires médians par catégorie+unité
-    en cherchant tous les produits du rayon (promo ou pas).
-    Retourne: {"Produits Laitiers|/kg": {"median": 5.60, "count": 295}, ...}
+    Récupère les prix unitaires médians par sous-catégorie+unité.
+    Retourne: {"yaourt|/kg": {"median": 5.60, "count": 295, "label": "yaourt"}, ...}
     """
     from statistics import median
 
     ref = {}
-    for category, terms in CATEGORY_SEARCH_TERMS.items():
-        # Collect unit prices from all search terms for this category
-        prices_by_unit = {}  # unit -> list of prices
-        seen_ids = set()
+    seen_terms = set()
+    terms_to_fetch = [sub["term"] for sub in SUBCATEGORY_TERMS]
 
-        for term in terms:
-            try:
-                r = requests.get(
-                    COURSES_SEARCH_URL,
-                    params={
-                        "maxPageSize": "300",
-                        "maxProductsToDecorate": "300",
-                        "q": term,
-                        "tag": "web",
-                    },
-                    headers=HEADERS,
-                    timeout=15,
-                )
-                if not r.ok:
-                    continue
-            except Exception:
+    for term in terms_to_fetch:
+        if term in seen_terms:
+            continue
+        seen_terms.add(term)
+
+        try:
+            r = requests.get(
+                COURSES_SEARCH_URL,
+                params={
+                    "maxPageSize": "300",
+                    "maxProductsToDecorate": "300",
+                    "q": term,
+                    "tag": "web",
+                },
+                headers=HEADERS,
+                timeout=15,
+            )
+            if not r.ok:
                 continue
+        except Exception:
+            continue
 
-            data = r.json()
-            for group in data.get("productGroups", []):
-                products = group.get("decoratedProducts") or group.get("products", [])
-                for p in products:
-                    pid = p.get("productId", "")
-                    if pid in seen_ids:
-                        continue
-                    seen_ids.add(pid)
-                    up = p.get("unitPrice", {})
-                    amount = up.get("price", {}).get("amount", "")
-                    unit_raw = up.get("unit", "")
-                    if not amount or not unit_raw:
-                        continue
-                    unit_label = unit_raw.replace("fop.price.per.", "/")
-                    prices_by_unit.setdefault(unit_label, []).append(float(amount))
+        data = r.json()
+        prices_by_unit = {}
+        for group in data.get("productGroups", []):
+            products = group.get("decoratedProducts") or group.get("products", [])
+            for p in products:
+                up = p.get("unitPrice", {})
+                amount = up.get("price", {}).get("amount", "")
+                unit_raw = up.get("unit", "")
+                if not amount or not unit_raw:
+                    continue
+                unit_label = unit_raw.replace("fop.price.per.", "/")
+                prices_by_unit.setdefault(unit_label, []).append(float(amount))
 
         for unit_label, prices in prices_by_unit.items():
-            if len(prices) >= 5:  # need enough data points
-                key = f"{category}|{unit_label}"
+            if len(prices) >= 5:
+                key = f"{term}|{unit_label}"
                 ref[key] = {
                     "median": round(median(prices), 2),
                     "count": len(prices),
+                    "label": term,
                 }
                 print(f"  [REF] {key}: médiane={ref[key]['median']} €  (n={len(prices)})")
 
@@ -281,17 +335,77 @@ def fetch_all_promos() -> list[dict]:
                 discounted = float(unit_amount) * factor
                 discounted_unit = f"{discounted:.2f} €{unit_label}"
 
+            subcategory = match_subcategory(product.get("name", ""))
+            product_id = product.get("retailerProductId", "")
+
             deals.append({
+                "id": product_id,
                 "name": product.get("name", ""),
                 "price": price,
                 "discount": short_desc,
                 "category": category,
+                "subcategory": subcategory or "",
                 "image": image,
                 "unitPrice": f"{unit_amount} €{unit_label}" if unit_amount else "",
                 "discountedUnitPrice": discounted_unit,
             })
 
     return deals
+
+
+HISTORY_MAX_DAYS = 90
+
+
+def update_history(deals):
+    """Met à jour l'historique des prix (rolling 90 jours)."""
+    os.makedirs(DOCS_DIR, exist_ok=True)
+    history_path = os.path.join(DOCS_DIR, "history.json")
+
+    # Charger l'historique existant
+    history = {}
+    if os.path.exists(history_path):
+        with open(history_path, "r", encoding="utf-8") as f:
+            try:
+                history = json.load(f)
+            except json.JSONDecodeError:
+                history = {}
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=HISTORY_MAX_DAYS)).strftime("%Y-%m-%d")
+
+    for deal in deals:
+        pid = deal.get("id", "")
+        if not pid:
+            continue
+
+        if pid not in history:
+            history[pid] = {"name": deal["name"], "prices": {}}
+
+        # Mettre à jour le nom (peut changer légèrement)
+        history[pid]["name"] = deal["name"]
+
+        # Ajouter le prix du jour
+        entry = {"price": deal["price"]}
+        if deal.get("unitPrice"):
+            entry["unitPrice"] = deal["unitPrice"].split(" ")[0]  # "5.18" from "5.18 €/kg"
+        if deal.get("discount"):
+            entry["discount"] = deal["discount"]
+        history[pid]["prices"][today] = entry
+
+        # Prune les entrées trop anciennes
+        history[pid]["prices"] = {
+            d: v for d, v in history[pid]["prices"].items() if d >= cutoff
+        }
+
+    # Prune les produits sans données récentes
+    history = {
+        pid: data for pid, data in history.items()
+        if any(d >= cutoff for d in data["prices"])
+    }
+
+    with open(history_path, "w", encoding="utf-8") as f:
+        json.dump(history, f, ensure_ascii=False, separators=(",", ":"))
+    print(f"[OK] Historique mis à jour: {len(history)} produits dans {history_path}")
 
 
 def export_json(deals, reference_prices=None):
@@ -377,8 +491,9 @@ def main():
     ref_prices = fetch_reference_prices()
     print(f"[INFO] {len(ref_prices)} références de prix récupérées.")
 
-    # Export JSON pour le front
+    # Historique des prix + export JSON
     if deals:
+        update_history(deals)
         export_json(deals, ref_prices)
 
     # Discord
