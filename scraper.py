@@ -69,11 +69,21 @@ def fetch_all_promos() -> list[dict]:
             category_path = product.get("categoryPath", [])
             category = category_path[0] if category_path else "Autre"
 
+            image_path = (product.get("imagePaths") or [""])[0]
+            image = f"{image_path}/200x200.webp" if image_path else ""
+
+            unit_price_data = product.get("unitPrice", {})
+            unit_amount = unit_price_data.get("price", {}).get("amount", "")
+            unit_raw = unit_price_data.get("unit", "")
+            unit_label = unit_raw.replace("fop.price.per.", "/") if unit_raw else ""
+
             deals.append({
                 "name": product.get("name", ""),
                 "price": price,
                 "discount": short_desc,
                 "category": category,
+                "image": image,
+                "unitPrice": f"{unit_amount} €{unit_label}" if unit_amount else "",
             })
 
     return deals
