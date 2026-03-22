@@ -97,6 +97,33 @@
   .search-wrap input:focus { border-color: var(--accent); }
   .search-wrap input::placeholder { color: var(--muted); }
 
+  /* Sort */
+  .sort-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .sort-wrap label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+  }
+  .sort-wrap select {
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.8rem;
+    outline: none;
+    cursor: pointer;
+  }
+  .sort-wrap select:focus { border-color: var(--accent); }
+
   /* Grid */
   .grid {
     max-width: 1200px;
@@ -169,6 +196,7 @@
   .badge-30 { background: #eab30822; color: #fbbf24; border: 1px solid #eab30844; }
   .badge-20 { background: #3b82f622; color: #60a5fa; border: 1px solid #3b82f644; }
   .badge-default { background: #6b728022; color: #9ca3af; border: 1px solid #6b728044; }
+  .badge-bon-prix { background: #10b98122; color: #34d399; border: 1px solid #10b98144; font-size: 0.65rem; }
   .card-unit {
     font-size: 0.7rem;
     color: var(--muted);
@@ -212,6 +240,15 @@
   <input type="text" id="search" placeholder="Rechercher un produit...">
 </div>
 
+<div class="sort-wrap">
+  <label for="sort">Trier par</label>
+  <select id="sort">
+    <option value="default">Par défaut</option>
+    <option value="unit-price">Prix unitaire croissant</option>
+    <option value="price">Prix croissant</option>
+  </select>
+</div>
+
 <div class="filters">
   <div class="filter-group">
     <div class="filter-label">Type de promo</div>
@@ -249,8 +286,54 @@ function getBadgeClass(discount) {
   return 'badge-default';
 }
 
+function parseUnitPrice(s) {
+  if (!s) return Infinity;
+  const m = s.match(/([\d.,]+)/);
+  return m ? parseFloat(m[1].replace(',', '.')) : Infinity;
+}
+
+function parseUnit(s) {
+  if (!s) return '';
+  const m = s.match(/€(.+)$/);
+  return m ? m[1].trim() : '';
+}
+
+function computeBonPrix(deals) {
+  // Group by category + unit, find 20th percentile threshold
+  const groups = {};
+  deals.forEach(d => {
+    const up = parseUnitPrice(d.unitPrice);
+    const unit = parseUnit(d.unitPrice);
+    if (up === Infinity || !unit) return;
+    const key = d.category + '|' + unit;
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(up);
+  });
+
+  const thresholds = {};
+  for (const [key, prices] of Object.entries(groups)) {
+    if (prices.length < 3) continue; // need enough products to compare
+    prices.sort((a, b) => a - b);
+    const idx = Math.max(0, Math.ceil(prices.length * 0.2) - 1);
+    thresholds[key] = prices[idx];
+  }
+
+  const bonPrix = new Set();
+  deals.forEach((d, i) => {
+    const up = parseUnitPrice(d.unitPrice);
+    const unit = parseUnit(d.unitPrice);
+    if (up === Infinity || !unit) return;
+    const key = d.category + '|' + unit;
+    if (thresholds[key] !== undefined && up <= thresholds[key]) {
+      bonPrix.add(i);
+    }
+  });
+  return bonPrix;
+}
+
 function render() {
   const q = document.getElementById('search').value.toLowerCase().trim();
+  const sortBy = document.getElementById('sort').value;
   const grid = document.getElementById('grid');
 
   const filtered = DATA.filter(d => {
@@ -260,6 +343,16 @@ function render() {
     return true;
   });
 
+  // Sort
+  if (sortBy === 'unit-price') {
+    filtered.sort((a, b) => parseUnitPrice(a.unitPrice) - parseUnitPrice(b.unitPrice));
+  } else if (sortBy === 'price') {
+    filtered.sort((a, b) => (parseFloat(a.price) || Infinity) - (parseFloat(b.price) || Infinity));
+  }
+
+  // Compute "bon prix" within filtered results
+  const bonPrix = computeBonPrix(filtered);
+
   document.getElementById('results-count').textContent = `${filtered.length} produit${filtered.length > 1 ? 's' : ''}`;
 
   if (!filtered.length) {
@@ -267,7 +360,7 @@ function render() {
     return;
   }
 
-  grid.innerHTML = filtered.map(d => `
+  grid.innerHTML = filtered.map((d, i) => `
     <div class="card">
       ${d.image ? `<img class="card-img" src="${esc(d.image)}" alt="" loading="lazy">` : ''}
       <div class="card-body">
@@ -280,6 +373,7 @@ function render() {
         </div>
         <div class="card-bottom">
           <span class="badge ${getBadgeClass(d.discount)}">${esc(d.discount)}</span>
+          ${bonPrix.has(i) ? '<span class="badge badge-bon-prix">Bon prix/unit\u00e9</span>' : ''}
           <span class="card-cat">${esc(d.category)}</span>
         </div>
       </div>
@@ -333,6 +427,7 @@ async function init() {
     buildChips('cat-chips', cats, activeCats);
 
     document.getElementById('search').addEventListener('input', render);
+    document.getElementById('sort').addEventListener('change', render);
     render();
   } catch (e) {
     document.getElementById('meta').textContent = 'Erreur de chargement des donn\u00e9es.';
