@@ -1,6 +1,6 @@
 {
-  "updated": "2026-03-23T09:01:27.708227+00:00",
-  "count": 285,
+  "updated": "2026-03-24T08:57:24.578619+00:00",
+  "count": 284,
   "deals": [
     {
       "id": "MPX_3800265",
@@ -25,147 +25,26 @@
       "discountedUnitPrice": "3.82 €/kg"
     },
     {
-      "id": "MPX_3612490",
-      "name": "Yoplait Perle De Lait Coco Yaourt Brassé Pots 4x125g",
+      "id": "MPX_3045451",
+      "name": "Andros Compote Pomme Châtaigne 4x100g",
       "price": "2.49",
       "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "yaourt",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/09e06ac9-9623-4d58-9b2b-0f4a4ae9773c/200x200.webp",
-      "unitPrice": "4.98 €/kg",
-      "discountedUnitPrice": "3.74 €/kg"
+      "category": "Fruits et Légumes",
+      "subcategory": "compote",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/3e832a4b-f515-4458-ad96-6ead20ac9f6f/200x200.webp",
+      "unitPrice": "6.23 €/kg",
+      "discountedUnitPrice": "4.67 €/kg"
     },
     {
-      "id": "MPX_654619",
-      "name": "Gerblé Biscuit croquants miel sésame   162g",
-      "price": "3.49",
-      "discount": "2 +1 offert",
-      "category": "Épicerie Sucrée",
-      "subcategory": "biscuit",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/2fd4a9ce-0060-49c8-801e-5b31e2c1a61d/200x200.webp",
-      "unitPrice": "21.54 €/kg",
-      "discountedUnitPrice": "14.36 €/kg"
-    },
-    {
-      "id": "MPX_6788534",
-      "name": "Lactel Vita'Vie Lait Vitaminé 1,0% de Mg 6x1L",
-      "price": "8.09",
+      "id": "MPX_2713457",
+      "name": "Société Roquefort AOP Cave Saveur 150g",
+      "price": "3.69",
       "discount": "-50% sur le 2ème produit",
       "category": "Produits Laitiers",
-      "subcategory": "lait",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/149b4a7b-f321-4020-b809-e4fc73a1b118/200x200.webp",
-      "unitPrice": "0.22 €/litre",
-      "discountedUnitPrice": "0.17 €/litre"
-    },
-    {
-      "id": "MPX_3167866",
-      "name": "L'Atelier Blini Olives Bio Ail et Origan 150g",
-      "price": "4.75",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Épicerie Salée",
-      "subcategory": "huile",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e96b1cc2-7be9-45a3-be59-e240fa8e854b/200x200.webp",
-      "unitPrice": "31.67 €/kg",
-      "discountedUnitPrice": "23.75 €/kg"
-    },
-    {
-      "id": "MPX_5216918",
-      "name": "Fleury Michon Gratin d'Endives au Jambon 280g",
-      "price": "4.49",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "jambon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/00ff450e-e16e-40a0-8404-1dceff35983f/200x200.webp",
-      "unitPrice": "16.04 €/kg",
-      "discountedUnitPrice": "12.03 €/kg"
-    },
-    {
-      "id": "MPX_180101",
-      "name": "Giraudet Quenelles Fraîches de Brochet 4x50g",
-      "price": "4.19",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/98c0efe3-4b1d-4fe1-9079-f0916bbd49e0/200x200.webp",
-      "unitPrice": "20.95 €/kg",
-      "discountedUnitPrice": "15.71 €/kg"
-    },
-    {
-      "id": "MPX_2838425",
-      "name": "Herta Pâte à Pizza fine et rectangulaire 390g",
-      "price": "2.35",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "jambon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e038cdac-e555-4377-ac31-4bb456b456fc/200x200.webp",
-      "unitPrice": "6.03 €/kg",
-      "discountedUnitPrice": "4.52 €/kg"
-    },
-    {
-      "id": "MPX_6612839",
-      "name": "Domaine Picard jambon de chez nous 4 tranches de 40g",
-      "price": "4.09",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "jambon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/5521c60d-be18-43f6-aca6-be096e22c767/200x200.webp",
-      "unitPrice": "25.56 €/kg",
-      "discountedUnitPrice": "19.17 €/kg"
-    },
-    {
-      "id": "MPX_888690",
-      "name": "Citterio Mortadelle de Bologne IGP 150g",
-      "price": "3.65",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Bière et Alcools",
       "subcategory": "vin rouge",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e24800b2-32ee-4485-ab20-d6310e303d53/200x200.webp",
-      "unitPrice": "24.33 €/kg",
-      "discountedUnitPrice": "18.25 €/kg"
-    },
-    {
-      "id": "MPX_4276293",
-      "name": "Herta Allumettes Fumés Sans Nitrite 2x75g",
-      "price": "3.15",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "jambon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/407ed393-fad1-4f19-8460-fdd1b833b8ea/200x200.webp",
-      "unitPrice": "21.00 €/kg",
-      "discountedUnitPrice": "15.75 €/kg"
-    },
-    {
-      "id": "MPX_4276294",
-      "name": "Herta Allumettes Nature Sans Nitrite 2x75g",
-      "price": "3.15",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "jambon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/db073d32-6746-4fd9-b5d8-dc264e2e7ede/200x200.webp",
-      "unitPrice": "21.00 €/kg",
-      "discountedUnitPrice": "15.75 €/kg"
-    },
-    {
-      "id": "MPX_2005643",
-      "name": "Demoizet Boudin Blanc De Rethel 230g",
-      "price": "4.99",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/61b62c2a-a0ba-4c02-919f-4326c072356b/200x200.webp",
-      "unitPrice": "21.70 €/kg",
-      "discountedUnitPrice": "16.27 €/kg"
-    },
-    {
-      "id": "MPX_6782131",
-      "name": "HARI&CO Nems Haché Végétal & Curry 120g",
-      "price": "3.39",
-      "discount": "-30% remise immédiate",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/75d87b14-f7ad-4fe5-84b1-16915d16cc72/200x200.webp",
-      "unitPrice": "28.25 €/kg",
-      "discountedUnitPrice": "19.77 €/kg"
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/d5040ded-939b-4400-9a6f-2d9bd590d06a/200x200.webp",
+      "unitPrice": "24.60 €/kg",
+      "discountedUnitPrice": "18.45 €/kg"
     },
     {
       "id": "MPX_3524162",
@@ -179,829 +58,81 @@
       "discountedUnitPrice": "15.62 €/kg"
     },
     {
-      "id": "MPX_6782142",
-      "name": "Marie Poulet Mariné à l'orientale Semoule 300g",
-      "price": "4.89",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "poulet",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/3b9eb68e-314d-4b90-9612-80565c87ea6c/200x200.webp",
-      "unitPrice": "16.30 €/kg",
-      "discountedUnitPrice": "12.23 €/kg"
-    },
-    {
-      "id": "MPX_5447206",
-      "name": "L'Atelier Blini Falafels Pois Chiches 120g",
-      "price": "3.59",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8fa534f4-1d55-49f8-afac-7a9a0c8c01c3/200x200.webp",
-      "unitPrice": "29.92 €/kg",
-      "discountedUnitPrice": "22.44 €/kg"
-    },
-    {
-      "id": "MPX_3417204",
-      "name": "Cochonou Saucisson Sec 30 Tranches Fines 93g",
-      "price": "1.89",
-      "discount": "2 +1 offert",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "saucisson",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c7f752ee-95c9-401f-8711-4fe9063659c5/200x200.webp",
-      "unitPrice": "20.32 €/kg",
-      "discountedUnitPrice": "13.55 €/kg"
-    },
-    {
-      "id": "MPX_4055139",
-      "name": "Herta Tendre Croc' Comté Jambon 200g",
-      "price": "2.69",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "fromage",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/b4f398aa-dc86-4402-8a8f-a1a92060fbd8/200x200.webp",
-      "unitPrice": "13.45 €/kg",
-      "discountedUnitPrice": "10.09 €/kg"
-    },
-    {
-      "id": "MPX_1582858",
-      "name": "Aoste Jambon cru fines et fondantes 100g",
-      "price": "4.49",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "jambon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/9b7e063a-9b70-4187-9136-5995506c05c9/200x200.webp",
-      "unitPrice": "44.90 €/kg",
-      "discountedUnitPrice": "33.67 €/kg"
-    },
-    {
-      "id": "MPX_3526157",
-      "name": "Aoste Jambon Serrano Cru fines et fondantes 100g",
-      "price": "4.49",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "jambon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/90ff20d7-5a08-48df-a1af-64fad829d9de/200x200.webp",
-      "unitPrice": "44.90 €/kg",
-      "discountedUnitPrice": "33.67 €/kg"
-    },
-    {
-      "id": "MPX_1921548",
-      "name": "Bonduelle Taboulé à la menthe douce 300g",
-      "price": "2.09",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Fruits et Légumes",
-      "subcategory": "salade",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/029b30d1-3fba-447f-bd2d-a83a1b04a108/200x200.webp",
-      "unitPrice": "6.97 €/kg",
-      "discountedUnitPrice": "5.23 €/kg"
-    },
-    {
-      "id": "MPX_811173",
-      "name": "Giraudet Pot De Sauce Nantua Aux Écrevisses Maison 250g",
-      "price": "3.79",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Épicerie Salée",
-      "subcategory": "sauce",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/39bb3e4b-4f27-478a-bb28-d474bd6db934/200x200.webp",
-      "unitPrice": "15.16 €/kg",
-      "discountedUnitPrice": "11.37 €/kg"
-    },
-    {
-      "id": "MPX_6714389",
-      "name": "Citterio Antipasti Charcuterie 1878 100g",
-      "price": "4.35",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "bresaola",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/384a2efc-e384-4125-b2cc-f453e0bd2a6d/200x200.webp",
-      "unitPrice": "43.50 €/kg",
-      "discountedUnitPrice": "32.62 €/kg"
-    },
-    {
-      "id": "MPX_2426192",
-      "name": "L'Atelier Blini 6 Accras de morue 120g",
-      "price": "3.69",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e10bdbc3-d267-4b9a-9764-246492cc7adb/200x200.webp",
-      "unitPrice": "30.75 €/kg",
-      "discountedUnitPrice": "23.06 €/kg"
-    },
-    {
-      "id": "MPX_2725024",
-      "name": "Bonduelle Taboulé au poulet rôti 300g",
-      "price": "2.95",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "salade",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/168a4688-abe2-49e8-9d72-b1c7a8e7003e/200x200.webp",
-      "unitPrice": "9.83 €/kg",
-      "discountedUnitPrice": "7.37 €/kg"
-    },
-    {
-      "id": "MPX_1934238",
-      "name": "Marie Saucisse de Toulouse grillée et purée au beurre 290g",
-      "price": "4.65",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "beurre",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/09edbfba-c652-4b2c-b626-dd7bab9b840a/200x200.webp",
-      "unitPrice": "16.03 €/kg",
-      "discountedUnitPrice": "12.02 €/kg"
-    },
-    {
-      "id": "MPX_1540345",
-      "name": "Bonduelle Tortis Concombres Saumon 300g",
-      "price": "3.49",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Poissons et Fruits de mer",
-      "subcategory": "salade",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e12e28b0-393a-4eca-af2e-56345b150a08/200x200.webp",
-      "unitPrice": "11.63 €/kg",
-      "discountedUnitPrice": "8.72 €/kg"
-    },
-    {
-      "id": "MPX_2775339",
-      "name": "Sodebo Sandwich Méga club viennois Thon œuf mayo légère 230g",
-      "price": "2.55",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Épicerie Sucrée",
-      "subcategory": "bonbon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/4b32ce75-67b5-465c-84a1-15074164d5f6/200x200.webp",
-      "unitPrice": "11.09 €/kg",
-      "discountedUnitPrice": "8.32 €/kg"
-    },
-    {
-      "id": "MPX_6739702",
-      "name": "Domaine Picard Jambon blanc 2x60g",
-      "price": "3.19",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "jambon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/a2bfe42f-e4a7-4546-8e53-141b9f8cd207/200x200.webp",
-      "unitPrice": "26.58 €/kg",
-      "discountedUnitPrice": "19.93 €/kg"
-    },
-    {
-      "id": "MPX_4210922",
-      "name": "Labeyrie Bloc de Foie Gras de Canard Barquette 100g",
-      "price": "8.09",
-      "discount": "-34% remise immédiate",
-      "category": "Poissons et Fruits de mer",
-      "subcategory": "saumon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/edab2ffa-0aaf-48be-9884-a2753c8a5215/200x200.webp",
-      "unitPrice": "80.90 €/kg",
-      "discountedUnitPrice": "53.39 €/kg"
-    },
-    {
-      "id": "MPX_6682783",
-      "name": "Pierre Martinet Salade Oslo 220g",
-      "price": "2.99",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "salade",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e7192a4a-cd62-4c13-89af-10be8ed87684/200x200.webp",
-      "unitPrice": "13.59 €/kg",
-      "discountedUnitPrice": "10.19 €/kg"
-    },
-    {
-      "id": "MPX_4246754",
-      "name": "Saint Agaûne La Fine 200g",
-      "price": "6.19",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "saucisson",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8cdb62e1-3510-4a11-9ee2-aba85fa21d5c/200x200.webp",
-      "unitPrice": "30.95 €/kg",
-      "discountedUnitPrice": "23.21 €/kg"
-    },
-    {
-      "id": "MPX_3046583",
-      "name": "Bonduelle Taboulé riche en légumes 300g",
-      "price": "2.99",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Fruits et Légumes",
-      "subcategory": "salade",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c8711b3f-37dd-421c-a4c0-881e6d4939d8/200x200.webp",
-      "unitPrice": "9.97 €/kg",
-      "discountedUnitPrice": "7.48 €/kg"
-    },
-    {
-      "id": "MPX_1373777",
-      "name": "Pierre Martinet Duo carottes râpées / taboulé oriental 250g",
-      "price": "2.39",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Fruits et Légumes",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8c04360d-a6c8-446c-b1dc-722aaf16264e/200x200.webp",
-      "unitPrice": "9.56 €/kg",
-      "discountedUnitPrice": "7.17 €/kg"
-    },
-    {
-      "id": "MPX_6720622",
-      "name": "Bonduelle Pomme de terre saumon 280g",
-      "price": "2.89",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "salade",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/585c0a89-2bb0-46b4-8dc7-a8e3aa9d5ff2/200x200.webp",
-      "unitPrice": "10.32 €/kg",
-      "discountedUnitPrice": "7.74 €/kg"
-    },
-    {
-      "id": "MPX_2120290",
-      "name": "Manuel De Montejo Chorizo 100g",
-      "price": "3.09",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/d10047cc-a297-437f-aab2-09b19f64c623/200x200.webp",
-      "unitPrice": "30.90 €/kg",
-      "discountedUnitPrice": "23.17 €/kg"
-    },
-    {
-      "id": "MPX_2336247",
-      "name": "L'Atelier Blini Mini Involtini Speck Italien & Ricotta 120g",
-      "price": "5.39",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/d642f8e4-a502-4a72-8179-bb82544a2c47/200x200.webp",
-      "unitPrice": "44.92 €/kg",
-      "discountedUnitPrice": "33.69 €/kg"
-    },
-    {
-      "id": "MPX_2547767",
-      "name": "Sodebo Sandwich Méga club complet jambon emmental 230g",
-      "price": "2.75",
+      "id": "MPX_2190638",
+      "name": "Juraflore Comté Fort Des Rousses 15 mois 200g",
+      "price": "6.25",
       "discount": "-50% sur le 2ème produit",
       "category": "Produits Laitiers",
       "subcategory": "fromage",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/fc7cb068-0e00-4e1f-aa7f-13ddd247e09f/200x200.webp",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/22faa06c-3a3d-4f6e-bfc7-ab8dd4d35625/200x200.webp",
+      "unitPrice": "31.25 €/kg",
+      "discountedUnitPrice": "23.44 €/kg"
+    },
+    {
+      "id": "MPX_2154222",
+      "name": "Charles & Alice Pommes Mirabelles De Lorraine 4x97g",
+      "price": "2.19",
+      "discount": "2 +1 offert",
+      "category": "Fruits et Légumes",
+      "subcategory": "compote",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e69a5640-d239-4d2b-8458-d0b776f45606/200x200.webp",
+      "unitPrice": "5.64 €/kg",
+      "discountedUnitPrice": "3.76 €/kg"
+    },
+    {
+      "id": "MPX_63899",
+      "name": "Lepetit Camembert 250g",
+      "price": "2.99",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Produits Laitiers",
+      "subcategory": "fromage",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/1d142766-3e3f-46b1-9ed5-60e761726d5b/200x200.webp",
       "unitPrice": "11.96 €/kg",
       "discountedUnitPrice": "8.97 €/kg"
     },
     {
-      "id": "MPX_2888848",
-      "name": "Labeyrie Jambon Pata Negra 24 Mois d'Affinage x4 Tranches Fines",
-      "price": "7.25",
-      "discount": "-34% remise immédiate",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "jambon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/47e77567-5b83-4a49-a6b2-38e64ee6ff3e/200x200.webp",
-      "unitPrice": "120.83 €/kg",
-      "discountedUnitPrice": "79.75 €/kg"
-    },
-    {
-      "id": "MPX_6743373",
-      "name": "Philippe Wagner Lard paysan supérieur à l'ancienne 5x30g",
-      "price": "4.99",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "steak",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/7fb04217-6a92-4c55-af65-21fd90e03c99/200x200.webp",
-      "unitPrice": "33.27 €/kg",
-      "discountedUnitPrice": "24.95 €/kg"
-    },
-    {
-      "id": "MPX_6565198",
-      "name": "Bonduelle Riz saumon & concombre sauce citronnée 280g",
-      "price": "2.79",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "salade",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/cfc53eeb-b51c-4d91-80f7-23a762ae0a88/200x200.webp",
-      "unitPrice": "9.96 €/kg",
-      "discountedUnitPrice": "7.47 €/kg"
-    },
-    {
-      "id": "MPX_2120289",
-      "name": "Manuel De Montejo Jambon Serrano Fe 100g",
-      "price": "4.35",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "jambon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/eedcad96-4e0d-41ef-b799-4025c100650c/200x200.webp",
-      "unitPrice": "43.50 €/kg",
-      "discountedUnitPrice": "32.62 €/kg"
-    },
-    {
-      "id": "MPX_3267553",
-      "name": "Marie Fondant de Bœuf et écrasé de pomme de terre 300g",
-      "price": "6.69",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "bonbon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/6aeca9da-cf32-4cf3-aed5-1bc2b08ee452/200x200.webp",
-      "unitPrice": "22.30 €/kg",
-      "discountedUnitPrice": "16.73 €/kg"
-    },
-    {
-      "id": "MPX_4246755",
-      "name": "Saint Agaûne 200g",
-      "price": "6.19",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "saucisson",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c0ff2089-8db4-43e7-9085-dbeda542abaf/200x200.webp",
-      "unitPrice": "30.95 €/kg",
-      "discountedUnitPrice": "23.21 €/kg"
-    },
-    {
-      "id": "MPX_4615679",
-      "name": "Planted Effiloché végétal barbecue 160g",
-      "price": "3.99",
-      "discount": "-30% remise immédiate",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/370061a1-40de-4fbb-9aee-a437b50ea4af/200x200.webp",
-      "unitPrice": "24.94 €/kg",
-      "discountedUnitPrice": "17.46 €/kg"
-    },
-    {
-      "id": "MPX_2482525",
-      "name": "Sodebo Pizza La Pizz Jambon emmental 470g",
-      "price": "3.85",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "fromage",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c543c7f2-ec6c-411e-9073-6577d315d2f5/200x200.webp",
-      "unitPrice": "8.19 €/kg",
-      "discountedUnitPrice": "6.14 €/kg"
-    },
-    {
-      "id": "MPX_4615680",
-      "name": "Planted Kebab Végétal 160g",
-      "price": "4.09",
-      "discount": "-30% remise immédiate",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/1c79bba5-29b7-443b-bfc3-3d30cec9bed3/200x200.webp",
-      "unitPrice": "25.56 €/kg",
-      "discountedUnitPrice": "17.89 €/kg"
-    },
-    {
-      "id": "MPX_4123705",
-      "name": "Léon Chaillot Saucisse Sèche Ardèche Igp 300g",
-      "price": "7.39",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Bière et Alcools",
-      "subcategory": "vin rouge",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ba3667a0-2445-4f51-9a91-ad618620dfce/200x200.webp",
-      "unitPrice": "24.63 €/kg",
-      "discountedUnitPrice": "18.47 €/kg"
-    },
-    {
-      "id": "MPX_2507761",
-      "name": "L'Atelier Blini Olives Manzanilla À La Méditérranéenne 300g",
-      "price": "6.25",
-      "discount": "-50% sur le 2ème produit",
+      "id": "MPX_6719851",
+      "name": "Charles & Alice Pomme raisin  sans sucre ajoutés 4x97g",
+      "price": "1.99",
+      "discount": "2 +1 offert",
       "category": "Épicerie Salée",
-      "subcategory": "huile",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/1a98d970-945a-4c69-ba39-de866c85fa7b/200x200.webp",
-      "unitPrice": "20.83 €/kg",
-      "discountedUnitPrice": "15.62 €/kg"
+      "subcategory": "compote",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ce74a7ea-a21a-411c-9edd-e6f8e3eca93e/200x200.webp",
+      "unitPrice": "5.13 €/kg",
+      "discountedUnitPrice": "3.42 €/kg"
     },
     {
-      "id": "MPX_2775338",
-      "name": "Sodebo Sandwich Méga club suédois poulet rôti œuf 230g",
-      "price": "3.19",
+      "id": "MPX_64127",
+      "name": "Société Crème fromage fondu de brebis 100g",
+      "price": "2.49",
       "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "bonbon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/fc77f24e-be03-4488-b4bc-fe4e4acaefd5/200x200.webp",
-      "unitPrice": "13.87 €/kg",
-      "discountedUnitPrice": "10.40 €/kg"
-    },
-    {
-      "id": "MPX_3647070",
-      "name": "Pierre Martinet Salade de quinoa croquant 220g",
-      "price": "3.59",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Fruits et Légumes",
-      "subcategory": "salade",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/771f4dff-48d7-463a-90ab-4d030b001ddb/200x200.webp",
-      "unitPrice": "16.32 €/kg",
-      "discountedUnitPrice": "12.24 €/kg"
-    },
-    {
-      "id": "MPX_5272048",
-      "name": "L'Atelier Blini Falafels Patates Douces 120g",
-      "price": "3.49",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/78e4c991-15cb-4379-a9da-6a52677fa30c/200x200.webp",
-      "unitPrice": "29.08 €/kg",
-      "discountedUnitPrice": "21.81 €/kg"
-    },
-    {
-      "id": "MPX_2482527",
-      "name": "Sodebo Pizza La Pizz 4 fromages fondants 470g",
-      "price": "4.09",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "fromage",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/58841d19-e1f9-47a9-b5db-d2925dbc1708/200x200.webp",
-      "unitPrice": "8.70 €/kg",
-      "discountedUnitPrice": "6.52 €/kg"
-    },
-    {
-      "id": "MPX_2120293",
-      "name": "Manuel De Montejo Lomo Embuchado, Charcuterie",
-      "price": "4.39",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/31ec4096-b35d-4fe0-bb02-941fe7dacd12/200x200.webp",
-      "unitPrice": "43.90 €/kg",
-      "discountedUnitPrice": "32.92 €/kg"
-    },
-    {
-      "id": "MPX_6709797",
-      "name": "Sonigiri Onigiri Thon Mayo Wasabi 135g",
-      "price": "3.55",
-      "discount": "-30% remise immédiate",
-      "category": "Épicerie Salée",
-      "subcategory": "thon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/1396e299-9393-4efd-99b7-d74437b6637c/200x200.webp",
-      "unitPrice": "26.30 €/kg",
-      "discountedUnitPrice": "18.41 €/kg"
-    },
-    {
-      "id": "MPX_2482524",
-      "name": "Sodebo Pizza La Pizz Chèvre affiné et lardons 470g",
-      "price": "4.09",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "steak",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/85ea55bd-27e6-4dec-b29e-ed0b6f0bc71a/200x200.webp",
-      "unitPrice": "8.70 €/kg",
-      "discountedUnitPrice": "6.52 €/kg"
-    },
-    {
-      "id": "MPX_4206516",
-      "name": "Heura Chunks Méditerranéennes 160g",
-      "price": "4.89",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/02bd6428-af26-4921-97b0-26c6e9b0a4c9/200x200.webp",
-      "unitPrice": "30.56 €/kg",
-      "discountedUnitPrice": "22.92 €/kg"
-    },
-    {
-      "id": "MPX_1835624",
-      "name": "Porc De Nos Montagnes Saucisson Sec, Pur Porc 250g",
-      "price": "6.89",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "saucisson",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/2462105e-f5c2-4a83-908f-641e1623c0f5/200x200.webp",
-      "unitPrice": "27.56 €/kg",
-      "discountedUnitPrice": "20.67 €/kg"
-    },
-    {
-      "id": "MPX_6782125",
-      "name": "Dauna Pâtes & Salades Poulet Caesar Sauce Caesar 250g",
-      "price": "3.99",
-      "discount": "-30% remise immédiate",
-      "category": "Épicerie Salée",
-      "subcategory": "salade",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/1e59c37e-e91b-4dde-a14f-cb84e21489b8/200x200.webp",
-      "unitPrice": "15.96 €/kg",
-      "discountedUnitPrice": "11.17 €/kg"
-    },
-    {
-      "id": "MPX_6786854",
-      "name": "Heüra Burgers Natures à base de Protéines de Pois 200g",
-      "price": "4.89",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Régimes alimentaires",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/2986f981-e748-416f-adca-e82d25513c8f/200x200.webp",
-      "unitPrice": "24.45 €/kg",
-      "discountedUnitPrice": "18.34 €/kg"
-    },
-    {
-      "id": "MPX_6782126",
-      "name": "Daunat Salade de Pâtes Gourmet Thon 250g",
-      "price": "3.85",
-      "discount": "-30% remise immédiate",
-      "category": "Épicerie Salée",
-      "subcategory": "salade",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c76cb92f-4cd9-4cbf-84b5-fae1d3cc6b36/200x200.webp",
-      "unitPrice": "15.40 €/kg",
-      "discountedUnitPrice": "10.78 €/kg"
-    },
-    {
-      "id": "MPX_2006798",
-      "name": "Saint Jean Box Ravioles sauce saint Marcellin et noix du Dauphiné 300g",
-      "price": "5.79",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "sauce",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c80b1f33-9333-43f9-b726-8dcacc035d9e/200x200.webp",
-      "unitPrice": "19.30 €/kg",
-      "discountedUnitPrice": "14.48 €/kg"
-    },
-    {
-      "id": "MPX_6781280",
-      "name": "Larnaudie Brandade de morue traditionnelle 300g",
-      "price": "5.89",
-      "discount": "-30% remise immédiate",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/28fd7a1e-21c1-4daa-8467-4acea17d8cf7/200x200.webp",
-      "unitPrice": "19.63 €/kg",
-      "discountedUnitPrice": "13.74 €/kg"
-    },
-    {
-      "id": "MPX_2336417",
-      "name": "Daunat Sandwich triangle XXL Jambon Emmental Salade 230g",
-      "price": "2.79",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "salade",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/909b34c5-e9d8-4ca0-8045-14ed4546003f/200x200.webp",
-      "unitPrice": "12.13 €/kg",
-      "discountedUnitPrice": "9.10 €/kg"
-    },
-    {
-      "id": "MPX_1835625",
-      "name": "Porc De Nos Montagnes Saucisse Sèche Pur Porc 250g",
-      "price": "6.99",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/5e17fc15-6c32-43a2-a79d-0642c54a73a7/200x200.webp",
-      "unitPrice": "27.96 €/kg",
-      "discountedUnitPrice": "20.97 €/kg"
-    },
-    {
-      "id": "MPX_6566173",
-      "name": "Heura Saucisses natures 216g",
-      "price": "3.99",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e2d53558-9754-43d3-bfc6-cee99825a580/200x200.webp",
-      "unitPrice": "18.47 €/kg",
-      "discountedUnitPrice": "13.85 €/kg"
-    },
-    {
-      "id": "MPX_6830393",
-      "name": "Planted steak Tendre & Juteux 120g",
-      "price": "4.29",
-      "discount": "-30% remise immédiate",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "steak",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/4ffc726f-5e1c-4f5e-b9cc-7f9fe3b8a013/200x200.webp",
-      "unitPrice": "35.75 €/kg",
-      "discountedUnitPrice": "25.02 €/kg"
-    },
-    {
-      "id": "MPX_6786856",
-      "name": "Heura Escalopes Panées 180g",
-      "price": "4.69",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/25fc289a-2999-4fd1-b769-7d9d3cd97f6a/200x200.webp",
-      "unitPrice": "26.06 €/kg",
-      "discountedUnitPrice": "19.54 €/kg"
-    },
-    {
-      "id": "MPX_1583093",
-      "name": "Michel Bolard Gougere Au Fromage 250g",
-      "price": "6.09",
-      "discount": "-20% remise immédiate",
       "category": "Produits Laitiers",
       "subcategory": "fromage",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/77044936-a6ab-4255-95b5-0551d11faca5/200x200.webp",
-      "unitPrice": "24.36 €/kg",
-      "discountedUnitPrice": "19.49 €/kg"
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/98f8025e-f829-461f-bd2d-5ee73a43ec1c/200x200.webp",
+      "unitPrice": "24.90 €/kg",
+      "discountedUnitPrice": "18.67 €/kg"
     },
     {
-      "id": "MPX_3366163",
-      "name": "Justin Bridou Bâton de Berger Pur Porc 250g",
-      "price": "6.15",
-      "discount": "-68% sur le 2ème produit",
-      "category": "Boissons",
-      "subcategory": "jus de fruits",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/0b9f3fcb-400a-498e-b032-8b776b55d10a/200x200.webp",
-      "unitPrice": "24.60 €/kg",
-      "discountedUnitPrice": "16.24 €/kg"
-    },
-    {
-      "id": "MPX_6567757",
-      "name": "Planted Effiloché herbes épicées 160g",
-      "price": "3.99",
-      "discount": "-30% remise immédiate",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/5bc13b70-be17-43ae-a345-d6a33ebb83b4/200x200.webp",
-      "unitPrice": "24.94 €/kg",
-      "discountedUnitPrice": "17.46 €/kg"
-    },
-    {
-      "id": "MPX_6781283",
-      "name": "Larnaudie Quenelles de brochet sauce nantua riz 250g",
-      "price": "5.89",
-      "discount": "-30% remise immédiate",
-      "category": "Épicerie Salée",
-      "subcategory": "riz",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/09c74829-b7e0-4137-ace1-58eee40f3509/200x200.webp",
-      "unitPrice": "23.56 €/kg",
-      "discountedUnitPrice": "16.49 €/kg"
-    },
-    {
-      "id": "MPX_1863294",
-      "name": "Michel Bolard Plateau Cocktail De 4 Pâtés en Croûte",
-      "price": "6.89",
-      "discount": "-20% remise immédiate",
-      "category": "Boissons",
-      "subcategory": "eau minérale",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ed2e210e-cabc-404c-8b40-222b168fe8cd/200x200.webp",
-      "unitPrice": "26.91 €/kg",
-      "discountedUnitPrice": "21.53 €/kg"
-    },
-    {
-      "id": "MPX_6786855",
-      "name": "Heura Emincés Tex Mex 160g",
-      "price": "3.79",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Régimes alimentaires",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/169d4c32-e47d-43d8-b6ae-40dab8db15ad/200x200.webp",
-      "unitPrice": "23.69 €/kg",
-      "discountedUnitPrice": "17.77 €/kg"
-    },
-    {
-      "id": "MPX_4211334",
-      "name": "Aoste Dentelle de Rosette 80g",
-      "price": "3.99",
-      "discount": "-30% remise immédiate",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/5e9b302a-a052-4785-90cf-e4d5739821d9/200x200.webp",
-      "unitPrice": "49.88 €/kg",
-      "discountedUnitPrice": "34.92 €/kg"
-    },
-    {
-      "id": "MPX_6849319",
-      "name": "Heura Foods Nuggets Natures 180g",
-      "price": "4.05",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8a45d226-9441-4884-8c7a-a0ad5e219724/200x200.webp",
-      "unitPrice": "22.50 €/kg",
-      "discountedUnitPrice": "16.88 €/kg"
-    },
-    {
-      "id": "MPX_6849318",
-      "name": "Heura Supreme Nature 180g",
-      "price": "4.99",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/70b59694-58f8-4e43-a960-b8fcf7c7968b/200x200.webp",
-      "unitPrice": "27.72 €/kg",
-      "discountedUnitPrice": "20.79 €/kg"
-    },
-    {
-      "id": "MPX_6830591",
-      "name": "Hari&co Fusilli sauce champignons et hache végétal 300g",
-      "price": "4.85",
-      "discount": "-30% remise immédiate",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "sauce",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/24946297-1ce0-404d-97ba-d4f2998067fd/200x200.webp",
-      "unitPrice": "16.17 €/kg",
-      "discountedUnitPrice": "11.32 €/kg"
-    },
-    {
-      "id": "MPX_6831407",
-      "name": "Saint Jean Grandes Ravioles aux Morilles à la crème 220g",
-      "price": "4.69",
+      "id": "MPX_3612490",
+      "name": "Yoplait Perle De Lait Coco Yaourt Brassé Pots 4x125g",
+      "price": "2.49",
       "discount": "-50% sur le 2ème produit",
       "category": "Produits Laitiers",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/32d7ef4b-d303-4ff3-b454-51469ceb6128/200x200.webp",
-      "unitPrice": "21.32 €/kg",
-      "discountedUnitPrice": "15.99 €/kg"
+      "subcategory": "yaourt",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/09e06ac9-9623-4d58-9b2b-0f4a4ae9773c/200x200.webp",
+      "unitPrice": "4.98 €/kg",
+      "discountedUnitPrice": "3.74 €/kg"
     },
     {
-      "id": "MPX_6830592",
-      "name": "Hari&co Mini penne sauce tomates et hache végétal 300g",
-      "price": "4.85",
-      "discount": "-30% remise immédiate",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "sauce",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/18976a95-be1a-4f06-ae58-fa2e17b87b43/200x200.webp",
-      "unitPrice": "16.17 €/kg",
-      "discountedUnitPrice": "11.32 €/kg"
-    },
-    {
-      "id": "MPX_6678794",
-      "name": "Heura Jambon York 4x19g - 78g",
-      "price": "3.75",
+      "id": "MPX_6788534",
+      "name": "Lactel Vita'Vie Lait Vitaminé 1,0% de Mg 6x1L",
+      "price": "8.09",
       "discount": "-50% sur le 2ème produit",
-      "category": "Régimes alimentaires",
-      "subcategory": "jambon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/74d8f6ff-ebef-4a98-a7e0-f021426bfb25/200x200.webp",
-      "unitPrice": "48.08 €/kg",
-      "discountedUnitPrice": "36.06 €/kg"
-    },
-    {
-      "id": "MPX_6831408",
-      "name": "Saint Jean Grandes Ravioles au Beaufort AOP 220g",
-      "price": "4.69",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "vin rouge",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8e596f05-d850-4bb1-8969-b668715bf59b/200x200.webp",
-      "unitPrice": "21.32 €/kg",
-      "discountedUnitPrice": "15.99 €/kg"
-    },
-    {
-      "id": "MPX_6781281",
-      "name": "Larnaudie Paupiette de Veau Purée 300g",
-      "price": "6.69",
-      "discount": "-30% remise immédiate",
-      "category": "Boissons",
-      "subcategory": "eau minérale",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c47add09-72cd-40f2-ba06-b7f06afc87ac/200x200.webp",
-      "unitPrice": "22.30 €/kg",
-      "discountedUnitPrice": "15.61 €/kg"
-    },
-    {
-      "id": "MPX_6859774",
-      "name": "Cochonou Croc Sec Nature VPF 150g",
-      "price": "4.49",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "saucisson",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/717d3f76-837c-40b0-9bb6-aafa3e501c4c/200x200.webp",
-      "unitPrice": "29.93 €/kg",
-      "discountedUnitPrice": "22.45 €/kg"
-    },
-    {
-      "id": "MPX_4211333",
-      "name": "Aoste Dentelles de Coppa 80g",
-      "price": "4.19",
-      "discount": "-30% remise immédiate",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/cd5ccec9-3d1b-44fd-96f8-adc24597cdb7/200x200.webp",
-      "unitPrice": "52.38 €/kg",
-      "discountedUnitPrice": "36.67 €/kg"
-    },
-    {
-      "id": "MPX_4211335",
-      "name": "Aoste Dentelles de Jambon Sec 80g",
-      "price": "3.99",
-      "discount": "-30% remise immédiate",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "jambon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/222f0e72-014c-436a-a367-fd1a6467dfb3/200x200.webp",
-      "unitPrice": "49.88 €/kg",
-      "discountedUnitPrice": "34.92 €/kg"
-    },
-    {
-      "id": "MPX_6910902",
-      "name": "Delpeyrat Bloc Foie gras de canard du sud-ouest Igp 150g",
-      "price": "12.99",
-      "discount": "-34% remise immédiate",
-      "category": "Bière et Alcools",
-      "subcategory": "vin rouge",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/d982e7ae-5396-4581-beac-a1ad62b01aa5/200x200.webp",
-      "unitPrice": "86.60 €/kg",
-      "discountedUnitPrice": "57.16 €/kg"
-    },
-    {
-      "id": "MPX_3416831",
-      "name": "Fleury Michon Rôti De Porc Cuit -25% De Sel x4",
-      "price": "4.09",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "jambon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/a7edebd7-2b44-4bb1-9f55-ffb0a1278790/200x200.webp",
-      "unitPrice": "25.56 €/kg",
-      "discountedUnitPrice": "19.17 €/kg"
-    },
-    {
-      "id": "MPX_1861678",
-      "name": "Marie Macaroni sauce tomate et boulettes au bœuf vbf 280g",
-      "price": "3.65",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Viandes et Charcuterie",
-      "subcategory": "bonbon",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/2bfa0111-76d5-4a01-91d8-bc59af731354/200x200.webp",
-      "unitPrice": "13.04 €/kg",
-      "discountedUnitPrice": "9.78 €/kg"
+      "category": "Produits Laitiers",
+      "subcategory": "lait",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/149b4a7b-f321-4020-b809-e4fc73a1b118/200x200.webp",
+      "unitPrice": "0.22 €/litre",
+      "discountedUnitPrice": "0.17 €/litre"
     },
     {
       "id": "MPX_2351707",
@@ -1070,28 +201,6 @@
       "discountedUnitPrice": "3.13 €/kg"
     },
     {
-      "id": "MPX_2852368",
-      "name": "Activia Yaourt Vanille Bifidus 4x125g",
-      "price": "2.09",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "yaourt",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/fee3a4ef-5c39-4c44-88a3-edee2939eba7/200x200.webp",
-      "unitPrice": "4.18 €/kg",
-      "discountedUnitPrice": "3.13 €/kg"
-    },
-    {
-      "id": "MPX_3045451",
-      "name": "Andros Compote Pomme Châtaigne 4x100g",
-      "price": "2.49",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Fruits et Légumes",
-      "subcategory": "compote",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/3e832a4b-f515-4458-ad96-6ead20ac9f6f/200x200.webp",
-      "unitPrice": "6.23 €/kg",
-      "discountedUnitPrice": "4.67 €/kg"
-    },
-    {
       "id": "MPX_3254475",
       "name": "Activia Probiotiques Yaourt Aux Fruits Fraise Bifidus 4x125g",
       "price": "2.29",
@@ -1101,28 +210,6 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/26bcc4de-2ced-4a7a-94c7-ec0caf56d364/200x200.webp",
       "unitPrice": "4.58 €/kg",
       "discountedUnitPrice": "3.44 €/kg"
-    },
-    {
-      "id": "MPX_2172422",
-      "name": "Michel & Augustin L'incroyable Mousse Au Chocolat Noir 245g",
-      "price": "5.65",
-      "discount": "-25% remise immédiate",
-      "category": "Produits Laitiers",
-      "subcategory": "chocolat",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/f9aba404-cbc3-4909-8817-abcf1d86270a/200x200.webp",
-      "unitPrice": "23.06 €/kg",
-      "discountedUnitPrice": "17.29 €/kg"
-    },
-    {
-      "id": "MPX_2713457",
-      "name": "Société Roquefort AOP Cave Saveur 150g",
-      "price": "3.69",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "vin rouge",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/d5040ded-939b-4400-9a6f-2d9bd590d06a/200x200.webp",
-      "unitPrice": "24.60 €/kg",
-      "discountedUnitPrice": "18.45 €/kg"
     },
     {
       "id": "MPX_3177064",
@@ -1147,17 +234,6 @@
       "discountedUnitPrice": "2.32 €/litre"
     },
     {
-      "id": "MPX_3045449",
-      "name": "Andros Compote Pomme & Fraise 4x100g",
-      "price": "1.99",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Fruits et Légumes",
-      "subcategory": "compote",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ff479c36-6a76-4010-970d-d1e60c57aef6/200x200.webp",
-      "unitPrice": "4.98 €/kg",
-      "discountedUnitPrice": "3.74 €/kg"
-    },
-    {
       "id": "MPX_2154221",
       "name": "Charles & Alice Desserts Pommes & Poires Williams sans sucres ajoutés 4x100g",
       "price": "1.99",
@@ -1167,17 +243,6 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/73d664dd-97f9-45cd-935e-8117dd224222/200x200.webp",
       "unitPrice": "4.98 €/kg",
       "discountedUnitPrice": "3.32 €/kg"
-    },
-    {
-      "id": "MPX_3045450",
-      "name": "Andros Compote Pomme Poire 4x100g",
-      "price": "1.95",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Fruits et Légumes",
-      "subcategory": "compote",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/b139c5f6-2fbc-45e7-907d-731b2d57c9a5/200x200.webp",
-      "unitPrice": "4.88 €/kg",
-      "discountedUnitPrice": "3.66 €/kg"
     },
     {
       "id": "MPX_2154223",
@@ -1195,7 +260,7 @@
       "name": "Charles & Alice Compote Pomme sans sucre ajoutée 4x100g",
       "price": "1.99",
       "discount": "2 +1 offert",
-      "category": "Épicerie Sucrée",
+      "category": "Fruits et Légumes",
       "subcategory": "compote",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/4b7b309c-904c-423e-baa7-ca45dad88715/200x200.webp",
       "unitPrice": "4.98 €/kg",
@@ -1246,17 +311,6 @@
       "discountedUnitPrice": "3.86 €/kg"
     },
     {
-      "id": "MPX_6621160",
-      "name": "Oatly - Boisson à l’Avoine Barista Edition 500ml",
-      "price": "1.89",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Boissons",
-      "subcategory": "boisson énergétique",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/fb08ef12-1bcf-47f8-91e3-ab701392649a/200x200.webp",
-      "unitPrice": "3.78 €/litre",
-      "discountedUnitPrice": "2.83 €/litre"
-    },
-    {
       "id": "MPX_2154220",
       "name": "Charles & Alice Desserts fruités pommes et mangues sans sucres ajoutés 4x100g",
       "price": "1.99",
@@ -1268,26 +322,15 @@
       "discountedUnitPrice": "3.32 €/kg"
     },
     {
-      "id": "MPX_63582",
-      "name": "Andros Compote Pomme & Rhubarbe 4x100g",
-      "price": "1.95",
+      "id": "MPX_6621160",
+      "name": "Oatly - Boisson à l’Avoine Barista Edition 500ml",
+      "price": "1.89",
       "discount": "-50% sur le 2ème produit",
-      "category": "Fruits et Légumes",
-      "subcategory": "compote",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/de6824f6-457d-4f22-9c85-1df9e5cba03b/200x200.webp",
-      "unitPrice": "4.88 €/kg",
-      "discountedUnitPrice": "3.66 €/kg"
-    },
-    {
-      "id": "MPX_810452",
-      "name": "Caprice Des Dieux Fromage 200g",
-      "price": "3.79",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "fromage",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ff47b571-12a7-4e96-8df5-aa0a49c2c1d9/200x200.webp",
-      "unitPrice": "18.95 €/kg",
-      "discountedUnitPrice": "14.21 €/kg"
+      "category": "Boissons",
+      "subcategory": "boisson énergétique",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/fb08ef12-1bcf-47f8-91e3-ab701392649a/200x200.webp",
+      "unitPrice": "3.78 €/litre",
+      "discountedUnitPrice": "2.83 €/litre"
     },
     {
       "id": "MPX_3069827",
@@ -1299,6 +342,17 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/7fcb4f48-8f8c-4c75-adc6-82b97ac039a9/200x200.webp",
       "unitPrice": "6.59 €/kg",
       "discountedUnitPrice": "5.27 €/kg"
+    },
+    {
+      "id": "MPX_810452",
+      "name": "Caprice Des Dieux Fromage 200g",
+      "price": "3.79",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Produits Laitiers",
+      "subcategory": "fromage",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ff47b571-12a7-4e96-8df5-aa0a49c2c1d9/200x200.webp",
+      "unitPrice": "18.95 €/kg",
+      "discountedUnitPrice": "14.21 €/kg"
     },
     {
       "id": "MPX_2934827",
@@ -1327,22 +381,11 @@
       "name": "Etorki Fromage Basque Pur Brebis 180g",
       "price": "4.89",
       "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
+      "category": "Nos régions de France",
       "subcategory": "fromage",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/33da318d-096e-40d6-885c-83b29a1a93fc/200x200.webp",
       "unitPrice": "27.17 €/kg",
       "discountedUnitPrice": "20.38 €/kg"
-    },
-    {
-      "id": "MPX_3045448",
-      "name": "Andros Compote Pomme & Abricot 4x100g",
-      "price": "1.99",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Fruits et Légumes",
-      "subcategory": "compote",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/38887b83-de81-4e2f-9a97-96188fb51441/200x200.webp",
-      "unitPrice": "4.98 €/kg",
-      "discountedUnitPrice": "3.74 €/kg"
     },
     {
       "id": "MPX_75556",
@@ -1411,15 +454,15 @@
       "discountedUnitPrice": "2.17 €/litre"
     },
     {
-      "id": "MPX_2190638",
-      "name": "Juraflore Comté Fort Des Rousses 15 mois 200g",
-      "price": "6.25",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "fromage",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/22faa06c-3a3d-4f6e-bfc7-ab8dd4d35625/200x200.webp",
-      "unitPrice": "31.25 €/kg",
-      "discountedUnitPrice": "23.44 €/kg"
+      "id": "MPX_4696683",
+      "name": "Charles & Alice Compote Pomme Pruneaux Sans Sucres Ajoutés 4x100g",
+      "price": "2.19",
+      "discount": "2 +1 offert",
+      "category": "Fruits et Légumes",
+      "subcategory": "compote",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/65b133eb-0771-4c02-808f-c118bae86e3e/200x200.webp",
+      "unitPrice": "5.48 €/kg",
+      "discountedUnitPrice": "3.65 €/kg"
     },
     {
       "id": "MPX_2599697",
@@ -1433,17 +476,6 @@
       "discountedUnitPrice": "6.13 €/kg"
     },
     {
-      "id": "MPX_4696683",
-      "name": "Charles & Alice Compote Pomme Pruneaux Sans Sucres Ajoutés 4x100g",
-      "price": "2.19",
-      "discount": "2 +1 offert",
-      "category": "Fruits et Légumes",
-      "subcategory": "compote",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/65b133eb-0771-4c02-808f-c118bae86e3e/200x200.webp",
-      "unitPrice": "5.48 €/kg",
-      "discountedUnitPrice": "3.65 €/kg"
-    },
-    {
       "id": "MPX_4261060",
       "name": "Yoplait Perle De Lait Nature Yaourt Brassé Pots 4x125g",
       "price": "2.39",
@@ -1455,48 +487,15 @@
       "discountedUnitPrice": "3.58 €/kg"
     },
     {
-      "id": "MPX_1031319",
-      "name": "Andros Compote Pomme Framboise 4x100g",
-      "price": "2.39",
+      "id": "MPX_4002591",
+      "name": "L'oeuf de nos Village Oeufs frais x12",
+      "price": "3.99",
       "discount": "-50% sur le 2ème produit",
-      "category": "Fruits et Légumes",
-      "subcategory": "compote",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/7c6170c2-a857-4fa3-aa32-bf8ebe16eefe/200x200.webp",
-      "unitPrice": "5.98 €/kg",
-      "discountedUnitPrice": "4.49 €/kg"
-    },
-    {
-      "id": "MPX_3166397",
-      "name": "Activia Probiotiques Céréales Yaourt Muesli Bifidus 4x120g",
-      "price": "2.55",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "céréales",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c0ba513b-f056-459c-996e-427f6eb436f8/200x200.webp",
-      "unitPrice": "5.31 €/kg",
-      "discountedUnitPrice": "3.98 €/kg"
-    },
-    {
-      "id": "MPX_2187053",
-      "name": "Innocent Jus Pomme & framboise la bouteille de 900ml",
-      "price": "3.29",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Boissons",
-      "subcategory": "jus de fruits",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/86149278-5282-4c7f-83a5-794243ca3812/200x200.webp",
-      "unitPrice": "3.66 €/litre",
-      "discountedUnitPrice": "2.75 €/litre"
-    },
-    {
-      "id": "MPX_2308238",
-      "name": "Danette Liégeois chocolat 4x100g",
-      "price": "2.09",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "chocolat",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ae73522a-2b14-4aa2-9a65-6976b467ae87/200x200.webp",
-      "unitPrice": "5.23 €/kg",
-      "discountedUnitPrice": "3.92 €/kg"
+      "category": "Épicerie Sucrée",
+      "subcategory": "bonbon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/0fa0872a-e703-472e-ac98-ad5490db1280/200x200.webp",
+      "unitPrice": "0.33 €/each",
+      "discountedUnitPrice": "0.25 €/each"
     },
     {
       "id": "MPX_2120402",
@@ -1510,6 +509,28 @@
       "discountedUnitPrice": "10.37 €/kg"
     },
     {
+      "id": "MPX_2308238",
+      "name": "Danette Liégeois chocolat 4x100g",
+      "price": "2.09",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Produits Laitiers",
+      "subcategory": "chocolat",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ae73522a-2b14-4aa2-9a65-6976b467ae87/200x200.webp",
+      "unitPrice": "5.23 €/kg",
+      "discountedUnitPrice": "3.92 €/kg"
+    },
+    {
+      "id": "MPX_2187053",
+      "name": "Innocent Jus Pomme & framboise la bouteille de 900ml",
+      "price": "3.29",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Boissons",
+      "subcategory": "jus de fruits",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/86149278-5282-4c7f-83a5-794243ca3812/200x200.webp",
+      "unitPrice": "3.66 €/litre",
+      "discountedUnitPrice": "2.75 €/litre"
+    },
+    {
       "id": "MPX_2975470",
       "name": "Alpro Boisson Végétale Lait D'amande Grillée Sans Sucres 1L",
       "price": "2.99",
@@ -1519,6 +540,17 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ac6f5334-b3ba-498e-bf31-ba903ae5b1ee/200x200.webp",
       "unitPrice": "2.99 €/litre",
       "discountedUnitPrice": "2.24 €/litre"
+    },
+    {
+      "id": "MPX_193964",
+      "name": "Lou Pérac La Brique De Brebis 150g",
+      "price": "3.65",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Produits Laitiers",
+      "subcategory": "fromage",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/61e3ce13-ea85-45ce-b486-36991d42ecef/200x200.webp",
+      "unitPrice": "24.33 €/kg",
+      "discountedUnitPrice": "18.25 €/kg"
     },
     {
       "id": "MPX_6675563",
@@ -1532,17 +564,6 @@
       "discountedUnitPrice": "7.00 €/kg"
     },
     {
-      "id": "MPX_3059450",
-      "name": "Innocent Pur jus tutti frutti 900ml",
-      "price": "3.29",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Boissons",
-      "subcategory": "jus de fruits",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ded8af37-289f-4e5a-9219-cba155cbbe8a/200x200.webp",
-      "unitPrice": "3.66 €/litre",
-      "discountedUnitPrice": "2.75 €/litre"
-    },
-    {
       "id": "MPX_4261059",
       "name": "Yoplait Perle De Lait Vanille Yaourt Brassé Pots 4x125g",
       "price": "2.49",
@@ -1554,15 +575,15 @@
       "discountedUnitPrice": "3.74 €/kg"
     },
     {
-      "id": "MPX_193964",
-      "name": "Lou Pérac La Brique De Brebis 150g",
-      "price": "3.65",
+      "id": "MPX_3059450",
+      "name": "Innocent Pur jus tutti frutti 900ml",
+      "price": "3.29",
       "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "fromage",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/61e3ce13-ea85-45ce-b486-36991d42ecef/200x200.webp",
-      "unitPrice": "24.33 €/kg",
-      "discountedUnitPrice": "18.25 €/kg"
+      "category": "Boissons",
+      "subcategory": "jus de fruits",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ded8af37-289f-4e5a-9219-cba155cbbe8a/200x200.webp",
+      "unitPrice": "3.66 €/litre",
+      "discountedUnitPrice": "2.75 €/litre"
     },
     {
       "id": "MPX_2726480",
@@ -1609,17 +630,6 @@
       "discountedUnitPrice": "6.32 €/kg"
     },
     {
-      "id": "MPX_6576609",
-      "name": "Ucha kombucha gingembre Bio 75cl",
-      "price": "4.59",
-      "discount": "-20% remise immédiate",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8f99d555-794d-4b63-8c15-bbe00c4d4e54/200x200.webp",
-      "unitPrice": "6.12 €/litre",
-      "discountedUnitPrice": "4.90 €/litre"
-    },
-    {
       "id": "MPX_6563999",
       "name": "Siggi's Skyr Framboise 2% de Mg 1x450g",
       "price": "4.09",
@@ -1629,6 +639,17 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8370a0b7-e06f-4c2d-b064-50a599cacf67/200x200.webp",
       "unitPrice": "9.09 €/kg",
       "discountedUnitPrice": "6.82 €/kg"
+    },
+    {
+      "id": "MPX_6576609",
+      "name": "Ucha kombucha gingembre Bio 75cl",
+      "price": "4.59",
+      "discount": "-20% remise immédiate",
+      "category": "Autre",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8f99d555-794d-4b63-8c15-bbe00c4d4e54/200x200.webp",
+      "unitPrice": "6.12 €/litre",
+      "discountedUnitPrice": "4.90 €/litre"
     },
     {
       "id": "MPX_5094661",
@@ -1642,15 +663,15 @@
       "discountedUnitPrice": "3.42 €/kg"
     },
     {
-      "id": "MPX_3305890",
-      "name": "Alpro Dessert Végétal Vanille Soja 500g",
-      "price": "2.45",
+      "id": "MPX_6839837",
+      "name": "Oatly Boisson Avoine Barista Bio 1L",
+      "price": "3.09",
       "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/3977fb34-937b-43a4-a53a-86707c56e4b4/200x200.webp",
-      "unitPrice": "4.90 €/kg",
-      "discountedUnitPrice": "3.68 €/kg"
+      "category": "Régimes alimentaires",
+      "subcategory": "boisson énergétique",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/a551b0c5-fe50-4b92-a501-3d4783bc45c6/200x200.webp",
+      "unitPrice": "3.09 €/litre",
+      "discountedUnitPrice": "2.32 €/litre"
     },
     {
       "id": "MPX_2218158",
@@ -1662,17 +683,6 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/2941beee-f22b-40f8-8bc3-5a77b61d5f82/200x200.webp",
       "unitPrice": "2.75 €/litre",
       "discountedUnitPrice": "1.92 €/litre"
-    },
-    {
-      "id": "MPX_6839837",
-      "name": "Oatly Boisson Avoine Barista Bio 1L",
-      "price": "3.09",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Régimes alimentaires",
-      "subcategory": "boisson énergétique",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/a551b0c5-fe50-4b92-a501-3d4783bc45c6/200x200.webp",
-      "unitPrice": "3.09 €/litre",
-      "discountedUnitPrice": "2.32 €/litre"
     },
     {
       "id": "MPX_4135010",
@@ -1697,15 +707,15 @@
       "discountedUnitPrice": "3.44 €/kg"
     },
     {
-      "id": "MPX_2154222",
-      "name": "Charles & Alice Pommes Mirabelles De Lorraine 4x97g",
-      "price": "2.19",
-      "discount": "2 +1 offert",
-      "category": "Fruits et Légumes",
-      "subcategory": "compote",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e69a5640-d239-4d2b-8458-d0b776f45606/200x200.webp",
-      "unitPrice": "5.64 €/kg",
-      "discountedUnitPrice": "3.76 €/kg"
+      "id": "MPX_2698663",
+      "name": "Grand Fermage Beurre Charentes Poitou aop doux 250g",
+      "price": "3.29",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Produits Laitiers",
+      "subcategory": "beurre",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/56b9a2d0-51a5-4e63-bd94-3bf239b0e530/200x200.webp",
+      "unitPrice": "13.16 €/kg",
+      "discountedUnitPrice": "9.87 €/kg"
     },
     {
       "id": "MPX_2547216",
@@ -1719,28 +729,6 @@
       "discountedUnitPrice": "5.35 €/kg"
     },
     {
-      "id": "MPX_6758274",
-      "name": "Alpro Spécial pour café avoine 750ml",
-      "price": "2.35",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Boissons",
-      "subcategory": "boisson énergétique",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/eb209cd9-fdd8-482e-8862-bf96aafa0838/200x200.webp",
-      "unitPrice": "3.13 €/litre",
-      "discountedUnitPrice": "2.35 €/litre"
-    },
-    {
-      "id": "MPX_1803934",
-      "name": "Andros Compote Pomme Pêche 4x100g",
-      "price": "1.89",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Fruits et Légumes",
-      "subcategory": "compote",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/085de27f-4e56-43e2-b0c3-df6cb3a5a39e/200x200.webp",
-      "unitPrice": "4.73 €/kg",
-      "discountedUnitPrice": "3.55 €/kg"
-    },
-    {
       "id": "MPX_3635838",
       "name": "Charles &Alice Spécialité de pommes rhubarbe sans sucres ajoutés 4x97g",
       "price": "2.19",
@@ -1750,17 +738,6 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ad598b7d-e0f7-4af5-94d4-c36225eda0f0/200x200.webp",
       "unitPrice": "5.64 €/kg",
       "discountedUnitPrice": "3.76 €/kg"
-    },
-    {
-      "id": "MPX_2698663",
-      "name": "Grand Fermage Beurre Charentes Poitou aop doux 250g",
-      "price": "3.29",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "beurre",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/56b9a2d0-51a5-4e63-bd94-3bf239b0e530/200x200.webp",
-      "unitPrice": "13.16 €/kg",
-      "discountedUnitPrice": "9.87 €/kg"
     },
     {
       "id": "MPX_2650635",
@@ -1774,15 +751,15 @@
       "discountedUnitPrice": "1.69 €/litre"
     },
     {
-      "id": "MPX_6813658",
-      "name": "Alpro Skyr Style Protéina Nature 400g",
-      "price": "2.99",
+      "id": "MPX_4015307",
+      "name": "Elle & Vire Spécialité laitière sans lactose 33cl",
+      "price": "2.15",
       "discount": "-50% sur le 2ème produit",
       "category": "Produits Laitiers",
-      "subcategory": "yaourt",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/df416104-d3ee-4603-b462-379832057b38/200x200.webp",
-      "unitPrice": "7.48 €/kg",
-      "discountedUnitPrice": "5.61 €/kg"
+      "subcategory": "beurre",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/3e36f5f5-ca16-4d96-ae32-a46172c8111f/200x200.webp",
+      "unitPrice": "6.52 €/litre",
+      "discountedUnitPrice": "4.89 €/litre"
     },
     {
       "id": "MPX_3254474",
@@ -1805,17 +782,6 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/517dafdd-fa38-4561-8aa5-1aa8199baf9e/200x200.webp",
       "unitPrice": "5.48 €/kg",
       "discountedUnitPrice": "3.65 €/kg"
-    },
-    {
-      "id": "MPX_4015307",
-      "name": "Elle & Vire Spécialité laitière sans lactose 33cl",
-      "price": "2.15",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "beurre",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/3e36f5f5-ca16-4d96-ae32-a46172c8111f/200x200.webp",
-      "unitPrice": "6.52 €/litre",
-      "discountedUnitPrice": "4.89 €/litre"
     },
     {
       "id": "MPX_4001725",
@@ -1862,17 +828,6 @@
       "discountedUnitPrice": "5.25 €/kg"
     },
     {
-      "id": "MPX_6576610",
-      "name": "Ucha kombucha Thé parfumé mangue passion 75cl",
-      "price": "4.49",
-      "discount": "-20% remise immédiate",
-      "category": "Boissons",
-      "subcategory": "thé",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/0b6c935d-daa8-40d5-abde-d8ae43838dcf/200x200.webp",
-      "unitPrice": "5.99 €/litre",
-      "discountedUnitPrice": "4.79 €/litre"
-    },
-    {
       "id": "MPX_170431",
       "name": "Boursin Fromage À Tartiner Ail & Fines Herbes 10 Portions 160g",
       "price": "3.09",
@@ -1917,17 +872,6 @@
       "discountedUnitPrice": "2.21 €/litre"
     },
     {
-      "id": "MPX_2625622",
-      "name": "Innocent Jus d'Orange & de carotte la bouteille de 900ml",
-      "price": "3.85",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Boissons",
-      "subcategory": "jus de fruits",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e4bceb86-2121-4457-b1d3-90f645b351ad/200x200.webp",
-      "unitPrice": "4.28 €/litre",
-      "discountedUnitPrice": "3.21 €/litre"
-    },
-    {
       "id": "MPX_3305889",
       "name": "Alpro Dessert Végétal Soja Nature Noix De Coco 500g",
       "price": "2.45",
@@ -1937,17 +881,6 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8927d1a0-80e2-4d16-9008-6faf1698a172/200x200.webp",
       "unitPrice": "4.90 €/kg",
       "discountedUnitPrice": "3.68 €/kg"
-    },
-    {
-      "id": "MPX_2725333",
-      "name": "Michel & Augustin L'incroyable Mousse Au Chocolat Au Lait 245g",
-      "price": "5.65",
-      "discount": "-25% remise immédiate",
-      "category": "Produits Laitiers",
-      "subcategory": "chocolat",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/16632f92-fb7a-4930-a97a-6cffeeb3e0c1/200x200.webp",
-      "unitPrice": "23.06 €/kg",
-      "discountedUnitPrice": "17.29 €/kg"
     },
     {
       "id": "MPX_3858529",
@@ -1972,17 +905,6 @@
       "discountedUnitPrice": "2.83 €/kg"
     },
     {
-      "id": "MPX_4961370",
-      "name": "Oatly - Boisson Chocolatée à l'Avoine 1L",
-      "price": "2.99",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Épicerie Sucrée",
-      "subcategory": "chocolat",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/45cd5d70-a37d-426b-8a0a-195a93ce686a/200x200.webp",
-      "unitPrice": "2.99 €/litre",
-      "discountedUnitPrice": "2.24 €/litre"
-    },
-    {
       "id": "MPX_2850603",
       "name": "Boursin Fromage à tartiner ail & fines herbes 250g",
       "price": "4.09",
@@ -1994,15 +916,26 @@
       "discountedUnitPrice": "12.27 €/kg"
     },
     {
-      "id": "MPX_63899",
-      "name": "Lepetit Camembert 250g",
+      "id": "MPX_4961370",
+      "name": "Oatly - Boisson Chocolatée à l'Avoine 1L",
       "price": "2.99",
       "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "fromage",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/1d142766-3e3f-46b1-9ed5-60e761726d5b/200x200.webp",
-      "unitPrice": "11.96 €/kg",
-      "discountedUnitPrice": "8.97 €/kg"
+      "category": "Boissons",
+      "subcategory": "chocolat",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/45cd5d70-a37d-426b-8a0a-195a93ce686a/200x200.webp",
+      "unitPrice": "2.99 €/litre",
+      "discountedUnitPrice": "2.24 €/litre"
+    },
+    {
+      "id": "MPX_2650633",
+      "name": "Alpro Boisson Végétale Lait D'Amande Grillée 1L",
+      "price": "2.89",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Boissons",
+      "subcategory": "lait",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/58200ebe-01b7-4236-8865-57f1061fe209/200x200.webp",
+      "unitPrice": "2.89 €/litre",
+      "discountedUnitPrice": "2.17 €/litre"
     },
     {
       "id": "MPX_5033641",
@@ -2016,28 +949,6 @@
       "discountedUnitPrice": "3.21 €/litre"
     },
     {
-      "id": "MPX_2650633",
-      "name": "Alpro Boisson Végétale Lait D'Amande Grillée 1L",
-      "price": "2.89",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "lait",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/58200ebe-01b7-4236-8865-57f1061fe209/200x200.webp",
-      "unitPrice": "2.89 €/litre",
-      "discountedUnitPrice": "2.17 €/litre"
-    },
-    {
-      "id": "MPX_3636868",
-      "name": "Alpro Dessert Végétal Soja Mangue Sans Sucres 400g",
-      "price": "2.99",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/9d801061-bbac-4c24-85de-7bd05acce4c7/200x200.webp",
-      "unitPrice": "7.48 €/kg",
-      "discountedUnitPrice": "5.61 €/kg"
-    },
-    {
       "id": "MPX_3059043",
       "name": "St Hubert Oméga 3 Margarine Doux Sans Huile de Palme 250g",
       "price": "3.49",
@@ -2047,17 +958,6 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/93ba0033-207c-4dd2-b7a6-3f224f45f910/200x200.webp",
       "unitPrice": "13.96 €/kg",
       "discountedUnitPrice": "10.47 €/kg"
-    },
-    {
-      "id": "MPX_3476828",
-      "name": "Yoplait Yop Yaourt à Boire Parfum Fraise 825g",
-      "price": "2.39",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "yaourt",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/33e64772-0233-4d8a-9f47-c835b950de86/200x200.webp",
-      "unitPrice": "2.90 €/kg",
-      "discountedUnitPrice": "2.17 €/kg"
     },
     {
       "id": "MPX_5426220",
@@ -2082,11 +982,22 @@
       "discountedUnitPrice": "11.08 €/litre"
     },
     {
+      "id": "MPX_6670607",
+      "name": "Grand Fermage Beurre Moulé AOP Charentes-Poitou Demi-sel 250g",
+      "price": "3.29",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Produits Laitiers",
+      "subcategory": "beurre",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c9b0724b-95a2-4c31-8205-b26801e4f622/200x200.webp",
+      "unitPrice": "13.16 €/kg",
+      "discountedUnitPrice": "9.87 €/kg"
+    },
+    {
       "id": "MPX_64393",
       "name": "Apéricube Fromage fondu apéritif Cocktail 48 cubes 250g",
       "price": "5.25",
       "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
+      "category": "Épicerie Salée",
       "subcategory": "fromage",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/5a5f7f09-271d-4276-8664-087ac5f6c363/200x200.webp",
       "unitPrice": "21.00 €/kg",
@@ -2104,15 +1015,15 @@
       "discountedUnitPrice": "9.73 €/kg"
     },
     {
-      "id": "MPX_6670607",
-      "name": "Grand Fermage Beurre Moulé AOP Charentes-Poitou Demi-sel 250g",
-      "price": "3.29",
+      "id": "MPX_3476830",
+      "name": "Yoplait Yop Yaourt à Boire Parfum Vanille Bouteille 825g",
+      "price": "2.39",
       "discount": "-50% sur le 2ème produit",
       "category": "Produits Laitiers",
-      "subcategory": "beurre",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c9b0724b-95a2-4c31-8205-b26801e4f622/200x200.webp",
-      "unitPrice": "13.16 €/kg",
-      "discountedUnitPrice": "9.87 €/kg"
+      "subcategory": "yaourt",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/52b3a23f-6e9c-4542-b5a2-85dc1c7d227c/200x200.webp",
+      "unitPrice": "2.90 €/kg",
+      "discountedUnitPrice": "2.17 €/kg"
     },
     {
       "id": "MPX_3550388",
@@ -2126,28 +1037,6 @@
       "discountedUnitPrice": "2.96 €/litre"
     },
     {
-      "id": "MPX_3476830",
-      "name": "Yoplait Yop Yaourt à Boire Parfum Vanille Bouteille 825g",
-      "price": "2.39",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "yaourt",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/52b3a23f-6e9c-4542-b5a2-85dc1c7d227c/200x200.webp",
-      "unitPrice": "2.90 €/kg",
-      "discountedUnitPrice": "2.17 €/kg"
-    },
-    {
-      "id": "MPX_6719851",
-      "name": "Charles & Alice Pomme raisin  sans sucre ajoutés 4x97g",
-      "price": "1.99",
-      "discount": "2 +1 offert",
-      "category": "Épicerie Salée",
-      "subcategory": "compote",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ce74a7ea-a21a-411c-9edd-e6f8e3eca93e/200x200.webp",
-      "unitPrice": "5.13 €/kg",
-      "discountedUnitPrice": "3.42 €/kg"
-    },
-    {
       "id": "MPX_4263280",
       "name": "Alpro Boisson Végétale Protéiné Soja 1L",
       "price": "3.09",
@@ -2157,17 +1046,6 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/3b46716a-f7ad-402d-8b95-b7f84bd29699/200x200.webp",
       "unitPrice": "3.09 €/litre",
       "discountedUnitPrice": "2.32 €/litre"
-    },
-    {
-      "id": "MPX_6846108",
-      "name": "Alpro Yaourt Soja myrtille 500g",
-      "price": "2.49",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "yaourt",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/d433f8e7-71fc-4fc9-b378-c356828c9d4e/200x200.webp",
-      "unitPrice": "4.98 €/kg",
-      "discountedUnitPrice": "3.74 €/kg"
     },
     {
       "id": "MPX_3511737",
@@ -2196,7 +1074,7 @@
       "name": "Gü Cheesecake Vanille Spéculoos 2x80g",
       "price": "4.69",
       "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
+      "category": "Autre",
       "subcategory": "",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ed36f504-1a68-474e-bd73-992d065c3a44/200x200.webp",
       "unitPrice": "29.31 €/kg",
@@ -2236,28 +1114,6 @@
       "discountedUnitPrice": "27.38 €/kg"
     },
     {
-      "id": "MPX_3525564",
-      "name": "Fruit D'Or Margarine Doux 50% Mg Sans Huile De Palme 225g",
-      "price": "2.45",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "beurre",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c23df422-ed6f-4224-8614-e4ab1df05ba9/200x200.webp",
-      "unitPrice": "10.89 €/kg",
-      "discountedUnitPrice": "8.17 €/kg"
-    },
-    {
-      "id": "MPX_64127",
-      "name": "Société Crème fromage fondu de brebis 100g",
-      "price": "2.49",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "fromage",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/98f8025e-f829-461f-bd2d-5ee73a43ec1c/200x200.webp",
-      "unitPrice": "24.90 €/kg",
-      "discountedUnitPrice": "18.67 €/kg"
-    },
-    {
       "id": "MPX_6758275",
       "name": "Alpro Spécial pour café amande 750ml",
       "price": "2.29",
@@ -2269,6 +1125,17 @@
       "discountedUnitPrice": "2.29 €/litre"
     },
     {
+      "id": "MPX_3525564",
+      "name": "Fruit D'Or Margarine Doux 50% Mg Sans Huile De Palme 225g",
+      "price": "2.45",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Produits Laitiers",
+      "subcategory": "beurre",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c23df422-ed6f-4224-8614-e4ab1df05ba9/200x200.webp",
+      "unitPrice": "10.89 €/kg",
+      "discountedUnitPrice": "8.17 €/kg"
+    },
+    {
       "id": "MPX_6813657",
       "name": "Alpro Skyr Style +Protéina Fraise 400g",
       "price": "2.99",
@@ -2278,28 +1145,6 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/732053ca-e3c6-49ba-8559-4f8cfd78784a/200x200.webp",
       "unitPrice": "7.48 €/kg",
       "discountedUnitPrice": "5.61 €/kg"
-    },
-    {
-      "id": "MPX_3476829",
-      "name": "Yoplait Yop Yaourt à Boire Parfum Framboise Bouteille 825g",
-      "price": "2.39",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "yaourt",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/9599581f-bd6e-4c61-a1f8-a3ff173631ec/200x200.webp",
-      "unitPrice": "2.90 €/kg",
-      "discountedUnitPrice": "2.17 €/kg"
-    },
-    {
-      "id": "MPX_4056193",
-      "name": "Alpro Boisson Végétale Lait D'Amande Vanille 1L",
-      "price": "3.19",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "lait",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/2b4a4f30-cb34-4d9c-ab05-6246dc32ff0e/200x200.webp",
-      "unitPrice": "3.19 €/kg",
-      "discountedUnitPrice": "2.39 €/kg"
     },
     {
       "id": "MPX_6847892",
@@ -2335,15 +1180,15 @@
       "discountedUnitPrice": "4.77 €/kg"
     },
     {
-      "id": "MPX_3366882",
-      "name": "Boursin Onctueux Fromage À Tartiner Ail & Fines Herbes 125g",
-      "price": "2.59",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "fromage",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/6def877d-2cef-40cd-acf0-a2347300b06c/200x200.webp",
-      "unitPrice": "20.72 €/kg",
-      "discountedUnitPrice": "15.54 €/kg"
+      "id": "MPX_6715134",
+      "name": "Montebelo Brasil Pur jus orange avec pulpe 1L",
+      "price": "2.95",
+      "discount": "-34% remise immédiate",
+      "category": "Boissons",
+      "subcategory": "jus de fruits",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/3b3faf94-0ae4-44e0-b462-4907b1b37604/200x200.webp",
+      "unitPrice": "2.95 €/litre",
+      "discountedUnitPrice": "1.95 €/litre"
     },
     {
       "id": "MPX_2947286",
@@ -2357,55 +1202,22 @@
       "discountedUnitPrice": "10.47 €/kg"
     },
     {
-      "id": "MPX_6624472",
-      "name": "Activia Yaourt Aux Fruits Rouges Et Céréales Bifidus 4x115g",
-      "price": "2.75",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "céréales",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/939394fc-817b-4263-a7c9-9940262bbc3b/200x200.webp",
-      "unitPrice": "5.98 €/kg",
-      "discountedUnitPrice": "4.49 €/kg"
-    },
-    {
       "id": "MPX_6821399",
       "name": "Casa Azzurra Gorgonzola AOP 150g",
       "price": "3.49",
       "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
+      "category": "Bière et Alcools",
       "subcategory": "vin rouge",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/0159d4e4-08ae-4f98-80c2-32ba215696ac/200x200.webp",
       "unitPrice": "23.27 €/kg",
       "discountedUnitPrice": "17.45 €/kg"
     },
     {
-      "id": "MPX_6564057",
-      "name": "Alpro Saveur Macchiato 1L",
-      "price": "3.49",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ec48f3cd-a7ce-4ecb-a0a3-1f9b94f646ba/200x200.webp",
-      "unitPrice": "3.49 €/litre",
-      "discountedUnitPrice": "2.62 €/litre"
-    },
-    {
-      "id": "MPX_6715134",
-      "name": "Montebelo Brasil Pur jus orange avec pulpe 1L",
-      "price": "2.95",
-      "discount": "-34% remise immédiate",
-      "category": "Boissons",
-      "subcategory": "jus de fruits",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/3b3faf94-0ae4-44e0-b462-4907b1b37604/200x200.webp",
-      "unitPrice": "2.95 €/litre",
-      "discountedUnitPrice": "1.95 €/litre"
-    },
-    {
       "id": "MPX_2065257",
       "name": "Boursin Fromage apéritif roulés jambon fumé ail et fines herbes 20 roulés 100g",
       "price": "3.95",
       "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
+      "category": "Épicerie Salée",
       "subcategory": "fromage",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/be4da30f-87d3-44e1-87bd-1ad5e2c4e1e5/200x200.webp",
       "unitPrice": "39.50 €/kg",
@@ -2423,17 +1235,6 @@
       "discountedUnitPrice": "5.15 €/litre"
     },
     {
-      "id": "MPX_2291256",
-      "name": "Boursin Salade & Apéritif Fromage Ail & Fines Herbes 120g",
-      "price": "2.65",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "salade",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/2352bfde-d55b-4e2e-ad70-8e69742c1b8d/200x200.webp",
-      "unitPrice": "22.08 €/kg",
-      "discountedUnitPrice": "16.56 €/kg"
-    },
-    {
       "id": "MPX_3705888",
       "name": "Yoplait Yop Yaourt A Boire Parfum Fraise Banane Bouteille 825g",
       "price": "2.49",
@@ -2443,6 +1244,17 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/71238d30-73d4-4499-be81-35c41ed86d0d/200x200.webp",
       "unitPrice": "3.02 €/kg",
       "discountedUnitPrice": "2.27 €/kg"
+    },
+    {
+      "id": "MPX_2291256",
+      "name": "Boursin Salade & Apéritif Fromage Ail & Fines Herbes 120g",
+      "price": "2.65",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Salée",
+      "subcategory": "salade",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/2352bfde-d55b-4e2e-ad70-8e69742c1b8d/200x200.webp",
+      "unitPrice": "22.08 €/kg",
+      "discountedUnitPrice": "16.56 €/kg"
     },
     {
       "id": "MPX_6715135",
@@ -2467,17 +1279,6 @@
       "discountedUnitPrice": "5.15 €/litre"
     },
     {
-      "id": "MPX_4263295",
-      "name": "Alpro Boisson protéinée chocolat 1L",
-      "price": "3.35",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Régimes alimentaires",
-      "subcategory": "chocolat",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/7a8e9b70-05a7-489c-9b19-e5421df03ca3/200x200.webp",
-      "unitPrice": "3.35 €/litre",
-      "discountedUnitPrice": "2.51 €/litre"
-    },
-    {
       "id": "MPX_64761",
       "name": "Candia Elben - Lait fermenté - La Brique de 1L",
       "price": "2.35",
@@ -2493,7 +1294,7 @@
       "name": "Apéricube Fromage fondu le goût de la fête 48 cubes 250g",
       "price": "5.49",
       "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
+      "category": "Épicerie Salée",
       "subcategory": "fromage",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/57b7c9b4-15b5-4c0d-8386-8ef4851750c2/200x200.webp",
       "unitPrice": "21.96 €/kg",
@@ -2526,7 +1327,7 @@
       "name": "Valcrest Mini Involtini Chèvre Speck 20x5g",
       "price": "4.85",
       "discount": "-20% remise immédiate",
-      "category": "Autre",
+      "category": "Viandes et Charcuterie",
       "subcategory": "",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e5043ccc-e89d-4a1b-829e-5118802844e5/200x200.webp",
       "unitPrice": "48.50 €/kg",
@@ -2555,15 +1356,15 @@
       "discountedUnitPrice": "2.44 €/litre"
     },
     {
-      "id": "MPX_2950057",
-      "name": "Atelier De Chateaubourg Sélection Des Médaillés Plateau D’assortiment De Fromage 370g",
-      "price": "15.90",
-      "discount": "-20% remise immédiate",
+      "id": "MPX_3576901",
+      "name": "Société Bleu De Brebis Doux Et Fondant 110g",
+      "price": "3.09",
+      "discount": "-50% sur le 2ème produit",
       "category": "Produits Laitiers",
-      "subcategory": "fromage",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/65660a48-4e43-4d4d-80a7-21963686638c/200x200.webp",
-      "unitPrice": "42.97 €/kg",
-      "discountedUnitPrice": "34.38 €/kg"
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/95292a17-0168-48ec-ad6d-aeeaae561664/200x200.webp",
+      "unitPrice": "28.09 €/kg",
+      "discountedUnitPrice": "21.07 €/kg"
     },
     {
       "id": "MPX_6893587",
@@ -2588,37 +1389,26 @@
       "discountedUnitPrice": "7.52 €/kg"
     },
     {
-      "id": "MPX_3576901",
-      "name": "Société Bleu De Brebis Doux Et Fondant 110g",
-      "price": "3.09",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/95292a17-0168-48ec-ad6d-aeeaae561664/200x200.webp",
-      "unitPrice": "28.09 €/kg",
-      "discountedUnitPrice": "21.07 €/kg"
-    },
-    {
       "id": "MPX_6838227",
       "name": "Montebelo Brasil Orange goyave & citron vert 1L",
       "price": "3.59",
       "discount": "-34% remise immédiate",
-      "category": "Boissons",
+      "category": "Fruits et Légumes",
       "subcategory": "",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/d14b7eac-8f18-4783-9480-17ff730b8f62/200x200.webp",
       "unitPrice": "3.59 €/litre",
       "discountedUnitPrice": "2.37 €/litre"
     },
     {
-      "id": "MPX_6838226",
-      "name": "Montebelo Brasil Citronnade Citron vert 1L",
-      "price": "2.29",
-      "discount": "-34% remise immédiate",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/7ef69dad-7470-4ea5-9d4e-b89146fff84a/200x200.webp",
-      "unitPrice": "2.29 €/litre",
-      "discountedUnitPrice": "1.51 €/litre"
+      "id": "MPX_1177307",
+      "name": "Galbani Mozzarella Di Latte Di Bufala 125g",
+      "price": "3.59",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Produits Laitiers",
+      "subcategory": "fromage",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/fb6672c6-e531-42de-ab47-1b591889bf3b/200x200.webp",
+      "unitPrice": "28.72 €/kg",
+      "discountedUnitPrice": "21.54 €/kg"
     },
     {
       "id": "MPX_6838104",
@@ -2643,17 +1433,6 @@
       "discountedUnitPrice": "2.09 €/litre"
     },
     {
-      "id": "MPX_955451",
-      "name": "Société Roquefort Fromage AOP caves Baragnaudes au lait cru de brebis 150g",
-      "price": "5.19",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
-      "subcategory": "fromage",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/fdb561c4-6b39-4db9-b574-52d014ac3298/200x200.webp",
-      "unitPrice": "34.60 €/kg",
-      "discountedUnitPrice": "25.95 €/kg"
-    },
-    {
       "id": "MPX_6893588",
       "name": "Danette saveur twix  4x115g",
       "price": "1.95",
@@ -2663,17 +1442,6 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/593f7ecf-5089-4abc-b118-eefc7c3fa79e/200x200.webp",
       "unitPrice": "3.90 €/kg",
       "discountedUnitPrice": "2.92 €/kg"
-    },
-    {
-      "id": "MPX_6706744",
-      "name": "Innocent Jus pressé Ananas, fraise et pomme 900ml",
-      "price": "2.89",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Boissons",
-      "subcategory": "jus de fruits",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c8135bc8-ea4c-4840-8a5f-9b175c7ac4a5/200x200.webp",
-      "unitPrice": "3.21 €/litre",
-      "discountedUnitPrice": "2.41 €/litre"
     },
     {
       "id": "MPX_3254472",
@@ -2702,7 +1470,7 @@
       "name": "Apérivrais Saveurs De Provence 100g",
       "price": "2.89",
       "discount": "-50% sur le 2ème produit",
-      "category": "Produits Laitiers",
+      "category": "Épicerie Salée",
       "subcategory": "fromage",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8f40ca02-795a-4bb3-bde9-6e1a90b4f17a/200x200.webp",
       "unitPrice": "28.90 €/kg",
@@ -2718,6 +1486,28 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/b4ff568a-d3e7-4e0a-9a0b-dc7398fada9c/200x200.webp",
       "unitPrice": "20.07 €/kg",
       "discountedUnitPrice": "15.05 €/kg"
+    },
+    {
+      "id": "MPX_2172422",
+      "name": "Michel & Augustin L'incroyable Mousse Au Chocolat Noir 245g",
+      "price": "5.65",
+      "discount": "-25% remise immédiate",
+      "category": "Épicerie Sucrée",
+      "subcategory": "chocolat",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/f9aba404-cbc3-4909-8817-abcf1d86270a/200x200.webp",
+      "unitPrice": "23.06 €/kg",
+      "discountedUnitPrice": "17.29 €/kg"
+    },
+    {
+      "id": "MPX_6706744",
+      "name": "Innocent Jus pressé Ananas, fraise et pomme 900ml",
+      "price": "2.89",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Boissons",
+      "subcategory": "jus de fruits",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c8135bc8-ea4c-4840-8a5f-9b175c7ac4a5/200x200.webp",
+      "unitPrice": "3.21 €/litre",
+      "discountedUnitPrice": "2.41 €/litre"
     },
     {
       "id": "MPX_4165465",
@@ -2742,15 +1532,785 @@
       "discountedUnitPrice": "6.32 €/kg"
     },
     {
-      "id": "MPX_3032568",
-      "name": "Président Emmental Râpé Fondant 200g",
-      "price": "2.59",
+      "id": "MPX_6782142",
+      "name": "Marie Poulet Mariné à l'orientale Semoule 300g",
+      "price": "4.89",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "poulet",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/3b9eb68e-314d-4b90-9612-80565c87ea6c/200x200.webp",
+      "unitPrice": "16.30 €/kg",
+      "discountedUnitPrice": "12.23 €/kg"
+    },
+    {
+      "id": "MPX_1934238",
+      "name": "Marie Saucisse de Toulouse grillée et purée au beurre 290g",
+      "price": "4.65",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "beurre",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/09edbfba-c652-4b2c-b626-dd7bab9b840a/200x200.webp",
+      "unitPrice": "16.03 €/kg",
+      "discountedUnitPrice": "12.02 €/kg"
+    },
+    {
+      "id": "MPX_2006798",
+      "name": "Saint Jean Box Ravioles sauce saint Marcellin et noix du Dauphiné 300g",
+      "price": "5.79",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "sauce",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c80b1f33-9333-43f9-b726-8dcacc035d9e/200x200.webp",
+      "unitPrice": "19.30 €/kg",
+      "discountedUnitPrice": "14.48 €/kg"
+    },
+    {
+      "id": "MPX_3167866",
+      "name": "L'Atelier Blini Olives Bio Ail et Origan 150g",
+      "price": "4.75",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Salée",
+      "subcategory": "huile",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e96b1cc2-7be9-45a3-be59-e240fa8e854b/200x200.webp",
+      "unitPrice": "31.67 €/kg",
+      "discountedUnitPrice": "23.75 €/kg"
+    },
+    {
+      "id": "MPX_5216918",
+      "name": "Fleury Michon Gratin d'Endives au Jambon 280g",
+      "price": "4.49",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "jambon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/00ff450e-e16e-40a0-8404-1dceff35983f/200x200.webp",
+      "unitPrice": "16.04 €/kg",
+      "discountedUnitPrice": "12.03 €/kg"
+    },
+    {
+      "id": "MPX_180101",
+      "name": "Giraudet Quenelles Fraîches de Brochet 4x50g",
+      "price": "4.19",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/98c0efe3-4b1d-4fe1-9079-f0916bbd49e0/200x200.webp",
+      "unitPrice": "20.95 €/kg",
+      "discountedUnitPrice": "15.71 €/kg"
+    },
+    {
+      "id": "MPX_6612839",
+      "name": "Domaine Picard jambon de chez nous 4 tranches de 40g",
+      "price": "4.09",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "jambon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/5521c60d-be18-43f6-aca6-be096e22c767/200x200.webp",
+      "unitPrice": "25.56 €/kg",
+      "discountedUnitPrice": "19.17 €/kg"
+    },
+    {
+      "id": "MPX_888690",
+      "name": "Citterio Mortadelle de Bologne IGP 150g",
+      "price": "3.65",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Bière et Alcools",
+      "subcategory": "vin rouge",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e24800b2-32ee-4485-ab20-d6310e303d53/200x200.webp",
+      "unitPrice": "24.33 €/kg",
+      "discountedUnitPrice": "18.25 €/kg"
+    },
+    {
+      "id": "MPX_4276293",
+      "name": "Herta Allumettes Fumés Sans Nitrite 2x75g",
+      "price": "3.15",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "jambon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/407ed393-fad1-4f19-8460-fdd1b833b8ea/200x200.webp",
+      "unitPrice": "21.00 €/kg",
+      "discountedUnitPrice": "15.75 €/kg"
+    },
+    {
+      "id": "MPX_4276294",
+      "name": "Herta Allumettes Nature Sans Nitrite 2x75g",
+      "price": "3.15",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "jambon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/db073d32-6746-4fd9-b5d8-dc264e2e7ede/200x200.webp",
+      "unitPrice": "21.00 €/kg",
+      "discountedUnitPrice": "15.75 €/kg"
+    },
+    {
+      "id": "MPX_6782131",
+      "name": "HARI&CO Nems Haché Végétal & Curry 120g",
+      "price": "3.39",
+      "discount": "-30% remise immédiate",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/75d87b14-f7ad-4fe5-84b1-16915d16cc72/200x200.webp",
+      "unitPrice": "28.25 €/kg",
+      "discountedUnitPrice": "19.77 €/kg"
+    },
+    {
+      "id": "MPX_3417204",
+      "name": "Cochonou Saucisson Sec 30 Tranches Fines 93g",
+      "price": "1.89",
+      "discount": "2 +1 offert",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "saucisson",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c7f752ee-95c9-401f-8711-4fe9063659c5/200x200.webp",
+      "unitPrice": "20.32 €/kg",
+      "discountedUnitPrice": "13.55 €/kg"
+    },
+    {
+      "id": "MPX_4055139",
+      "name": "Herta Tendre Croc' Comté Jambon 200g",
+      "price": "2.69",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "fromage",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/b4f398aa-dc86-4402-8a8f-a1a92060fbd8/200x200.webp",
+      "unitPrice": "13.45 €/kg",
+      "discountedUnitPrice": "10.09 €/kg"
+    },
+    {
+      "id": "MPX_1582858",
+      "name": "Aoste Jambon cru fines et fondantes 100g",
+      "price": "4.49",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "jambon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/9b7e063a-9b70-4187-9136-5995506c05c9/200x200.webp",
+      "unitPrice": "44.90 €/kg",
+      "discountedUnitPrice": "33.67 €/kg"
+    },
+    {
+      "id": "MPX_3526157",
+      "name": "Aoste Jambon Serrano Cru fines et fondantes 100g",
+      "price": "4.49",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "jambon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/90ff20d7-5a08-48df-a1af-64fad829d9de/200x200.webp",
+      "unitPrice": "44.90 €/kg",
+      "discountedUnitPrice": "33.67 €/kg"
+    },
+    {
+      "id": "MPX_1921548",
+      "name": "Bonduelle Taboulé à la menthe douce 300g",
+      "price": "2.09",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "salade",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/029b30d1-3fba-447f-bd2d-a83a1b04a108/200x200.webp",
+      "unitPrice": "6.97 €/kg",
+      "discountedUnitPrice": "5.23 €/kg"
+    },
+    {
+      "id": "MPX_811173",
+      "name": "Giraudet Pot De Sauce Nantua Aux Écrevisses Maison 250g",
+      "price": "3.79",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "sauce",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/39bb3e4b-4f27-478a-bb28-d474bd6db934/200x200.webp",
+      "unitPrice": "15.16 €/kg",
+      "discountedUnitPrice": "11.37 €/kg"
+    },
+    {
+      "id": "MPX_6714389",
+      "name": "Citterio Antipasti Charcuterie 1878 100g",
+      "price": "4.35",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "bresaola",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/384a2efc-e384-4125-b2cc-f453e0bd2a6d/200x200.webp",
+      "unitPrice": "43.50 €/kg",
+      "discountedUnitPrice": "32.62 €/kg"
+    },
+    {
+      "id": "MPX_2426192",
+      "name": "L'Atelier Blini 6 Accras de morue 120g",
+      "price": "3.69",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Salée",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e10bdbc3-d267-4b9a-9764-246492cc7adb/200x200.webp",
+      "unitPrice": "30.75 €/kg",
+      "discountedUnitPrice": "23.06 €/kg"
+    },
+    {
+      "id": "MPX_2725024",
+      "name": "Bonduelle Taboulé au poulet rôti 300g",
+      "price": "2.95",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "salade",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/168a4688-abe2-49e8-9d72-b1c7a8e7003e/200x200.webp",
+      "unitPrice": "9.83 €/kg",
+      "discountedUnitPrice": "7.37 €/kg"
+    },
+    {
+      "id": "MPX_1540345",
+      "name": "Bonduelle Tortis Concombres Saumon 300g",
+      "price": "3.49",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "salade",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e12e28b0-393a-4eca-af2e-56345b150a08/200x200.webp",
+      "unitPrice": "11.63 €/kg",
+      "discountedUnitPrice": "8.72 €/kg"
+    },
+    {
+      "id": "MPX_2775339",
+      "name": "Sodebo Sandwich Méga club viennois Thon œuf mayo légère 230g",
+      "price": "2.55",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "bonbon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/4b32ce75-67b5-465c-84a1-15074164d5f6/200x200.webp",
+      "unitPrice": "11.09 €/kg",
+      "discountedUnitPrice": "8.32 €/kg"
+    },
+    {
+      "id": "MPX_6739702",
+      "name": "Domaine Picard Jambon blanc 2x60g",
+      "price": "3.19",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "jambon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/a2bfe42f-e4a7-4546-8e53-141b9f8cd207/200x200.webp",
+      "unitPrice": "26.58 €/kg",
+      "discountedUnitPrice": "19.93 €/kg"
+    },
+    {
+      "id": "MPX_4210922",
+      "name": "Labeyrie Bloc de Foie Gras de Canard Barquette 100g",
+      "price": "8.09",
+      "discount": "-34% remise immédiate",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "saumon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/edab2ffa-0aaf-48be-9884-a2753c8a5215/200x200.webp",
+      "unitPrice": "80.90 €/kg",
+      "discountedUnitPrice": "53.39 €/kg"
+    },
+    {
+      "id": "MPX_5447206",
+      "name": "L'Atelier Blini Falafels Pois Chiches 120g",
+      "price": "3.59",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8fa534f4-1d55-49f8-afac-7a9a0c8c01c3/200x200.webp",
+      "unitPrice": "29.92 €/kg",
+      "discountedUnitPrice": "22.44 €/kg"
+    },
+    {
+      "id": "MPX_6682783",
+      "name": "Pierre Martinet Salade Oslo 220g",
+      "price": "2.99",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "salade",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e7192a4a-cd62-4c13-89af-10be8ed87684/200x200.webp",
+      "unitPrice": "13.59 €/kg",
+      "discountedUnitPrice": "10.19 €/kg"
+    },
+    {
+      "id": "MPX_4246754",
+      "name": "Saint Agaûne La Fine 200g",
+      "price": "6.19",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "saucisson",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8cdb62e1-3510-4a11-9ee2-aba85fa21d5c/200x200.webp",
+      "unitPrice": "30.95 €/kg",
+      "discountedUnitPrice": "23.21 €/kg"
+    },
+    {
+      "id": "MPX_3046583",
+      "name": "Bonduelle Taboulé riche en légumes 300g",
+      "price": "2.99",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "salade",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c8711b3f-37dd-421c-a4c0-881e6d4939d8/200x200.webp",
+      "unitPrice": "9.97 €/kg",
+      "discountedUnitPrice": "7.48 €/kg"
+    },
+    {
+      "id": "MPX_1373777",
+      "name": "Pierre Martinet Duo carottes râpées / taboulé oriental 250g",
+      "price": "2.39",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8c04360d-a6c8-446c-b1dc-722aaf16264e/200x200.webp",
+      "unitPrice": "9.56 €/kg",
+      "discountedUnitPrice": "7.17 €/kg"
+    },
+    {
+      "id": "MPX_2120290",
+      "name": "Manuel De Montejo Chorizo 100g",
+      "price": "3.09",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/d10047cc-a297-437f-aab2-09b19f64c623/200x200.webp",
+      "unitPrice": "30.90 €/kg",
+      "discountedUnitPrice": "23.17 €/kg"
+    },
+    {
+      "id": "MPX_6720622",
+      "name": "Bonduelle Pomme de terre saumon 280g",
+      "price": "2.89",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "salade",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/585c0a89-2bb0-46b4-8dc7-a8e3aa9d5ff2/200x200.webp",
+      "unitPrice": "10.32 €/kg",
+      "discountedUnitPrice": "7.74 €/kg"
+    },
+    {
+      "id": "MPX_2547767",
+      "name": "Sodebo Sandwich Méga club complet jambon emmental 230g",
+      "price": "2.75",
       "discount": "-50% sur le 2ème produit",
       "category": "Produits Laitiers",
       "subcategory": "fromage",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/2fa00cc6-ca03-4691-a42c-e79f9ac862d3/200x200.webp",
-      "unitPrice": "12.95 €/kg",
-      "discountedUnitPrice": "9.71 €/kg"
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/fc7cb068-0e00-4e1f-aa7f-13ddd247e09f/200x200.webp",
+      "unitPrice": "11.96 €/kg",
+      "discountedUnitPrice": "8.97 €/kg"
+    },
+    {
+      "id": "MPX_2888848",
+      "name": "Labeyrie Jambon Pata Negra 24 Mois d'Affinage x4 Tranches Fines",
+      "price": "7.25",
+      "discount": "-34% remise immédiate",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "jambon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/47e77567-5b83-4a49-a6b2-38e64ee6ff3e/200x200.webp",
+      "unitPrice": "120.83 €/kg",
+      "discountedUnitPrice": "79.75 €/kg"
+    },
+    {
+      "id": "MPX_6565198",
+      "name": "Bonduelle Riz saumon & concombre sauce citronnée 280g",
+      "price": "2.79",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "salade",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/cfc53eeb-b51c-4d91-80f7-23a762ae0a88/200x200.webp",
+      "unitPrice": "9.96 €/kg",
+      "discountedUnitPrice": "7.47 €/kg"
+    },
+    {
+      "id": "MPX_6743373",
+      "name": "Philippe Wagner Lard paysan supérieur à l'ancienne 5x30g",
+      "price": "4.99",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "steak",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/7fb04217-6a92-4c55-af65-21fd90e03c99/200x200.webp",
+      "unitPrice": "33.27 €/kg",
+      "discountedUnitPrice": "24.95 €/kg"
+    },
+    {
+      "id": "MPX_3267553",
+      "name": "Marie Fondant de Bœuf et écrasé de pomme de terre 300g",
+      "price": "6.69",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "bonbon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/6aeca9da-cf32-4cf3-aed5-1bc2b08ee452/200x200.webp",
+      "unitPrice": "22.30 €/kg",
+      "discountedUnitPrice": "16.73 €/kg"
+    },
+    {
+      "id": "MPX_2120289",
+      "name": "Manuel De Montejo Jambon Serrano Fe 100g",
+      "price": "4.35",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "jambon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/eedcad96-4e0d-41ef-b799-4025c100650c/200x200.webp",
+      "unitPrice": "43.50 €/kg",
+      "discountedUnitPrice": "32.62 €/kg"
+    },
+    {
+      "id": "MPX_4246755",
+      "name": "Saint Agaûne 200g",
+      "price": "6.19",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "saucisson",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c0ff2089-8db4-43e7-9085-dbeda542abaf/200x200.webp",
+      "unitPrice": "30.95 €/kg",
+      "discountedUnitPrice": "23.21 €/kg"
+    },
+    {
+      "id": "MPX_4615679",
+      "name": "Planted Effiloché végétal barbecue 160g",
+      "price": "3.99",
+      "discount": "-30% remise immédiate",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/370061a1-40de-4fbb-9aee-a437b50ea4af/200x200.webp",
+      "unitPrice": "24.94 €/kg",
+      "discountedUnitPrice": "17.46 €/kg"
+    },
+    {
+      "id": "MPX_4615680",
+      "name": "Planted Kebab Végétal 160g",
+      "price": "4.09",
+      "discount": "-30% remise immédiate",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/1c79bba5-29b7-443b-bfc3-3d30cec9bed3/200x200.webp",
+      "unitPrice": "25.56 €/kg",
+      "discountedUnitPrice": "17.89 €/kg"
+    },
+    {
+      "id": "MPX_4123705",
+      "name": "Léon Chaillot Saucisse Sèche Ardèche Igp 300g",
+      "price": "7.39",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Bière et Alcools",
+      "subcategory": "vin rouge",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ba3667a0-2445-4f51-9a91-ad618620dfce/200x200.webp",
+      "unitPrice": "24.63 €/kg",
+      "discountedUnitPrice": "18.47 €/kg"
+    },
+    {
+      "id": "MPX_2775338",
+      "name": "Sodebo Sandwich Méga club suédois poulet rôti œuf 230g",
+      "price": "3.19",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "bonbon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/fc77f24e-be03-4488-b4bc-fe4e4acaefd5/200x200.webp",
+      "unitPrice": "13.87 €/kg",
+      "discountedUnitPrice": "10.40 €/kg"
+    },
+    {
+      "id": "MPX_2507761",
+      "name": "L'Atelier Blini Olives Manzanilla À La Méditérranéenne 300g",
+      "price": "6.25",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Salée",
+      "subcategory": "huile",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/1a98d970-945a-4c69-ba39-de866c85fa7b/200x200.webp",
+      "unitPrice": "20.83 €/kg",
+      "discountedUnitPrice": "15.62 €/kg"
+    },
+    {
+      "id": "MPX_3647070",
+      "name": "Pierre Martinet Salade de quinoa croquant 220g",
+      "price": "3.59",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "salade",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/771f4dff-48d7-463a-90ab-4d030b001ddb/200x200.webp",
+      "unitPrice": "16.32 €/kg",
+      "discountedUnitPrice": "12.24 €/kg"
+    },
+    {
+      "id": "MPX_5272048",
+      "name": "L'Atelier Blini Falafels Patates Douces 120g",
+      "price": "3.49",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/78e4c991-15cb-4379-a9da-6a52677fa30c/200x200.webp",
+      "unitPrice": "29.08 €/kg",
+      "discountedUnitPrice": "21.81 €/kg"
+    },
+    {
+      "id": "MPX_2120293",
+      "name": "Manuel De Montejo Lomo Embuchado, Charcuterie",
+      "price": "4.39",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/31ec4096-b35d-4fe0-bb02-941fe7dacd12/200x200.webp",
+      "unitPrice": "43.90 €/kg",
+      "discountedUnitPrice": "32.92 €/kg"
+    },
+    {
+      "id": "MPX_6709797",
+      "name": "Sonigiri Onigiri Thon Mayo Wasabi 135g",
+      "price": "3.55",
+      "discount": "-30% remise immédiate",
+      "category": "Épicerie Salée",
+      "subcategory": "thon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/1396e299-9393-4efd-99b7-d74437b6637c/200x200.webp",
+      "unitPrice": "26.30 €/kg",
+      "discountedUnitPrice": "18.41 €/kg"
+    },
+    {
+      "id": "MPX_1835624",
+      "name": "Porc De Nos Montagnes Saucisson Sec, Pur Porc 250g",
+      "price": "6.89",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "saucisson",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/2462105e-f5c2-4a83-908f-641e1623c0f5/200x200.webp",
+      "unitPrice": "27.56 €/kg",
+      "discountedUnitPrice": "20.67 €/kg"
+    },
+    {
+      "id": "MPX_6782125",
+      "name": "Dauna Pâtes & Salades Poulet Caesar Sauce Caesar 250g",
+      "price": "3.99",
+      "discount": "-30% remise immédiate",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "salade",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/1e59c37e-e91b-4dde-a14f-cb84e21489b8/200x200.webp",
+      "unitPrice": "15.96 €/kg",
+      "discountedUnitPrice": "11.17 €/kg"
+    },
+    {
+      "id": "MPX_6781280",
+      "name": "Larnaudie Brandade de morue traditionnelle 300g",
+      "price": "5.89",
+      "discount": "-30% remise immédiate",
+      "category": "Produits de la Mer",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/28fd7a1e-21c1-4daa-8467-4acea17d8cf7/200x200.webp",
+      "unitPrice": "19.63 €/kg",
+      "discountedUnitPrice": "13.74 €/kg"
+    },
+    {
+      "id": "MPX_6782126",
+      "name": "Daunat Salade de Pâtes Gourmet Thon 250g",
+      "price": "3.85",
+      "discount": "-30% remise immédiate",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "salade",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/71fb6f28-fe96-416b-8ee9-340cd0f24737/200x200.webp",
+      "unitPrice": "15.40 €/kg",
+      "discountedUnitPrice": "10.78 €/kg"
+    },
+    {
+      "id": "MPX_2336417",
+      "name": "Daunat Sandwich triangle XXL Jambon Emmental Salade 230g",
+      "price": "2.79",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "salade",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/909b34c5-e9d8-4ca0-8045-14ed4546003f/200x200.webp",
+      "unitPrice": "12.13 €/kg",
+      "discountedUnitPrice": "9.10 €/kg"
+    },
+    {
+      "id": "MPX_1835625",
+      "name": "Porc De Nos Montagnes Saucisse Sèche Pur Porc 250g",
+      "price": "6.99",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/5e17fc15-6c32-43a2-a79d-0642c54a73a7/200x200.webp",
+      "unitPrice": "27.96 €/kg",
+      "discountedUnitPrice": "20.97 €/kg"
+    },
+    {
+      "id": "MPX_6622380",
+      "name": "Planted émincé herbes de Provence  sans additifs 160g",
+      "price": "3.99",
+      "discount": "-30% remise immédiate",
+      "category": "Autre",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/816ccf3e-9e2c-4961-9ed7-b0cf3ebaad30/200x200.webp",
+      "unitPrice": "24.94 €/kg",
+      "discountedUnitPrice": "17.46 €/kg"
+    },
+    {
+      "id": "MPX_1583093",
+      "name": "Michel Bolard Gougere Au Fromage 250g",
+      "price": "6.09",
+      "discount": "-20% remise immédiate",
+      "category": "Épicerie Sucrée",
+      "subcategory": "fromage",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/77044936-a6ab-4255-95b5-0551d11faca5/200x200.webp",
+      "unitPrice": "24.36 €/kg",
+      "discountedUnitPrice": "19.49 €/kg"
+    },
+    {
+      "id": "MPX_6567757",
+      "name": "Planted Effiloché herbes épicées 160g",
+      "price": "3.99",
+      "discount": "-30% remise immédiate",
+      "category": "Régimes alimentaires",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/5bc13b70-be17-43ae-a345-d6a33ebb83b4/200x200.webp",
+      "unitPrice": "24.94 €/kg",
+      "discountedUnitPrice": "17.46 €/kg"
+    },
+    {
+      "id": "MPX_1863294",
+      "name": "Michel Bolard Plateau Cocktail De 4 Pâtés en Croûte",
+      "price": "6.89",
+      "discount": "-20% remise immédiate",
+      "category": "Épicerie Sucrée",
+      "subcategory": "eau minérale",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ed2e210e-cabc-404c-8b40-222b168fe8cd/200x200.webp",
+      "unitPrice": "26.91 €/kg",
+      "discountedUnitPrice": "21.53 €/kg"
+    },
+    {
+      "id": "MPX_6781283",
+      "name": "Larnaudie Quenelles de brochet sauce nantua riz 250g",
+      "price": "5.89",
+      "discount": "-30% remise immédiate",
+      "category": "Épicerie Salée",
+      "subcategory": "riz",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/09c74829-b7e0-4137-ace1-58eee40f3509/200x200.webp",
+      "unitPrice": "23.56 €/kg",
+      "discountedUnitPrice": "16.49 €/kg"
+    },
+    {
+      "id": "MPX_4211334",
+      "name": "Aoste Dentelle de Rosette 80g",
+      "price": "3.99",
+      "discount": "-30% remise immédiate",
+      "category": "Autre",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/5e9b302a-a052-4785-90cf-e4d5739821d9/200x200.webp",
+      "unitPrice": "49.88 €/kg",
+      "discountedUnitPrice": "34.92 €/kg"
+    },
+    {
+      "id": "MPX_6831407",
+      "name": "Saint Jean Grandes Ravioles aux Morilles à la crème 220g",
+      "price": "4.69",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Produits Laitiers",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/32d7ef4b-d303-4ff3-b454-51469ceb6128/200x200.webp",
+      "unitPrice": "21.32 €/kg",
+      "discountedUnitPrice": "15.99 €/kg"
+    },
+    {
+      "id": "MPX_6830591",
+      "name": "Hari&co Fusilli sauce champignons et hache végétal 300g",
+      "price": "4.85",
+      "discount": "-30% remise immédiate",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "sauce",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/24946297-1ce0-404d-97ba-d4f2998067fd/200x200.webp",
+      "unitPrice": "16.17 €/kg",
+      "discountedUnitPrice": "11.32 €/kg"
+    },
+    {
+      "id": "MPX_6831408",
+      "name": "Saint Jean Grandes Ravioles au Beaufort AOP 220g",
+      "price": "4.69",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "vin rouge",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8e596f05-d850-4bb1-8969-b668715bf59b/200x200.webp",
+      "unitPrice": "21.32 €/kg",
+      "discountedUnitPrice": "15.99 €/kg"
+    },
+    {
+      "id": "MPX_6781281",
+      "name": "Larnaudie Paupiette de Veau Purée 300g",
+      "price": "6.69",
+      "discount": "-30% remise immédiate",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "eau minérale",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c47add09-72cd-40f2-ba06-b7f06afc87ac/200x200.webp",
+      "unitPrice": "22.30 €/kg",
+      "discountedUnitPrice": "15.61 €/kg"
+    },
+    {
+      "id": "MPX_4211333",
+      "name": "Aoste Dentelles de Coppa 80g",
+      "price": "4.19",
+      "discount": "-30% remise immédiate",
+      "category": "Autre",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/cd5ccec9-3d1b-44fd-96f8-adc24597cdb7/200x200.webp",
+      "unitPrice": "52.38 €/kg",
+      "discountedUnitPrice": "36.67 €/kg"
+    },
+    {
+      "id": "MPX_6859774",
+      "name": "Cochonou Croc Sec Nature VPF 150g",
+      "price": "4.49",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "saucisson",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/717d3f76-837c-40b0-9bb6-aafa3e501c4c/200x200.webp",
+      "unitPrice": "29.93 €/kg",
+      "discountedUnitPrice": "22.45 €/kg"
+    },
+    {
+      "id": "MPX_4211335",
+      "name": "Aoste Dentelles de Jambon Sec 80g",
+      "price": "3.99",
+      "discount": "-30% remise immédiate",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "jambon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/222f0e72-014c-436a-a367-fd1a6467dfb3/200x200.webp",
+      "unitPrice": "49.88 €/kg",
+      "discountedUnitPrice": "34.92 €/kg"
+    },
+    {
+      "id": "MPX_6910901",
+      "name": "Labeyrie Bloc de Foie Gras Canard du Sud- Ouest dégustation 200g",
+      "price": "19.99",
+      "discount": "-34% remise immédiate",
+      "category": "Poissons et Fruits de mer",
+      "subcategory": "saumon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/7aad8484-e9aa-4ea2-a8a7-cdceb330a58d/200x200.webp",
+      "unitPrice": "99.95 €/kg",
+      "discountedUnitPrice": "65.97 €/kg"
+    },
+    {
+      "id": "MPX_6910902",
+      "name": "Delpeyrat Bloc Foie gras de canard du sud-ouest Igp 150g",
+      "price": "12.99",
+      "discount": "-34% remise immédiate",
+      "category": "Bière et Alcools",
+      "subcategory": "vin rouge",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/d982e7ae-5396-4581-beac-a1ad62b01aa5/200x200.webp",
+      "unitPrice": "86.60 €/kg",
+      "discountedUnitPrice": "57.16 €/kg"
+    },
+    {
+      "id": "MPX_3416831",
+      "name": "Fleury Michon Rôti De Porc Cuit -25% De Sel x4",
+      "price": "4.09",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Viandes et Charcuterie",
+      "subcategory": "jambon",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/a7edebd7-2b44-4bb1-9f55-ffb0a1278790/200x200.webp",
+      "unitPrice": "25.56 €/kg",
+      "discountedUnitPrice": "19.17 €/kg"
+    },
+    {
+      "id": "MPX_6821403",
+      "name": "Häagen-Dazs Pot Strawberry and Cream 460ml 400g",
+      "price": "7.29",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Surgelés",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/bbe052ae-c1c9-427d-bb0d-4480c2b7bbc6/200x200.webp",
+      "unitPrice": "18.23 €/kg",
+      "discountedUnitPrice": "13.67 €/kg"
+    },
+    {
+      "id": "MPX_6821405",
+      "name": "Häagen-Dazs Crème glacée au café 400g",
+      "price": "7.29",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Surgelés",
+      "subcategory": "boisson énergétique",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/721a85ce-d258-45b5-9505-897d8e807bfe/200x200.webp",
+      "unitPrice": "18.23 €/kg",
+      "discountedUnitPrice": "13.67 €/kg"
     },
     {
       "id": "MPX_2396804",
@@ -2779,7 +2339,7 @@
       "name": "Pom'potes Compote gourdes Bio multivariétés 12x90g",
       "price": "8.59",
       "discount": "-50% sur le 2ème produit",
-      "category": "Fruits et Légumes",
+      "category": "Épicerie Sucrée",
       "subcategory": "compote",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/32637b5d-d6b1-4a5e-8562-aec83ddcd8c6/200x200.webp",
       "unitPrice": "7.95 €/kg",
@@ -2878,7 +2438,7 @@
       "name": "Pom'Potes Compote Pomme nature Bio Le pack de 12x90g",
       "price": "8.99",
       "discount": "-50% sur le 2ème produit",
-      "category": "Fruits et Légumes",
+      "category": "Épicerie Sucrée",
       "subcategory": "compote",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c5846bb6-69fa-4118-b581-5b7e23213b84/200x200.webp",
       "unitPrice": "8.32 €/kg",
@@ -2889,7 +2449,7 @@
       "name": "San Pellegrino Eau Minérale Naturelle Gazeuse 6x1L",
       "price": "4.55",
       "discount": "-50% sur le 2ème produit",
-      "category": "Boissons",
+      "category": "Épicerie Sucrée",
       "subcategory": "eau minérale",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/828978c6-44e2-4b84-87de-3cfa631bd892/200x200.webp",
       "unitPrice": "0.76 €/litre",
@@ -2900,7 +2460,7 @@
       "name": "Badoit Eau minérale naturelle fortement gazeuse 6x1L",
       "price": "4.39",
       "discount": "-50% sur le 2ème produit",
-      "category": "Boissons",
+      "category": "Épicerie Sucrée",
       "subcategory": "eau minérale",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/3b489973-233b-40bf-b723-120bd770b958/200x200.webp",
       "unitPrice": "0.73 €/litre",
@@ -2940,17 +2500,6 @@
       "discountedUnitPrice": "1.63 €/litre"
     },
     {
-      "id": "MPX_1180595",
-      "name": "Wattwiller Eau Minérale Naturelle 6x1,5L",
-      "price": "3.55",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Boissons",
-      "subcategory": "eau minérale",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/5fd31b6f-8c2a-47d3-96b4-ed3d7bbaffac/200x200.webp",
-      "unitPrice": "0.39 €/litre",
-      "discountedUnitPrice": "0.29 €/litre"
-    },
-    {
       "id": "MPX_67936",
       "name": "Tipiak Coquilles Saint-Jacques À La Bretonne Surgelées 220g",
       "price": "7.45",
@@ -2966,22 +2515,11 @@
       "name": "Kleenex Essuie Tout Essuie-Tout Maxi Ultra-Clean x2",
       "price": "4.35",
       "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
+      "category": "Entretien",
       "subcategory": "",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/6127deb9-1767-44de-a373-98589614f9fd/200x200.webp",
       "unitPrice": "2.18 €/each",
       "discountedUnitPrice": "1.64 €/each"
-    },
-    {
-      "id": "MPX_3306886",
-      "name": "Knorr Bouillon Saveur Légumes Bio 6 Cubes 60g",
-      "price": "1.99",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Bio",
-      "subcategory": "conserve",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/21adab50-952d-4e1c-842d-cb7a162b0f1b/200x200.webp",
-      "unitPrice": "33.17 €/kg",
-      "discountedUnitPrice": "24.88 €/kg"
     },
     {
       "id": "MPX_807772",
@@ -2993,17 +2531,6 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/d33e211f-8408-4fd6-a84c-ea93132b9dc5/200x200.webp",
       "unitPrice": "1.28 €/litre",
       "discountedUnitPrice": "0.96 €/litre"
-    },
-    {
-      "id": "MPX_1607474",
-      "name": "Panealba Gressins à L'huile d'Olive 250g",
-      "price": "3.75",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Épicerie Salée",
-      "subcategory": "huile",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/0996e622-6106-4701-8fc3-68eed0fccd8f/200x200.webp",
-      "unitPrice": "15.00 €/kg",
-      "discountedUnitPrice": "11.25 €/kg"
     },
     {
       "id": "MPX_1894583",
@@ -3021,88 +2548,11 @@
       "name": "Monster Munch Original 85g",
       "price": "1.59",
       "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
+      "category": "Épicerie Salée",
       "subcategory": "",
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/415ba81f-f6fd-40b5-b251-9f58db7b3364/200x200.webp",
       "unitPrice": "18.71 €/kg",
       "discountedUnitPrice": "14.03 €/kg"
-    },
-    {
-      "id": "MPX_1398116",
-      "name": "Bjorg Flocons d'Avoine Complète Bio 500g",
-      "price": "2.19",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Épicerie Sucrée",
-      "subcategory": "céréales",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/0382b17c-48fa-4c02-b310-70e808f8e61b/200x200.webp",
-      "unitPrice": "4.38 €/kg",
-      "discountedUnitPrice": "3.29 €/kg"
-    },
-    {
-      "id": "MPX_3765741",
-      "name": "Harrys Brioche tranchée recette classique nature sans additifs 485g",
-      "price": "2.95",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Épicerie Sucrée",
-      "subcategory": "brioche",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/865b1a5a-762f-481c-9b64-2e31ea6bf9ff/200x200.webp",
-      "unitPrice": "6.08 €/kg",
-      "discountedUnitPrice": "4.56 €/kg"
-    },
-    {
-      "id": "MPX_1951657",
-      "name": "Florette Purée de carottes sans additif 2x200g",
-      "price": "3.49",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Fruits & Légumes",
-      "subcategory": "salade",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/a52ed742-01b2-4874-8c88-f49de40d71f7/200x200.webp",
-      "unitPrice": "8.73 €/kg",
-      "discountedUnitPrice": "6.55 €/kg"
-    },
-    {
-      "id": "MPX_2307614",
-      "name": "Clipper Fabulous Thé vert citron, Bio 35g",
-      "price": "2.95",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Bio",
-      "subcategory": "thé",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/6a9b16a3-ba45-471a-a426-29f8699b4eca/200x200.webp",
-      "unitPrice": "84.29 €/kg",
-      "discountedUnitPrice": "63.22 €/kg"
-    },
-    {
-      "id": "MPX_3511774",
-      "name": "Haagen-Dazs Pot Vanille 400g",
-      "price": "7.15",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/84fd75a0-ab35-4853-9e76-317d1e8c0230/200x200.webp",
-      "unitPrice": "17.88 €/kg",
-      "discountedUnitPrice": "13.41 €/kg"
-    },
-    {
-      "id": "MPX_3511773",
-      "name": "Haagen-Dazs Pot Vanilla Pecan Prem 400g",
-      "price": "7.15",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Autre",
-      "subcategory": "",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/a3a108dd-9724-4152-b2c6-16a34250c244/200x200.webp",
-      "unitPrice": "17.88 €/kg",
-      "discountedUnitPrice": "13.41 €/kg"
-    },
-    {
-      "id": "MPX_3511765",
-      "name": "Haagen-Dazs Pot Cookie dough chip 394g",
-      "price": "7.15",
-      "discount": "-50% sur le 2ème produit",
-      "category": "Épicerie Sucrée",
-      "subcategory": "biscuit",
-      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/aa882cc2-3e03-4fdd-8587-266860d65399/200x200.webp",
-      "unitPrice": "18.15 €/kg",
-      "discountedUnitPrice": "13.61 €/kg"
     },
     {
       "id": "MPX_2409711",
@@ -3127,6 +2577,17 @@
       "discountedUnitPrice": "1.57 €/each"
     },
     {
+      "id": "MPX_6678791",
+      "name": "Mikado Chocolat au Lait 100g",
+      "price": "2.19",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "chocolat",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/0205e8d9-b43b-48f1-80e8-553d26d4f4b4/200x200.webp",
+      "unitPrice": "21.90 €/kg",
+      "discountedUnitPrice": "16.42 €/kg"
+    },
+    {
       "id": "MPX_3292151",
       "name": "Harrys Pain de mie 100% mie nature sans croute sans additifs 500g",
       "price": "2.19",
@@ -3136,6 +2597,534 @@
       "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e1a8db8e-a45f-4dd7-be74-86406a1ddbdd/200x200.webp",
       "unitPrice": "4.38 €/kg",
       "discountedUnitPrice": "3.29 €/kg"
+    },
+    {
+      "id": "MPX_2650793",
+      "name": "Harrys Pain de mie 100% mie complet sans croute sans additifs 500g",
+      "price": "2.55",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "brioche",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/aef4db2a-03d8-4ef9-b2d9-bf99b509e0bb/200x200.webp",
+      "unitPrice": "5.10 €/kg",
+      "discountedUnitPrice": "3.82 €/kg"
+    },
+    {
+      "id": "MPX_1184253",
+      "name": "San Pellegrino Eau Minérale Naturelle Gazeuse 6x50cl",
+      "price": "4.09",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Boissons",
+      "subcategory": "eau minérale",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/cff2a53d-e0f9-476d-9729-730afe61b9fc/200x200.webp",
+      "unitPrice": "1.36 €/litre",
+      "discountedUnitPrice": "1.02 €/litre"
+    },
+    {
+      "id": "MPX_5498831",
+      "name": "Findus Épinards hachés à la crème fraîche 500g",
+      "price": "3.49",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Produits Laitiers",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/a5101ec9-d2e8-498a-88f5-064dcdae67b4/200x200.webp",
+      "unitPrice": "6.98 €/kg",
+      "discountedUnitPrice": "5.24 €/kg"
+    },
+    {
+      "id": "MPX_1398116",
+      "name": "Bjorg Flocons d'Avoine Complète Bio 500g",
+      "price": "2.19",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "céréales",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/0382b17c-48fa-4c02-b310-70e808f8e61b/200x200.webp",
+      "unitPrice": "4.38 €/kg",
+      "discountedUnitPrice": "3.29 €/kg"
+    },
+    {
+      "id": "MPX_1259551",
+      "name": "Bjorg Muesli Croustillant Chocolat Bio 500g",
+      "price": "4.15",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "chocolat",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/e2e0750b-6326-40a9-9aae-ab17a46c3dcc/200x200.webp",
+      "unitPrice": "8.30 €/kg",
+      "discountedUnitPrice": "6.23 €/kg"
+    },
+    {
+      "id": "MPX_778",
+      "name": "Bonne Maman Confiture de fraises 370g",
+      "price": "2.15",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "confiture",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/a470d628-0052-41d8-a94b-6bcfedf860b3/200x200.webp",
+      "unitPrice": "5.81 €/kg",
+      "discountedUnitPrice": "4.36 €/kg"
+    },
+    {
+      "id": "MPX_3765741",
+      "name": "Harrys Brioche tranchée recette classique nature sans additifs 485g",
+      "price": "2.95",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "brioche",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/865b1a5a-762f-481c-9b64-2e31ea6bf9ff/200x200.webp",
+      "unitPrice": "6.08 €/kg",
+      "discountedUnitPrice": "4.56 €/kg"
+    },
+    {
+      "id": "MPX_3292344",
+      "name": "Harrys Pain de mie 100% mie nature sans croute grandes tranches sans additifs 500g",
+      "price": "2.19",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "brioche",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/747589a9-0e7c-48be-9397-06f4d3d01005/200x200.webp",
+      "unitPrice": "4.38 €/kg",
+      "discountedUnitPrice": "3.29 €/kg"
+    },
+    {
+      "id": "MPX_2484041",
+      "name": "Mini BN Biscuits fourrés goût chocolat 175g",
+      "price": "2.59",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "chocolat",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/abf8ac2e-7d8e-44fc-8e58-a620623f62c7/200x200.webp",
+      "unitPrice": "14.80 €/kg",
+      "discountedUnitPrice": "11.10 €/kg"
+    },
+    {
+      "id": "MPX_2349920",
+      "name": "Lotus Mouchoirs Etuis Sensitive x15",
+      "price": "3.75",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Entretien",
+      "subcategory": "mouchoirs",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/4048e911-0ea2-4a59-96a9-67a7fd29751d/200x200.webp",
+      "unitPrice": "0.25 €/each",
+      "discountedUnitPrice": "0.19 €/each"
+    },
+    {
+      "id": "MPX_565649",
+      "name": "Bjorg Muesli sans sucres ajoutés, Bio 375g",
+      "price": "2.65",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Bio",
+      "subcategory": "céréales",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/7dcb410a-a1da-4658-b2fb-4be7f51a9377/200x200.webp",
+      "unitPrice": "7.07 €/kg",
+      "discountedUnitPrice": "5.30 €/kg"
+    },
+    {
+      "id": "MPX_2337034",
+      "name": "Michel & Augustin Petits beurre apéritif Comté AOP 100g",
+      "price": "3.59",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Produits Laitiers",
+      "subcategory": "fromage",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ac5e7591-7d78-4ba6-a8ae-b810b1ad10ef/200x200.webp",
+      "unitPrice": "35.90 €/kg",
+      "discountedUnitPrice": "26.92 €/kg"
+    },
+    {
+      "id": "MPX_162064",
+      "name": "Bonne Maman Confiture de Framboises 370g",
+      "price": "2.99",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "confiture",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/37fc7aad-48a2-47e4-a284-c32ee4387bc2/200x200.webp",
+      "unitPrice": "8.08 €/kg",
+      "discountedUnitPrice": "6.06 €/kg"
+    },
+    {
+      "id": "MPX_2823785",
+      "name": "Pom'Potes Compote Pomme Et Abricot 20x90g",
+      "price": "10.50",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Fruits et Légumes",
+      "subcategory": "compote",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c21bc49c-9210-4415-ba4a-e75a4200f5b2/200x200.webp",
+      "unitPrice": "5.83 €/kg",
+      "discountedUnitPrice": "4.37 €/kg"
+    },
+    {
+      "id": "MPX_2160581",
+      "name": "Bjorg Muesli superfruits raisin, cassis, cranberry, myrtille, Bio 375g",
+      "price": "3.99",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Bio",
+      "subcategory": "céréales",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/4cf0fc54-2829-413f-99a9-2e052b8dc931/200x200.webp",
+      "unitPrice": "10.64 €/kg",
+      "discountedUnitPrice": "7.98 €/kg"
+    },
+    {
+      "id": "MPX_4077329",
+      "name": "Okay Essuie-Tout Sans Tube Blanc x2",
+      "price": "6.19",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Entretien",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/f8e8d760-7033-4f42-8ce8-83ebd6334e38/200x200.webp",
+      "unitPrice": "3.10 €/each",
+      "discountedUnitPrice": "2.33 €/each"
+    },
+    {
+      "id": "MPX_6611985",
+      "name": "Gallia Bière Champ Libre 6x33cl",
+      "price": "10.50",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Bière et Alcools",
+      "subcategory": "bière",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ea13c4ee-a144-4c13-a756-93d6aa7e6953/200x200.webp",
+      "unitPrice": "5.30 €/litre",
+      "discountedUnitPrice": "3.97 €/litre"
+    },
+    {
+      "id": "MPX_3524151",
+      "name": "Pom'Potes Compote Pomme Fraise 4x90g",
+      "price": "2.85",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Fruits et Légumes",
+      "subcategory": "compote",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/0d337a82-5725-40d9-a748-26b04b2b7002/200x200.webp",
+      "unitPrice": "7.92 €/kg",
+      "discountedUnitPrice": "5.94 €/kg"
+    },
+    {
+      "id": "MPX_2664725",
+      "name": "Michel & Augustin Sablés apéritif Beaufort AOP 100g",
+      "price": "3.49",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Bière et Alcools",
+      "subcategory": "biscuit",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/129cf17e-068c-48fc-a0ef-ac47ced5b4cc/200x200.webp",
+      "unitPrice": "34.90 €/kg",
+      "discountedUnitPrice": "26.17 €/kg"
+    },
+    {
+      "id": "MPX_6580434",
+      "name": "L'Arbre Vert Lessive Liquide Savon Végétal 1,53L",
+      "price": "8.59",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Hygiène et Beauté",
+      "subcategory": "gel douche",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/3ee5ad84-46a9-4644-b1b2-9deeca0c700e/200x200.webp",
+      "unitPrice": "5.61 €/litre",
+      "discountedUnitPrice": "4.21 €/litre"
+    },
+    {
+      "id": "MPX_1467946",
+      "name": "Bonne Maman Confiture aux Mirabelles 370g",
+      "price": "2.25",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "confiture",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/3b3919e0-43b2-44c8-8cd4-fdae64ce6975/200x200.webp",
+      "unitPrice": "6.08 €/kg",
+      "discountedUnitPrice": "4.56 €/kg"
+    },
+    {
+      "id": "MPX_2480924",
+      "name": "Bjorg Muesli Avoine Chocolat, Bio 375g",
+      "price": "3.99",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Bio",
+      "subcategory": "chocolat",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/f06193dc-7d9d-428f-8b4c-aaded11925d5/200x200.webp",
+      "unitPrice": "10.64 €/kg",
+      "discountedUnitPrice": "7.98 €/kg"
+    },
+    {
+      "id": "MPX_3526442",
+      "name": "Leffe Bière blonde Le pack de 6x25cl",
+      "price": "6.29",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Bière et Alcools",
+      "subcategory": "bière",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/63994aac-e3c1-4260-bfda-b7908a2f5774/200x200.webp",
+      "unitPrice": "4.19 €/litre",
+      "discountedUnitPrice": "3.14 €/litre"
+    },
+    {
+      "id": "MPX_2335260",
+      "name": "Schweppes Zéro Agrumes Boisson Gazeuse Le pack de 6x33cl",
+      "price": "4.25",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Boissons",
+      "subcategory": "boisson énergétique",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/50f770bc-a280-46c1-9d74-5ba6aef21488/200x200.webp",
+      "unitPrice": "2.15 €/litre",
+      "discountedUnitPrice": "1.61 €/litre"
+    },
+    {
+      "id": "MPX_1774183",
+      "name": "Pressade Nectar de Fruits À Base de Concentrés & Purées de Fruits Bio 1,5L",
+      "price": "2.65",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Boissons",
+      "subcategory": "compote",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/448f5168-0c6c-48ed-a605-44fec67b856d/200x200.webp",
+      "unitPrice": "1.77 €/litre",
+      "discountedUnitPrice": "1.33 €/litre"
+    },
+    {
+      "id": "MPX_2587445",
+      "name": "Clipper Infusion Camomille, Mélisse & Lavande Bio 20 Sachets 30g",
+      "price": "2.75",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Bio",
+      "subcategory": "thé",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/2f3f7b1f-ef7a-47b6-b610-4859f5123f82/200x200.webp",
+      "unitPrice": "91.67 €/kg",
+      "discountedUnitPrice": "68.75 €/kg"
+    },
+    {
+      "id": "MPX_6602114",
+      "name": "Teisseire Sirop de Grenadine 60cl",
+      "price": "3.29",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Boissons",
+      "subcategory": "sirop",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/3d5154ca-3dbf-489a-b66d-cd5fd08a4355/200x200.webp",
+      "unitPrice": "5.48 €/litre",
+      "discountedUnitPrice": "4.11 €/litre"
+    },
+    {
+      "id": "MPX_3071397",
+      "name": "Pom'Potes Compote Pommes, Poires, Vanille 4x90g",
+      "price": "3.29",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "compote",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/dadea03d-2f7f-4335-a175-709997e98007/200x200.webp",
+      "unitPrice": "9.14 €/kg",
+      "discountedUnitPrice": "6.86 €/kg"
+    },
+    {
+      "id": "MPX_3524143",
+      "name": "Pom'Potes Compote Bio multi variétés à la pomme 12x90g",
+      "price": "10.90",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "compote",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/8a65117d-9ea6-4cf3-8c79-f6efc0725c78/200x200.webp",
+      "unitPrice": "10.09 €/kg",
+      "discountedUnitPrice": "7.57 €/kg"
+    },
+    {
+      "id": "MPX_1583234",
+      "name": "Bonne Maman Confiture aux Figues Violettes 370g",
+      "price": "2.15",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "confiture",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/1532ffba-de0a-42e0-912e-f4f9de56da96/200x200.webp",
+      "unitPrice": "5.81 €/kg",
+      "discountedUnitPrice": "4.36 €/kg"
+    },
+    {
+      "id": "MPX_1045512",
+      "name": "Leffe Bière blonde abbaye en canette 50cl",
+      "price": "1.89",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Bière et Alcools",
+      "subcategory": "bière",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/793ca984-e01d-4c99-9c90-867dfbf9b4b8/200x200.webp",
+      "unitPrice": "3.78 €/litre",
+      "discountedUnitPrice": "2.83 €/litre"
+    },
+    {
+      "id": "MPX_3292345",
+      "name": "Harrys Pain de mie 100% mie nature sans croute maxi sans additifs 650g",
+      "price": "2.79",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "brioche",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/ef9a5c35-5bd9-40b5-9135-de5d0e150b7d/200x200.webp",
+      "unitPrice": "4.29 €/kg",
+      "discountedUnitPrice": "3.22 €/kg"
+    },
+    {
+      "id": "MPX_5023103",
+      "name": "Materne Pom'Potes Battle 2 Fruits Multivariétés 4x90g",
+      "price": "2.89",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Fruits et Légumes",
+      "subcategory": "compote",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/9602df92-5c1b-4ea1-a298-c100fb39075a/200x200.webp",
+      "unitPrice": "8.03 €/kg",
+      "discountedUnitPrice": "6.02 €/kg"
+    },
+    {
+      "id": "MPX_6714106",
+      "name": "Iliada Olives de Kalamata Dénoyautées 230g",
+      "price": "4.15",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Salée",
+      "subcategory": "huile",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/56d315a6-bd08-4900-baee-902324ce3c3f/200x200.webp",
+      "unitPrice": "31.92 €/kg",
+      "discountedUnitPrice": "23.94 €/kg"
+    },
+    {
+      "id": "MPX_5498832",
+      "name": "Findus Épinards branches à la crème 480g",
+      "price": "3.85",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Produits Laitiers",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/4875867e-9ea6-434b-ba0c-ef1403368ad1/200x200.webp",
+      "unitPrice": "8.02 €/kg",
+      "discountedUnitPrice": "6.01 €/kg"
+    },
+    {
+      "id": "MPX_3729907",
+      "name": "San Pellegrino Eau Gazeuse Aromatisée Clémentine Et Pêche 6x33cl",
+      "price": "5.59",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Boissons",
+      "subcategory": "eau minérale",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/4756fdd3-4ada-4f3b-955b-e3f0bdcdcce8/200x200.webp",
+      "unitPrice": "2.82 €/litre",
+      "discountedUnitPrice": "2.11 €/litre"
+    },
+    {
+      "id": "MPX_3070005",
+      "name": "Schweppes Zéro Indian Tonic Le pack de 6x33cl canettes",
+      "price": "4.25",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Autre",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/96c3ccac-b77b-4c15-bcf4-9676d0eb70ce/200x200.webp",
+      "unitPrice": "2.15 €/litre",
+      "discountedUnitPrice": "1.61 €/litre"
+    },
+    {
+      "id": "MPX_3741719",
+      "name": "Coca-Cola Original Bouteilles en verre 6x25cl",
+      "price": "7.25",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Boissons",
+      "subcategory": "soda",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c9159c8b-80cd-4d87-99d2-993003849fd2/200x200.webp",
+      "unitPrice": "4.83 €/litre",
+      "discountedUnitPrice": "3.62 €/litre"
+    },
+    {
+      "id": "MPX_6728660",
+      "name": "L'Arbre Vert Lessive Liquide Peaux Sensibles 34 Lavages 1,53L",
+      "price": "7.99",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Entretien",
+      "subcategory": "lessive",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/2e51125d-7a54-4a70-b8bd-a11a515faf64/200x200.webp",
+      "unitPrice": "5.22 €/litre",
+      "discountedUnitPrice": "3.92 €/litre"
+    },
+    {
+      "id": "MPX_2638311",
+      "name": "Pom'potes Compote multifruits tropical Le pack de 4x90g",
+      "price": "3.29",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "compote",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/5b45241b-527f-4855-a323-e57f45539a57/200x200.webp",
+      "unitPrice": "9.14 €/kg",
+      "discountedUnitPrice": "6.86 €/kg"
+    },
+    {
+      "id": "MPX_6616931",
+      "name": "Pom'potes Compote les p'tits explorateurs 4x90g",
+      "price": "2.59",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Produits Laitiers",
+      "subcategory": "compote",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/4f7c81d5-77a9-441e-9dd7-9e6ad156a8e8/200x200.webp",
+      "unitPrice": "7.19 €/kg",
+      "discountedUnitPrice": "5.39 €/kg"
+    },
+    {
+      "id": "MPX_3070004",
+      "name": "Schweppes Soda Indian Tonic Le pack de 6x33cl",
+      "price": "4.35",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Boissons",
+      "subcategory": "soda",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/9ee9d02b-aa58-4a83-b020-354192f7ad31/200x200.webp",
+      "unitPrice": "2.20 €/litre",
+      "discountedUnitPrice": "1.65 €/litre"
+    },
+    {
+      "id": "MPX_1951654",
+      "name": "Florette Purée de pois cassés 2x200g",
+      "price": "3.49",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Fruits & Légumes",
+      "subcategory": "salade",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/c5e88821-671a-4c4d-ac3e-eaaf0b5c6b96/200x200.webp",
+      "unitPrice": "8.73 €/kg",
+      "discountedUnitPrice": "6.55 €/kg"
+    },
+    {
+      "id": "MPX_3306150",
+      "name": "Bjorg Granola Fruits Rouges, Bio 350g",
+      "price": "5.35",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Bio",
+      "subcategory": "biscuit",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/d4890aa3-aa07-4eb7-b9ac-25a3f22ff84b/200x200.webp",
+      "unitPrice": "15.29 €/kg",
+      "discountedUnitPrice": "11.47 €/kg"
+    },
+    {
+      "id": "MPX_6727166",
+      "name": "Gallia Champ Libre Bière blonde non filtrée 50cl",
+      "price": "2.99",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Bière et Alcools",
+      "subcategory": "bière",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/443fbe6d-993e-4625-928c-3a6ed3aa5815/200x200.webp",
+      "unitPrice": "5.98 €/litre",
+      "discountedUnitPrice": "4.49 €/litre"
+    },
+    {
+      "id": "MPX_2810944",
+      "name": "Bourgogne Hautes côtes de nuits 2023 Pierre Maizière vin rouge Bio \n75cl",
+      "price": "12.90",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Nos régions de France",
+      "subcategory": "vin rouge",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/af0bbd5e-efde-4d75-9ca9-8c381da46fbb/200x200.webp",
+      "unitPrice": "17.20 €/litre",
+      "discountedUnitPrice": "12.90 €/litre"
+    },
+    {
+      "id": "MPX_3777449",
+      "name": "Bonne Maman Confiture Myrtille Cassis 335g",
+      "price": "3.25",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Épicerie Sucrée",
+      "subcategory": "confiture",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/dbcad066-1f9d-4858-b47b-5f57ab5cf189/200x200.webp",
+      "unitPrice": "9.70 €/kg",
+      "discountedUnitPrice": "7.27 €/kg"
+    },
+    {
+      "id": "MPX_1038764",
+      "name": "La Boulangère 4 Baguettes viennoises nature 340g",
+      "price": "1.95",
+      "discount": "-50% sur le 2ème produit",
+      "category": "Autre",
+      "subcategory": "",
+      "image": "https://courses.monoprix.fr/images-v3/0c44253f-c4a3-4340-9d37-d41e42b9d14a/b48f714d-aa66-4397-b953-b9e384bc4632/200x200.webp",
+      "unitPrice": "5.74 €/kg",
+      "discountedUnitPrice": "4.30 €/kg"
     }
   ],
   "referencePrices": {
@@ -3155,23 +3144,23 @@
       "label": "salade"
     },
     "chocolat|/kg": {
-      "median": 23.63,
+      "median": 22.73,
       "count": 300,
       "label": "chocolat"
     },
     "biscuit|/kg": {
-      "median": 15.91,
+      "median": 16.02,
       "count": 300,
       "label": "biscuit"
     },
     "confiture|/kg": {
-      "median": 12.59,
-      "count": 146,
+      "median": 12.99,
+      "count": 148,
       "label": "confiture"
     },
     "céréales|/kg": {
-      "median": 9.41,
-      "count": 290,
+      "median": 9.42,
+      "count": 291,
       "label": "céréales"
     },
     "céréales|/litre": {
@@ -3190,23 +3179,23 @@
       "label": "bonbon"
     },
     "yaourt|/kg": {
-      "median": 5.5,
-      "count": 295,
+      "median": 5.53,
+      "count": 294,
       "label": "yaourt"
     },
     "fromage|/kg": {
-      "median": 20.72,
-      "count": 279,
+      "median": 21.0,
+      "count": 295,
       "label": "fromage"
     },
     "fromage|/litre": {
-      "median": 3.13,
-      "count": 21,
+      "median": 6.87,
+      "count": 5,
       "label": "fromage"
     },
     "beurre|/kg": {
       "median": 15.56,
-      "count": 173,
+      "count": 174,
       "label": "beurre"
     },
     "crème dessert|/kg": {
@@ -3219,9 +3208,14 @@
       "count": 35,
       "label": "crème dessert"
     },
+    "crème dessert|/each": {
+      "median": 4.49,
+      "count": 5,
+      "label": "crème dessert"
+    },
     "compote|/kg": {
       "median": 6.75,
-      "count": 182,
+      "count": 181,
       "label": "compote"
     },
     "sorbet|/kg": {
@@ -3230,12 +3224,12 @@
       "label": "sorbet"
     },
     "lait|/litre": {
-      "median": 2.59,
+      "median": 2.67,
       "count": 126,
       "label": "lait"
     },
     "lait|/kg": {
-      "median": 18.2,
+      "median": 18.3,
       "count": 173,
       "label": "lait"
     },
@@ -3251,7 +3245,7 @@
     },
     "jus de fruits|/litre": {
       "median": 3.75,
-      "count": 225,
+      "count": 222,
       "label": "jus de fruits"
     },
     "eau minérale|/litre": {
@@ -3261,22 +3255,22 @@
     },
     "soda|/litre": {
       "median": 3.3,
-      "count": 193,
+      "count": 195,
       "label": "soda"
     },
     "thé|/kg": {
-      "median": 106.62,
-      "count": 264,
+      "median": 106.44,
+      "count": 267,
       "label": "thé"
     },
     "thé|/litre": {
-      "median": 2.06,
-      "count": 36,
+      "median": 2.05,
+      "count": 33,
       "label": "thé"
     },
     "sirop|/litre": {
-      "median": 6.17,
-      "count": 40,
+      "median": 6.13,
+      "count": 41,
       "label": "sirop"
     },
     "sirop|/kg": {
@@ -3291,17 +3285,17 @@
     },
     "riz|/kg": {
       "median": 9.22,
-      "count": 207,
+      "count": 206,
       "label": "riz"
     },
     "riz|/litre": {
-      "median": 3.31,
-      "count": 28,
+      "median": 3.36,
+      "count": 27,
       "label": "riz"
     },
     "sauce|/kg": {
-      "median": 13.59,
-      "count": 215,
+      "median": 13.57,
+      "count": 216,
       "label": "sauce"
     },
     "sauce|/litre": {
@@ -3310,18 +3304,18 @@
       "label": "sauce"
     },
     "chips|/kg": {
-      "median": 18.53,
-      "count": 129,
+      "median": 18.62,
+      "count": 130,
       "label": "chips"
     },
     "huile|/litre": {
       "median": 66.6,
-      "count": 280,
+      "count": 288,
       "label": "huile"
     },
     "huile|/each": {
-      "median": 8.9,
-      "count": 16,
+      "median": 9.45,
+      "count": 8,
       "label": "huile"
     },
     "noix|/kg": {
@@ -3335,7 +3329,7 @@
       "label": "noix"
     },
     "conserve|/kg": {
-      "median": 10.39,
+      "median": 10.5,
       "count": 300,
       "label": "conserve"
     },
@@ -3347,11 +3341,6 @@
     "poulet|/kg": {
       "median": 15.16,
       "count": 261,
-      "label": "poulet"
-    },
-    "poulet|/each": {
-      "median": 1.33,
-      "count": 5,
       "label": "poulet"
     },
     "saucisson|/kg": {
@@ -3370,28 +3359,28 @@
       "label": "bresaola"
     },
     "saumon|/kg": {
-      "median": 49.91,
-      "count": 156,
+      "median": 49.9,
+      "count": 155,
       "label": "saumon"
     },
     "thon|/kg": {
-      "median": 27.01,
-      "count": 122,
+      "median": 27.19,
+      "count": 121,
       "label": "thon"
     },
     "shampooing|/litre": {
-      "median": 25.61,
+      "median": 25.56,
       "count": 242,
       "label": "shampooing"
     },
     "gel douche|/litre": {
       "median": 12.56,
-      "count": 167,
+      "count": 163,
       "label": "gel douche"
     },
     "gel douche|/each": {
       "median": 9.9,
-      "count": 14,
+      "count": 13,
       "label": "gel douche"
     },
     "couches|/each": {
@@ -3400,13 +3389,13 @@
       "label": "couches"
     },
     "lessive|/litre": {
-      "median": 6.38,
-      "count": 95,
+      "median": 6.34,
+      "count": 96,
       "label": "lessive"
     },
     "lessive|/each": {
-      "median": 10.34,
-      "count": 16,
+      "median": 10.84,
+      "count": 14,
       "label": "lessive"
     },
     "lessive|/kg": {
@@ -3416,7 +3405,7 @@
     },
     "mouchoirs|/each": {
       "median": 0.06,
-      "count": 45,
+      "count": 47,
       "label": "mouchoirs"
     }
   }
