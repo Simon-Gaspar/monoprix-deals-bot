@@ -215,6 +215,21 @@
     color: var(--muted);
     opacity: 0.7;
   }
+  .other-prices {
+    margin-top: 0.25rem;
+    font-size: 0.65rem;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+  .other-prices .op-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.3rem;
+  }
+  .other-prices .op-store { opacity: 0.8; }
+  .other-prices .op-price { font-weight: 600; color: var(--text); }
+  .badge-cheapest { background: #22c55e22; color: #4ade80; border: 1px solid #22c55e44; font-size: 0.6rem; }
+  .badge-cheaper-elsewhere { background: #ef444422; color: #f87171; border: 1px solid #ef444444; font-size: 0.6rem; }
   .card-sparkline {
     display: flex;
     align-items: center;
@@ -238,6 +253,18 @@
     font-size: 0.7rem;
     color: var(--muted);
   }
+  .card-link {
+    font-size: 0.65rem;
+    color: var(--accent);
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  .card-link:hover { opacity: 1; text-decoration: underline; }
+  .card-since {
+    font-size: 0.6rem;
+    color: var(--muted);
+    opacity: 0.7;
+  }
 
   .results-count {
     max-width: 1200px;
@@ -252,6 +279,73 @@
     text-align: center;
     padding: 3rem;
     color: var(--muted);
+  }
+
+  /* Favorites */
+  .fav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 0.15rem;
+    color: var(--muted);
+    opacity: 0.5;
+    transition: all 0.15s;
+    flex-shrink: 0;
+  }
+  .fav-btn:hover { opacity: 1; }
+  .fav-btn.active { color: var(--accent); opacity: 1; }
+  .fav-filter {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  .fav-toggle {
+    padding: 0.35rem 0.75rem;
+    border-radius: 2rem;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .fav-toggle:hover { border-color: var(--text); color: var(--text); }
+  .fav-toggle.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .list-summary {
+    display: none;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    max-width: 1200px;
+  }
+  .list-summary.visible { display: block; }
+  .list-summary h3 {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  .list-summary .store-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .list-summary .store-row.monoprix { color: var(--accent); font-weight: 600; }
+  .list-summary .store-row .total { font-weight: 600; color: var(--text); }
+  .list-summary .store-row.cheapest .total { color: #4ade80; }
+  .list-summary .store-note {
+    font-size: 0.65rem;
+    color: var(--muted);
+    opacity: 0.6;
+    margin-top: 0.3rem;
   }
 
   @media (max-width: 600px) {
@@ -283,6 +377,10 @@
 </div>
 
 <div class="filters">
+  <div class="fav-filter">
+    <button class="fav-toggle" id="fav-filter" onclick="showFavOnly=!showFavOnly;this.classList.toggle('active');render()">&#9829; Ma liste de courses <span id="fav-count">0</span></button>
+  </div>
+  <div class="list-summary" id="list-summary"></div>
   <div class="filter-group">
     <div class="filter-label">Type de promo</div>
     <div class="chips" id="promo-chips"></div>
@@ -302,6 +400,21 @@ let REF_PRICES = {};
 let HISTORY = {};
 let activePromos = new Set();
 let activeCats = new Set();
+let favorites = new Set(JSON.parse(localStorage.getItem('favorites') || '[]'));
+let showFavOnly = false;
+
+function toggleFavorite(id) {
+  if (favorites.has(id)) favorites.delete(id);
+  else favorites.add(id);
+  localStorage.setItem('favorites', JSON.stringify([...favorites]));
+  updateFavCount();
+  render();
+}
+
+function updateFavCount() {
+  const el = document.getElementById('fav-count');
+  if (el) el.textContent = favorites.size;
+}
 
 const BADGE_CLASSES = {
   '2 +1 offert': 'badge-21',
@@ -346,6 +459,13 @@ function getRefComparison(d) {
   return { pct, median: ref.median, unit, count: ref.count, label: ref.label || d.subcategory };
 }
 
+function getPromoSince(d) {
+  if (!d.id || !HISTORY[d.id]) return '';
+  const dates = Object.keys(HISTORY[d.id].prices).sort();
+  if (!dates.length) return '';
+  return dates[0].split('-').reverse().join('/');
+}
+
 function buildSparkline(d) {
   if (!d.id || !HISTORY[d.id]) return '';
   const hist = HISTORY[d.id].prices;
@@ -386,12 +506,54 @@ function buildSparkline(d) {
   </div>`;
 }
 
+function updateListSummary(favDeals) {
+  const el = document.getElementById('list-summary');
+  if (!showFavOnly || !favDeals.length) {
+    el.classList.remove('visible');
+    return;
+  }
+  // Monoprix total (promo price)
+  let monoTotal = 0;
+  let monoCount = 0;
+  const storeTotals = {}; // {storeName: {total, count}}
+  for (const d of favDeals) {
+    const p = parseFloat(d.price);
+    if (p) { monoTotal += p; monoCount++; }
+    const op = d.otherPrices || [];
+    for (const o of op) {
+      if (!storeTotals[o.store]) storeTotals[o.store] = {total: 0, count: 0};
+      storeTotals[o.store].total += o.price;
+      storeTotals[o.store].count++;
+    }
+  }
+  // Only show stores that have prices for at least 2 products
+  const stores = Object.entries(storeTotals)
+    .filter(([, v]) => v.count >= 2)
+    .sort((a, b) => b[1].count - a[1].count)
+    .slice(0, 5);
+  const cheapestTotal = stores.length ? Math.min(...stores.map(([, v]) => v.total)) : Infinity;
+  let html = `<h3>Ma liste de courses (${monoCount} produit${monoCount > 1 ? 's' : ''})</h3>`;
+  html += `<div class="store-row monoprix"><span>Monoprix (promo)</span><span class="total">${monoTotal.toFixed(2)} \u20ac</span></div>`;
+  for (const [store, v] of stores) {
+    const isCheapest = v.total <= cheapestTotal;
+    html += `<div class="store-row${isCheapest ? ' cheapest' : ''}"><span>${store} <small>(${v.count}/${monoCount} produits)</small></span><span class="total">${v.total.toFixed(2)} \u20ac</span></div>`;
+  }
+  if (!stores.length) {
+    html += `<div class="store-note">Aucun prix compar\u00e9 disponible pour ces produits.</div>`;
+  } else {
+    html += `<div class="store-note">Estimations bas\u00e9es sur les derniers prix connus (Open Prices). Comparaison partielle.</div>`;
+  }
+  el.innerHTML = html;
+  el.classList.add('visible');
+}
+
 function render() {
   const q = document.getElementById('search').value.toLowerCase().trim();
   const sortBy = document.getElementById('sort').value;
   const grid = document.getElementById('grid');
 
   const filtered = DATA.filter(d => {
+    if (showFavOnly && !favorites.has(d.id)) return false;
     if (activePromos.size && !activePromos.has(d.discount)) return false;
     if (activeCats.size && !activeCats.has(d.category)) return false;
     if (q && !d.name.toLowerCase().includes(q)) return false;
@@ -414,6 +576,7 @@ function render() {
   }
 
   document.getElementById('results-count').textContent = `${filtered.length} produit${filtered.length > 1 ? 's' : ''}`;
+  updateListSummary(filtered);
 
   if (!filtered.length) {
     grid.innerHTML = '<div class="empty">Aucun produit ne correspond aux filtres.</div>';
@@ -431,22 +594,43 @@ function render() {
       }
     }
     const spark = buildSparkline(d);
+    const since = getPromoSince(d);
+    const productUrl = 'https://courses.monoprix.fr/search?q=' + encodeURIComponent(d.name);
+    const op = d.otherPrices || [];
+    let otherHtml = '';
+    let cheapBadge = '';
+    if (op.length && d.price) {
+      const monoPrice = parseFloat(d.price);
+      const cheapest = op[0];
+      if (cheapest.price < monoPrice) {
+        cheapBadge = `<span class="badge badge-cheaper-elsewhere">Moins cher ailleurs</span>`;
+      } else {
+        cheapBadge = `<span class="badge badge-cheapest">Moins cher ici</span>`;
+      }
+      otherHtml = `<div class="other-prices">${op.slice(0, 3).map(p =>
+        `<div class="op-row"><span class="op-store">${esc(p.store)}</span><span class="op-price">${Number(p.price).toFixed(2)} \u20ac</span></div>`
+      ).join('')}</div>`;
+    }
     return `
     <div class="card">
-      ${d.image ? `<img class="card-img" src="${esc(d.image)}" alt="" loading="lazy">` : ''}
+      ${d.image ? `<a href="${productUrl}" target="_blank" rel="noopener"><img class="card-img" src="${esc(d.image)}" alt="" loading="lazy"></a>` : ''}
       <div class="card-body">
         <div class="card-top">
-          <div class="card-name">${esc(d.name)}</div>
+          <button class="fav-btn${favorites.has(d.id) ? ' active' : ''}" onclick="event.stopPropagation();toggleFavorite('${esc(d.id)}')">${favorites.has(d.id) ? '\u2665' : '\u2661'}</button>
+          <div class="card-name"><a href="${productUrl}" target="_blank" rel="noopener" class="card-link" style="color:var(--text);font-size:inherit;opacity:1">${esc(d.name)}</a></div>
           <div>
             <div class="card-price">${d.price ? d.price + ' \u20ac' : ''}</div>
             ${d.discountedUnitPrice ? `<div class="card-unit"><span class="card-unit-original">${esc(d.unitPrice)}</span> <span class="card-unit-discounted">${esc(d.discountedUnitPrice)}</span></div>` : d.unitPrice ? `<div class="card-unit">${esc(d.unitPrice)}</div>` : ''}
             ${ref ? `<div class="card-ref">m\u00e9diane ${esc(ref.label)}: ${ref.median.toFixed(2)} \u20ac${ref.unit}</div>` : ''}
+            ${otherHtml}
           </div>
         </div>
         ${spark}
         <div class="card-bottom">
           <span class="badge ${getBadgeClass(d.discount)}">${esc(d.discount)}</span>
           ${refHtml}
+          ${cheapBadge}
+          ${since ? `<span class="card-since">depuis le ${since}</span>` : ''}
           <span class="card-cat">${esc(d.category)}</span>
         </div>
       </div>
@@ -508,6 +692,7 @@ async function init() {
 
     document.getElementById('search').addEventListener('input', render);
     document.getElementById('sort').addEventListener('change', render);
+    updateFavCount();
     render();
   } catch (e) {
     document.getElementById('meta').textContent = 'Erreur de chargement des donn\u00e9es.';

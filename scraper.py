@@ -8,6 +8,7 @@ notifie sur Discord et génère un JSON pour le front.
 import json
 import os
 import re
+import time
 import urllib.parse
 from datetime import datetime, timedelta, timezone
 import requests
@@ -16,6 +17,8 @@ CONFIG_PATH = os.path.join(os.path.dirname(__file__), "config.json")
 DOCS_DIR = os.path.join(os.path.dirname(__file__), "docs")
 
 COURSES_SEARCH_URL = "https://courses.monoprix.fr/api/webproductpagews/v6/product-pages/search"
+CATALOGUE_API_URL = "https://catalogue.monoprix.fr/catalog-api/rest/api"
+OPEN_PRICES_API_URL = "https://prices.openfoodfacts.org/api/v1/prices"
 MONOPRIX_URL = "https://courses.monoprix.fr"
 
 HEADERS = {
@@ -96,6 +99,7 @@ CATEGORY_KEYWORDS = {
 
 # Normalise les catégories de l'API vers nos catégories unifiées
 CATEGORY_NORMALIZE = {
+    # courses.monoprix.fr API categories
     "Produits Laitiers, Œufs et Fromages": "Produits Laitiers",
     "Boissons et Lait": "Boissons",
     "Bière, Cave et Spiritueux": "Bière et Alcools",
@@ -108,6 +112,81 @@ CATEGORY_NORMALIZE = {
     "Pâques": "Épicerie Sucrée",
     "Nos sélections": "",  # will be guessed from name
     "Nos recettes": "",
+    # catalogue.monoprix.fr API departments
+    "Chocolat, Confiserie, Compote et Crème dessert": "Épicerie Sucrée",
+    "Petit déjeuner": "Épicerie Sucrée",
+    "Sucre, Farine et aide à la patisserie": "Épicerie Sucrée",
+    "Biscotte, Tartine et Galette de riz": "Épicerie Sucrée",
+    "Pâtisserie": "Épicerie Sucrée",
+    "Boulangerie": "Épicerie Sucrée",
+    "Pain et Baguette": "Épicerie Sucrée",
+    "Cave à vins": "Bière et Alcools",
+    "Alcool Cocktail": "Bière et Alcools",
+    "Bière et Cidre": "Bière et Alcools",
+    "Eau & Jus de fruits": "Boissons",
+    "Jus et Sirop": "Boissons",
+    "Soda et Boisson aromatisée": "Boissons",
+    "Viande": "Viandes et Charcuterie",
+    "Boucherie": "Viandes et Charcuterie",
+    "Volaille": "Viandes et Charcuterie",
+    "Jambons et Saucissons": "Viandes et Charcuterie",
+    "Traiteur": "Viandes et Charcuterie",
+    "Poissonnerie": "Poissons et Fruits de mer",
+    "Produits de la Mer": "Poissons et Fruits de mer",
+    "Surimi": "Poissons et Fruits de mer",
+    "Fromagerie": "Produits Laitiers",
+    "Fromage": "Produits Laitiers",
+    "Crèmerie": "Produits Laitiers",
+    "Crémerie Bio": "Produits Laitiers",
+    "Dessert": "Produits Laitiers",
+    "Yaourt": "Produits Laitiers",
+    "Beurre et Margarine": "Produits Laitiers",
+    "Lait": "Produits Laitiers",
+    "Oeufs": "Produits Laitiers",
+    "Glace et Dessert glacé": "Produits Laitiers",
+    "Fruits et Légumes / Fleurs": "Fruits et Légumes",
+    "Légume": "Fruits et Légumes",
+    "Savons & Shampoings": "Hygiène et Beauté",
+    "Maquillage & Accessoires": "Hygiène et Beauté",
+    "Soins, Crèmes": "Hygiène et Beauté",
+    "Hygiène Dentaire": "Hygiène et Beauté",
+    "Parfumerie": "Hygiène et Beauté",
+    "Mouchoir, Coton, Couches": "Hygiène et Beauté",
+    "Voyage & Crèmes Solaires": "Hygiène et Beauté",
+    "Parapharmacie": "Hygiène et Beauté",
+    "Lessive et Soin du linge": "Entretien",
+    "Droguerie": "Entretien",
+    "Produit Vaisselle": "Entretien",
+    "Essuie Tout et Papier Toilette": "Entretien",
+    "Tartinable, Blini, Oeufs": "Épicerie Salée",
+    "Produit apéritif": "Épicerie Salée",
+    "Assaisonnement, Condiment, Sauce": "Épicerie Salée",
+    "Conserve": "Épicerie Salée",
+    "Saveurs étrangères et exotiques": "Épicerie Salée",
+    "Pâtes, Riz, Céréale, Purée, Soupe": "Épicerie Salée",
+    "Pause Déjeuner": "Épicerie Salée",
+    "Salade et Sandwich": "Épicerie Salée",
+    "Plat Cuisiné": "Épicerie Salée",
+    "Plat cuisiné et Repas Express": "Épicerie Salée",
+    "Pizza, Quiche et Tarte": "Épicerie Salée",
+    "Pâte fraîche, Gnocchi, Quenelle": "Épicerie Salée",
+    "Pâte à tarte et Pâte à pizza": "Épicerie Salée",
+    "Apéritif frais": "Épicerie Salée",
+    "Nutrition, Minceur et Végétal": "Épicerie Salée",
+    "Animaux": "Autre",
+    "Table et Cuisine": "Autre",
+    "Déco maison": "Autre",
+    "Culture & New Tech": "Autre",
+    "Jouets": "Autre",
+    "Papeterie": "Autre",
+    "Blanc": "Autre",
+    "Bricolage": "Autre",
+    # courses.monoprix.fr — catégories résiduelles
+    "Surgelés": "Autre",
+    "Bio": "Autre",
+    "Régimes alimentaires": "Autre",
+    "Nos régions de France": "Autre",
+    "Fruits & Légumes": "Fruits et Légumes",
 }
 
 
@@ -348,9 +427,251 @@ def fetch_all_promos() -> list[dict]:
                 "image": image,
                 "unitPrice": f"{unit_amount} €{unit_label}" if unit_amount else "",
                 "discountedUnitPrice": discounted_unit,
+                "ean": "",
+                "source": "courses",
             })
 
     return deals
+
+
+def fetch_catalogue_promos() -> list[dict]:
+    """
+    Récupère les promos du catalogue national via catalogue.monoprix.fr.
+    Complète les promos de courses.monoprix.fr avec les produits manquants.
+    """
+    url = f"{CATALOGUE_API_URL}/slider/by_alias/catalogue-promotionnel"
+    headers = {**HEADERS, "X-Retailer-Name": "monoprix", "Accept": "application/json"}
+
+    try:
+        r = requests.get(url, headers=headers, timeout=20)
+        if not r.ok:
+            print(f"[WARN] catalogue API {r.status_code}")
+            return []
+    except Exception as e:
+        print(f"[WARN] catalogue API erreur: {e}")
+        return []
+
+    data = r.json()
+    promos = data.get("promotions", [])
+    deals = []
+
+    for promo in promos:
+        product = promo.get("product", {})
+        if not product:
+            continue
+
+        name = product.get("title", "")
+        product_id = product.get("retailerId", "")
+
+        # Prix : virgule → point
+        price_raw = promo.get("discountPrice") or product.get("priceBase") or ""
+        price = price_raw.replace(",", ".") if price_raw else ""
+
+        # Discount description from promotionType
+        promo_types = promo.get("promotionType") or []
+        short_desc = ""
+        if promo_types:
+            pt = promo_types[0]
+            design = pt.get("design") or {}
+            value = design.get("designValue", "")
+            label = design.get("designLabel") or ""
+            pt_name = pt.get("name", "")
+
+            if "offert" in pt_name.lower() or "offert" in label.lower():
+                # "2+1 offert" type
+                short_desc = f"{value} {label}".strip()
+            elif pt_name == "Prix":
+                # Just a promoted price, no explicit discount → leave empty
+                pass
+            elif "en €" in pt_name:
+                # Euro discount: "-1.80€"
+                value_str = value.lstrip("-").replace(",", ".")
+                if value_str:
+                    short_desc = f"-{value_str}€"
+            elif value.startswith("-"):
+                # Percentage discount: "-50% sur le 2ème", "-34% immédiatement"
+                value_str = value.lstrip("-")
+                if value_str and label:
+                    short_desc = f"-{value_str}% {label}"
+                elif value_str:
+                    short_desc = f"-{value_str}%"
+
+            # Ajouter "cagnotté" pour les promos fidélité
+            if pt.get("discountType") == "differed":
+                if short_desc and "cagnott" not in short_desc:
+                    short_desc = f"{short_desc} cagnotté"
+                elif not short_desc:
+                    short_desc = "cagnotté"
+
+        # Catégorie
+        dept = product.get("department", {})
+        raw_category = dept.get("title", "Autre")
+        category = CATEGORY_NORMALIZE.get(raw_category, raw_category)
+        if not category:
+            category = guess_category(name)
+
+        # Image
+        images = (product.get("medias") or {}).get("productImages") or []
+        image = images[0] if images else ""
+
+        # Prix unitaire : "3,18" + "Le kg" → "3.18 €/kg"
+        unit_price_raw = product.get("priceMeasureUnit", "")
+        measure_unit = product.get("measureUnit", "")  # ex: "Le kg", "Le L"
+        unit_label = ""
+        if measure_unit:
+            # "Le kg" → "/kg", "La pièce" → "/pièce", "Les 100 g" → "/100 g"
+            cleaned = measure_unit
+            for prefix in ("Le ", "le ", "La ", "la ", "L'", "l'", "Les ", "les "):
+                if cleaned.startswith(prefix):
+                    cleaned = cleaned[len(prefix):]
+                    break
+            unit_label = "/" + cleaned
+        unit_amount = unit_price_raw.replace(",", ".") if unit_price_raw else ""
+
+        unit_price_str = f"{unit_amount} €{unit_label}" if unit_amount else ""
+
+        # Prix unitaire après réduction
+        discounted_unit = ""
+        disc_raw = promo.get("discountMeasureUnitPrice", "")
+        if disc_raw:
+            discounted_unit = f"{disc_raw.replace(',', '.')} €{unit_label}"
+        elif unit_amount and short_desc:
+            factor = discount_factor(short_desc)
+            discounted = float(unit_amount) * factor
+            discounted_unit = f"{discounted:.2f} €{unit_label}"
+
+        subcategory = match_subcategory(name)
+
+        deals.append({
+            "id": product_id,
+            "name": name,
+            "price": price,
+            "discount": short_desc,
+            "category": category,
+            "subcategory": subcategory or "",
+            "image": image,
+            "unitPrice": unit_price_str,
+            "discountedUnitPrice": discounted_unit,
+            "ean": product.get("ean", ""),
+            "source": "catalogue",
+        })
+
+    return deals
+
+
+STORE_NORMALIZE = {
+    "centre commercial e.leclerc": "E.Leclerc",
+    "e.leclerc": "E.Leclerc",
+    "leclerc": "E.Leclerc",
+    "carrefour": "Carrefour",
+    "carrefour city": "Carrefour",
+    "carrefour market": "Carrefour",
+    "carrefour express": "Carrefour",
+    "carrefour contact": "Carrefour",
+    "auchan": "Auchan",
+    "auchan supermarché": "Auchan",
+    "intermarché": "Intermarché",
+    "intermarché super": "Intermarché",
+    "intermarché contact": "Intermarché",
+    "lidl": "Lidl",
+    "aldi": "Aldi",
+    "aldi nord": "Aldi",
+    "aldi süd": "Aldi",
+    "casino": "Casino",
+    "géant casino": "Casino",
+    "casino supermarché": "Casino",
+    "monoprix": "Monoprix",
+    "monop'": "Monoprix",
+    "franprix": "Franprix",
+    "u express": "Super U",
+    "super u": "Super U",
+    "hyper u": "Super U",
+    "système u": "Super U",
+    "spar": "Spar",
+    "biocoop": "Biocoop",
+    "picard": "Picard",
+    "cora": "Cora",
+    "match": "Match",
+    "colruyt": "Colruyt",
+    "netto": "Netto",
+}
+
+
+def normalize_store(name: str) -> str:
+    """Normalise un nom de magasin Open Prices vers un nom d'enseigne court."""
+    lower = name.lower().strip()
+    for key, value in STORE_NORMALIZE.items():
+        if key in lower:
+            return value
+    return name
+
+
+def fetch_open_prices(ean_list: list[str]) -> dict[str, list[dict]]:
+    """
+    Requête Open Prices API pour chaque EAN.
+    Retourne {ean: [{store, price, date, city}, ...]} avec le prix le plus récent par enseigne.
+    """
+    if not ean_list:
+        return {}
+
+    result = {}
+    total = len(ean_list)
+    print(f"[INFO] Requête Open Prices pour {total} EAN(s)...")
+
+    for i, ean in enumerate(ean_list):
+        if not ean:
+            continue
+        try:
+            r = requests.get(
+                OPEN_PRICES_API_URL,
+                params={
+                    "product_code": ean,
+                    "order_by": "-date",
+                    "page_size": "20",
+                    "currency": "EUR",
+                },
+                headers=HEADERS,
+                timeout=10,
+            )
+            if not r.ok:
+                continue
+            data = r.json()
+            items = data.get("items", [])
+            if not items:
+                continue
+
+            # Garder le prix le plus récent par enseigne normalisée
+            by_store = {}
+            for item in items:
+                loc = item.get("location") or {}
+                raw_store = loc.get("osm_brand") or loc.get("osm_name") or ""
+                if not raw_store:
+                    continue
+                store = normalize_store(raw_store)
+                # Skip Monoprix — on a déjà nos propres prix
+                if store == "Monoprix":
+                    continue
+                if store not in by_store:
+                    by_store[store] = {
+                        "store": store,
+                        "price": item.get("price"),
+                        "date": item.get("date", ""),
+                        "city": loc.get("osm_address_city", ""),
+                    }
+
+            if by_store:
+                result[ean] = sorted(by_store.values(), key=lambda x: x["price"])
+
+        except Exception as e:
+            print(f"[WARN] Open Prices erreur pour {ean}: {e}")
+
+        # Rate limit : 200ms entre les requêtes
+        if i < total - 1:
+            time.sleep(0.2)
+
+    found = sum(1 for v in result.values() if v)
+    print(f"[OK] Open Prices: {found}/{total} EANs avec des prix comparés.")
+    return result
 
 
 HISTORY_MAX_DAYS = 90
@@ -484,8 +805,36 @@ def main():
     notify_if_empty = config.get("notify_if_empty", False)
 
     print("[INFO] Recherche des promos via courses.monoprix.fr...")
-    deals = fetch_all_promos()
-    print(f"[INFO] {len(deals)} promo(s) trouvée(s).")
+    courses_deals = fetch_all_promos()
+    print(f"[INFO] {len(courses_deals)} promo(s) courses.monoprix.fr.")
+
+    print("[INFO] Recherche des promos via catalogue.monoprix.fr...")
+    catalogue_deals = fetch_catalogue_promos()
+    print(f"[INFO] {len(catalogue_deals)} promo(s) catalogue.monoprix.fr.")
+
+    # Fusion : courses a priorité, catalogue complète
+    seen_ids = {d["id"] for d in courses_deals if d["id"]}
+    deals = list(courses_deals)
+    added = 0
+    for d in catalogue_deals:
+        if d["id"] and d["id"] not in seen_ids:
+            deals.append(d)
+            seen_ids.add(d["id"])
+            added += 1
+    print(f"[INFO] Fusion: {len(courses_deals)} courses + {added} catalogue = {len(deals)} total")
+
+    # Enrichir avec les prix multi-enseignes via Open Prices
+    ean_list = list({d["ean"] for d in deals if d.get("ean")})
+    if ean_list:
+        open_prices = fetch_open_prices(ean_list)
+        ean_to_prices = open_prices
+        for deal in deals:
+            ean = deal.get("ean", "")
+            deal["otherPrices"] = ean_to_prices.get(ean, [])
+    else:
+        for deal in deals:
+            deal["otherPrices"] = []
+        print("[INFO] Aucun EAN disponible, skip Open Prices.")
 
     print("[INFO] Récupération des prix de référence par rayon...")
     ref_prices = fetch_reference_prices()
